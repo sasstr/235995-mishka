@@ -1,0 +1,28 @@
+.copyright {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
+
+.copyright__text {
+  margin: 0 30px 31px 0;
+
+  font-weight: 700;
+  font-size: 19px;
+  color: #000000;
+
+  &::before {
+    position: absolute;
+    top: -27px;
+    left: calc((100vw - 260px) / 2);
+    z-index: 5;
+
+    content: "";
+
+    width: 260px;
+    height: 1px;
+
+    background-color: #e5e5e5;
+  }
+}

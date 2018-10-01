@@ -1,0 +1,80 @@
+.modal {
+  margin: 0 auto;
+  width: 320px;
+  min-height: 336px;
+
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;
+}
+
+.modal__title {
+  width: 148px;
+  min-height: 50px;
+  margin: 36px 0 25px 89px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.modal__select-size {
+  margin: 0 0 28px 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #444444;
+  text-align: center;
+}
+
+.modal__list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0 0 31px 0;
+
+  list-style: none;
+}
+
+.modal__size {
+  min-width: 82px;
+  min-height: 52px;
+  margin-left: 7px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #444444;
+  text-transform: uppercase;
+
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  background-color: #ffffff;
+
+  cursor: pointer;
+
+  &--selected {
+    border: 2px solid #63d1bb;
+  }
+
+  &--first {
+    margin-left: 0;
+  }
+}
+
+.modal__add {
+  min-width: 260px;
+  min-height: 52px;
+  margin: 0 0 46px 30px;
+
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: #63d1bb;
+  border: none;
+
+  cursor: pointer;
+}

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка Форма</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header-page">
@@ -10,7 +11,7 @@
         <nav class="header-page__nav header-nav">
           <div class="header-nav__logo">
             <a class="header-nav__logo-link" href="index.html">
-              <img class="header-nav__img" src="http://placehold.it/86x35" width="86" height="35" alt="Лого интернет магазина Мишка">
+              <img class="header-nav__img" src="img/logo-mobile.svg" width="86" height="35" alt="Лого интернет магазина Мишка">
             </a>
             <button type="button" class="header-nav__toggle">
               <span class="visually-hidden">Открыть меню</span>
@@ -29,16 +30,16 @@
               <a class="header-menu__link header-menu__link--search" href="#">Поиск по сайту</a>
             </li>
             <li class="header-menu__item">
-              <a class="header-menu__link header-menu__link--cart">Корзина: пока пуста</a>
+              <a class="header-menu__link header-menu__link--cart" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main-page form-page">
+      <h1 class="main-title order__main-title">Вязание на заказ</h1>
       <div class="form-page__container">
         <section class="order">
-          <h1 class="main-title order__title">Вязание на заказ</h1>
           <p class="order__description">
             Мы будем рады воплотить в жизнь ваши пожелания!
             Заполните простую форму заказа и мы свяжемся с вами,
@@ -49,11 +50,11 @@
               <h2 class="order__title order__title--type">Тип</h2>
               <div class="order__form-wrapper">
                 <div class="order__block">
-                  <input class="order__radio order__radio visually-hidden" type="radio" name="product-type" id="product-type-accessory" checked>
-                  <label class="order__label order__label" for="product-type-accessory">Аксессуар для интерьера</label>
+                  <input class="order__radio visually-hidden" type="radio" name="product-type" id="product-type-accessory" checked>
+                  <label class="order__label order__label--radio" for="product-type-accessory">Аксессуар для интерьера</label>
                 </div>
                 <div class="order__block">
-                  <input class="order__radio order__radio--type-toy visually-hidden" type="radio" name="product-type" id="product-type-toy">
+                  <input class="order__radio visually-hidden" type="radio" name="product-type" id="product-type-toy">
                   <label class="order__label order__label--radio" for="product-type-toy">Детская игрушка</label>
                 </div>
               </div>
@@ -144,7 +145,7 @@
       </ul>
       <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <b class="copyright__text">Разработано</b>
-        <img src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTMLAcademy">
+        <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTMLAcademy">
       </a>
     </footer>
   </body>

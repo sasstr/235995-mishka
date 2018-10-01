@@ -1,0 +1,38 @@
+.description {
+  margin-bottom: 28px;
+}
+
+.description__sort {
+  position: relative;
+
+  padding: 11px 0 11px 30px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+
+  &::before {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+
+    content: "";
+
+    width: 260px;
+    height: 1px;
+
+    background-color: #444444;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+}
+
+.description__value {
+  padding: 11px 0 11px 31px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #444444;
+}
