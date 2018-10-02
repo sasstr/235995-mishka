@@ -1,18 +1,24 @@
+.header-nav__logo {
+  display: flex;
+  justify-content: flex-end;
+  padding: 22px 30px;
+
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+}
+
+.header-nav__logo-link {
+  margin-right: 67px;
+}
+
 .header-nav__toggle {
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin-left: 67px;
+  margin-top: 7px;
 
   border: none;
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-image: url("../img/icon-menu-close.svg");
   background-size: 20px 20px;
-}
-
-.header-nav__logo {
-  display: flex;
-  justify-content: center;
-  margin: 22px 0;
 }

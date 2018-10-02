@@ -35,10 +35,10 @@
 }
 
 .catalog__link {
-  position: relative;
-
-  display: block;
-  padding: 30px 0 0 29px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 21px 29px;
 
   font-weight: 700;
   font-size: 19px;
@@ -46,7 +46,7 @@
   color: #ffffff;
 
   &::before {
-    position: absolute;
+    display: block;
 
     content: "";
 
@@ -55,22 +55,20 @@
   }
 
   &--interior-items::before {
-    top: 23px;
-    left: 244px;
-
+    display: block;
     width: 40px;
     height: 62px;
+    padding-right: 36px;
 
     background-color: #63d1bb;
     background-image: url("../img/icon-interior.svg");
   }
 
   &--toys::before {
-    top: 21px;
-    left: 223px;
-
+    display: block;
     width: 60px;
     height: 60px;
+    padding-right: 27px;
 
     background-color: #20c5af;
     background-image: url("../img/icon-toy.svg");
