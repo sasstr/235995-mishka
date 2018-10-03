@@ -16,6 +16,7 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -27,34 +28,46 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
+  font-family: "Open Sans", "Arial", sans-serif;
   color: #444444;
   text-align: center;
 }
 
 .modal__list {
   display: flex;
-  justify-content: center;
-  padding: 0;
+  justify-content: space-between;
+  max-width: 320px;
+  padding: 0 30px;
   margin: 0 0 31px 0;
 
   list-style: none;
 }
 
 .modal__size {
-  min-width: 82px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   min-height: 52px;
-  margin-left: 7px;
+  width: 82px;
+  padding: 20px 10px;
+  /* margin-left: 7px; */
 
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
+  font-family: "Open Sans", "Arial", sans-serif;
   color: #444444;
   text-transform: uppercase;
+  text-align: center;
 
   border: 2px solid rgba(68, 68, 68, 0.1);
   background-color: #ffffff;
 
   cursor: pointer;
+
+  &--m {
+    padding: 20px 34px;
+  }
 
   &--selected {
     border: 2px solid #63d1bb;
@@ -66,11 +79,15 @@
 }
 
 .modal__add {
+  display: flex;
+  
   min-width: 260px;
   min-height: 52px;
+  padding: 20px 10px 16px;
   margin: 0 0 46px 30px;
 
   line-height: 16px;
+  font-family: "Open Sans", "Arial", sans-serif;
   color: #ffffff;
 
   background-color: #63d1bb;
