@@ -1,5 +1,7 @@
 .order__fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .order__main-title {
@@ -94,15 +96,6 @@
 
     background-image: url("../img/icon-mail.svg");
   }
-}
-
-.order__description-required {
-  margin: 0 0 31px 30px;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  color: #444444;
 }
 
 .order__block {
@@ -230,6 +223,15 @@
 .order__label--checkbox {
   margin: 0 0 30px 63px;
   padding-top: 12px;
+}
+
+.order__description-required {
+  margin: 0 0 31px 30px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
 }
 
 .order__btn-submit {
