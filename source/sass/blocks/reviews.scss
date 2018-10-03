@@ -98,4 +98,17 @@
   min-height: 12px;
   padding: 20px 10px;
   margin: 0 0 95px 30px;
+
+  &::before {
+    position: absolute;
+    top: 95px;
+    left: -30px;
+
+    content: "";
+
+    width: 320px;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg")
+  }
 }

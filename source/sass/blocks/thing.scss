@@ -13,6 +13,7 @@
 }
 
 .thing__rating {
+  display: flex;
   margin: 0 0 30px 29px;
 
   font-weight: 700;
@@ -55,8 +56,23 @@
 }
 
 .thing__order {
+  position: relative;
+
   width: 259px;
   min-height: 12px;
   padding: 20px 10px;
   margin-left: 30px;
+
+  &::before {// Пока так сдюда воткнул что бы не забыть (не придумал как оставить в потоке )
+    position: absolute;
+    top: 80px;
+    left: -30px;
+
+    content: "";
+
+    width: 319px;
+    height: 6px;
+    //не понимаю почему она так видоизменяется эта полоска. В svg надо что то поменять ?
+    background-image: url("../img/bg-zigzag-line.svg");
+  }
 }

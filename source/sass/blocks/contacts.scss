@@ -33,25 +33,20 @@
   }
 }
 
-.contacts__data-info {
-  display: inline-block;
-
-  &--border {
-    height: 30px;
-
-    border-bottom: 1px solid #62d1ba;
-  }
-}
-
 .contacts__data-title {
   display: inline-block;
-  min-height: 46px;
+  min-height: 30px;
   margin-right: 28px;
 
   &--address {
-    min-height: 30px;
     min-width: 46px;
   }
+}
+
+.contacts__data-link {
+  color: #444444;
+  box-shadow: inset 0 1px 0 1px #ffffff,
+    inset 0 0 0 1px #62d1ba;
 }
 
 .contacts__map-iframe {
