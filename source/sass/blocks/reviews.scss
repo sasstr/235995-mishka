@@ -42,35 +42,29 @@
   font-style: normal;
 }
 
+.reviews__controls {
+  display: flex;
+  margin: 0 0 70px 30px;
+
+  font-size: 0;
+}
+
 .reviews__btn-control {
-  display: inline-block;
-  width: 130px;
-  height: 52px;
-  padding: 0;
+  padding: 26px 65px;
   margin: 0;
 
   border: 1px solid #ececec;
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: 50px 26px;
+  background-image: url("../img/icon-left-arrow.svg");
+  background-position: 38px 13px;
 
   cursor: pointer;
 
-  &--prev {
-    background-image: url("../img/icon-left-arrow.svg");
-    background-position: 38px 13px;
-  }
-
   &--next {
-    background-image: url("../img/icon-right-arrow.svg");
-    background-position: 38px 13px;
+    transform: rotate(180deg);
   }
-}
-
-.reviews__controls {
-  margin: 0 0 70px 30px;
-
-  font-size: 0;
 }
 
 .reviews__wrapper {
@@ -109,6 +103,6 @@
     width: 320px;
     height: 6px;
 
-    background-image: url("../img/bg-zigzag-line.svg")
+    background-image: url("../img/bg-zigzag-line.svg");
   }
 }
