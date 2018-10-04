@@ -18,14 +18,18 @@
 .specification__options {
   position: relative;
 
-  margin: 0 0 54px 29px;
+  margin: 0 0 27px 29px;
+  padding-bottom: 27px;
 
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
   color: #444444;
 
-  &::before {
+  box-shadow: inset -28px 1px 0 1px #ffffff,
+    inset -28px 0 0 1px rgba(68, 68, 68, 0.2);
+
+  /* &::before {
     position: absolute;
     top: 39px;
     left: 0;
@@ -36,7 +40,7 @@
     height: 1px;
 
     background-color: #ececec;
-  }
+  } */
 }
 
 .specification__price {

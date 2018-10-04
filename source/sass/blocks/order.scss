@@ -21,6 +21,8 @@
 .order__title {
   position: relative;
 
+  display: flex;
+  align-items: center;
   margin: 0 0 27px 30px;
 
   font-weight: 700;
@@ -29,21 +31,19 @@
   color: #63d1bb;
   text-transform: uppercase;
 
-  &::before {
-    position: absolute;
-    top: 6px;
-    left: 62px;
-
+  &::after {
     content: "";
+
+    display: block;
 
     width: 198px;
     height: 1px;
+    margin-left: 27px;
 
     background-color: #62d1ba;
   }
 
-  &--email::before {
-    left: 81px;
+  &--email::after {
 
     width: 179px;
   }
@@ -148,9 +148,9 @@
   position: relative;
 
   &:checked ~ .order__label::before {
-    position: absolute;
+    /* position: absolute;
     top: -10px;
-    left: 0;
+    left: 0; */
 
     content: "";
 
