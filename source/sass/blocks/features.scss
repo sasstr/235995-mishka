@@ -1,5 +1,9 @@
+.features {
+  padding-left: 30px;
+ }
+
 .features__title {
-  margin: 0 0 31px 30px;
+  margin: 0 0 31px 0;
 
   font-weight: 700;
   font-size: 25px;
@@ -9,7 +13,6 @@
 
 .features__list {
   @include reset-list;
-  margin-left: 30px;
 }
 
 .features__item {

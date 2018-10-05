@@ -5,12 +5,14 @@
 
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position: center -17px;
 }
 
 .catalog__title {
-  padding: 76px 0 0 0;
-  margin: -17px 0 135px 38px; //по макету 120px снизу должно быть?
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 76px 30px 120px;
 
   font-weight: 700;
   font-size: 27px;
@@ -55,7 +57,6 @@
   }
 
   &--interior-items::before {
-    display: block;
     width: 40px;
     height: 62px;
     padding-right: 36px;
@@ -65,7 +66,6 @@
   }
 
   &--toys::before {
-    display: block;
     width: 60px;
     height: 60px;
     padding-right: 27px;

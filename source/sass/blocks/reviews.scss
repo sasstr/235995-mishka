@@ -1,6 +1,10 @@
+.reviews {
+  padding-left: 30px;
+}
+
 .reviews__title {
   padding: 0;
-  margin: 0 0 38px 29px;
+  margin: 0 0 38px 0;
 
   font-weight: 700;
   font-size: 25px;
@@ -16,7 +20,7 @@
 .reviews__text {
   width: 255px;
   padding: 0;
-  margin: 0 0 40px 30px;
+  margin: 0 0 40px 0;
 
   font-weight: 400;
   font-size: 15px;
@@ -26,7 +30,7 @@
 
 .reviews__author {
   display: block;
-  margin: 0 0 20px 30px;
+  margin: 0 0 20px 0;
 
   font-style: normal;
   font-weight: 700;
@@ -37,14 +41,14 @@
 
 .reviews__contact {
   display: block;
-  margin: 0 0 36px 30px;
+  margin: 0 0 36px 0;
 
   font-style: normal;
 }
 
 .reviews__controls {
   display: flex;
-  margin: 0 0 70px 30px;
+  margin: 0 0 70px 0;
 
   font-size: 0;
 }
@@ -91,7 +95,7 @@
   width: 260px;
   min-height: 12px;
   padding: 20px 10px;
-  margin: 0 0 95px 30px;
+  margin: 0 0 95px 0;
 
   &::before {
     position: absolute;

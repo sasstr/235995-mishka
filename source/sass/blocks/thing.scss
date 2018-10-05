@@ -1,10 +1,11 @@
 .thing {
   margin-bottom: 36px;
+  padding-left: 30px;
 }
 
 .thing__title {
   padding: 0;
-  margin: 0 0 8px 32px;
+  margin: 0 0 8px 0;
 
   font-weight: 700;
   font-size: 25px;
@@ -14,7 +15,7 @@
 
 .thing__rating {
   display: flex;
-  margin: 0 0 30px 29px;
+  margin: 0 0 30px 0;
 
   font-weight: 700;
   font-size: 17px;
@@ -26,16 +27,13 @@
 .thing__promo {
   width: 249px;
   min-height: 63px;
-  margin: 0 0 33px 30px;
+  padding: 0;
+  margin: 0 0 33px 0;
 
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   color: #444444;
-}
-
-.thing__picture {
-  margin-left: 30px;
 }
 
 .thing__description {
@@ -47,7 +45,7 @@
   width: 130px;
   min-height: 18px;
   padding: 0;
-  margin: 0 0 28px 97px;
+  margin: 0 0 28px 67px;
 
   font-weight: 700;
   font-size: 17px;
@@ -61,7 +59,6 @@
   width: 259px;
   min-height: 12px;
   padding: 20px 10px;
-  margin-left: 30px;
 
   &::before {// Пока так сдюда воткнул что бы не забыть (не придумал как оставить в потоке )
     position: absolute;
