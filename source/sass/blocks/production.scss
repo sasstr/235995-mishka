@@ -1,0 +1,47 @@
+.production {
+  margin-left: 30px;
+}
+
+.production__title {
+  position: relative;
+
+  margin-left: 91px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+
+  &::before {
+    position: absolute;
+    top: 6px;
+    left: -57px;
+
+    content: "";
+
+    width: 32px;
+    height: 28px;
+
+    background-image: url("../img/icon-video.svg");
+  }
+}
+
+.production__description {
+  width: 183px;
+  min-height: 109px;
+  margin-left: 34px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
+
+.production__link-order {
+  width: 192px;
+  min-height: 52px;
+  padding: 20px 0 16px;
+  margin: 0 0 91px 34px;
+
+  line-height: 16px;
+}

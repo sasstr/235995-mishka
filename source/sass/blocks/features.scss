@@ -1,0 +1,86 @@
+.features__title {
+  margin: 0 0 31px 30px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.features__list {
+  @include reset-list;
+  margin-left: 30px;
+}
+
+.features__item {
+  position: relative;
+
+  width: 250px;
+  min-height: 95px;
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+
+  &--last {
+    margin-bottom: 61px;
+  }
+
+  &::before {
+    display: block;
+
+    content: "";
+
+    background-repeat: no-repeat;
+  }
+
+  &--ecology::before {
+    width: 32px;
+    height: 37px;
+    margin: 0 0 20px 9px;
+
+    background-image: url("../img/icon-feature-flower.svg");
+  }
+
+  &--nordic::before {
+    width: 47px;
+    height: 27px;
+    margin-bottom: 28px;
+
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--more-likes::before {
+    width: 47px;
+    height: 27px;
+    margin: 0 0 23px 8px;
+
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--handmade::before {
+    width: 35px;
+    height: 34px;
+    margin: 0 0 20px 3px;
+
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--support::before {
+    width: 55px;
+    height: 23px;
+    margin: 0 0 30px -7px;
+
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--gift-packed::before {
+    width: 33px;
+    height: 32px;
+    margin: 0 0 23px 2px;
+
+    background-image: url("../img/icon-feature-gift.svg");
+  }
+}

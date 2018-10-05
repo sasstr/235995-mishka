@@ -1,0 +1,17 @@
+.social {
+  @include reset-list;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 320px;
+  margin: 0 auto 60px auto;
+}
+
+.social__item {
+  margin: 25px 0 0 40px;
+
+  &--first {
+    margin-left: 0;
+  }
+}
