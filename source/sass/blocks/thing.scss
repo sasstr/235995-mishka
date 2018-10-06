@@ -1,6 +1,6 @@
 .thing {
   margin-bottom: 36px;
-  padding-left: 30px;
+  padding: 0 30px;
 }
 
 .thing__title {
@@ -42,7 +42,7 @@
 
 .thing__picture {
   padding: 0;
-  margin: 0 30px 0 0;
+  margin: 0;
 }
 
 .thing__image {
@@ -52,11 +52,12 @@
 }
 
 .thing__price {
-  display: block;
-  width: 130px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
   min-height: 18px;
   padding: 0;
-  margin: 0 0 28px 67px;
+  margin: 0 0 28px 0;
 
   font-weight: 700;
   font-size: 17px;
@@ -71,7 +72,7 @@
   min-height: 12px;
   padding: 20px 10px;
 
-  &::before {// Пока так сдюда воткнул что бы не забыть (не придумал как оставить в потоке )
+  &::before {//TODO Пока так сдюда воткнул что бы не забыть (не придумал как оставить в потоке )
     position: absolute;
     top: 80px;
     left: -30px;
@@ -80,7 +81,7 @@
 
     width: 319px;
     height: 6px;
-    //не понимаю почему она так видоизменяется эта полоска. В svg надо что то поменять ?
+    //TODO не понимаю почему она так видоизменяется эта полоска. В svg надо что то поменять ?
     background-image: url("../img/bg-zigzag-line.svg");
   }
 }

@@ -1,6 +1,6 @@
 .features {
-  padding-left: 30px;
- }
+  padding: 0 30px;
+}
 
 .features__title {
   margin: 0 0 31px 0;
@@ -20,7 +20,8 @@
 
   width: 250px;
   min-height: 95px;
-  margin-bottom: 30px;
+  padding: 0;
+  margin: 0 0 30px 0;
 
   font-weight: 700;
   font-size: 17px;

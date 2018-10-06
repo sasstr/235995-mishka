@@ -6,8 +6,8 @@
 }
 
 .specification__title {
-  margin: 0 0 0 28px;
-  padding: 31px 0 17px 0;
+  padding: 31px 0 17px 28px;
+  margin: 0;
 
   font-weight: 700;
   font-size: 17px;
@@ -18,8 +18,8 @@
 .specification__options {
   position: relative;
 
-  margin: 0 0 27px 29px;
-  padding-bottom: 27px;
+  padding: 0 0 26px 0;
+  margin: 0 0 0 29px;
 
   font-weight: 400;
   font-size: 13px;
@@ -28,25 +28,13 @@
 
   box-shadow: inset -28px 1px 0 1px #ffffff,
     inset -28px 0 0 1px rgba(68, 68, 68, 0.2);
-
-  /* &::before {
-    position: absolute;
-    top: 39px;
-    left: 0;
-
-    content: "";
-
-    width: 204px;
-    height: 1px;
-
-    background-color: #ececec;
-  } */
 }
 
 .specification__price {
   display: inline-block;
   min-width: 130px;
-  margin: 0 0 30px 28px;
+  padding: 27px 111px 30px 28px;
+  margin: 0;
 
   font-weight: 700;
   font-size: 15px;
@@ -55,7 +43,8 @@
 }
 
 .specification__button {
-  margin-left: 43px;
+  padding: 0;
+  margin: 0;
 
   border: none;
   background-color: #ffffff;

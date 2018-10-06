@@ -2,20 +2,21 @@
   @include reset-list;
   display: flex;
   justify-content: center;
-  max-width: 260px;
+  max-width: 260px;  // это потому что полоска тени такой ширины box-shadow
   margin: 0 auto;
   padding: 19px 30px 21px;
 
-  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
-}
-
-.social__item {
-  display: flex;
-  width: 40px;
-  height: 40px;
+  box-shadow: 0 1px 0 rgba(129, 129, 129, 0.1);
 }
 
 .social__link {
+  width: 50px;
+  height: 40px;
   display: flex;
-  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+  &--fb {
+    width: 48px;
+  }
 }

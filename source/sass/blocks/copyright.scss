@@ -1,21 +1,16 @@
 .copyright {
   display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 23px 0;
-}
-
-.copyright__link {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  min-width: 182px;
+  flex-wrap: wrap;
+  width: 320px;
+  padding: 23px 69px;
+  margin: 0 auto;
 }
 
 .copyright__text {
-  margin: 0;
   padding: 0;
+  margin: 0;
 
   font-weight: 700;
   font-size: 19px;
