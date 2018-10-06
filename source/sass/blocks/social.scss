@@ -2,12 +2,11 @@
   @include reset-list;
   display: flex;
   justify-content: center;
-  max-width: 320px;
+  max-width: 260px;
   margin: 0 auto;
-  padding: 25px 30px 30px;
+  padding: 19px 30px 21px;
 
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
-}// надо сделать тень уже до 260px
 
 .social__item {
   display: flex;
@@ -16,9 +15,6 @@
 }
 
 .social__link {
-  display: block;
-  width: 30px;
-  height: 30px;
+  display: flex;
   margin: auto;
 }
-
