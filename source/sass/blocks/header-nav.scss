@@ -23,3 +23,40 @@
   background-image: url("../img/icon-menu-close.svg");
   background-size: 20px 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .header-nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .header-nav__logo {
+    justify-content: flex-start;
+    flex-shrink: 0;
+    width: 120px;
+    padding: 0;
+  }
+
+  .header-nav__menu--user {
+    flex-grow: 1;
+  }
+
+  .header-nav__menu--nav {
+    order: 1;
+    flex-grow: 1;
+
+    background-color: #f9f9f9;
+  }
+
+  .header-nav__extra-list {
+    order: 2;
+  }
+
+  .header-nav__toggle {
+    display: none;
+  }
+
+  .header-nav__logo-link {
+    margin-right: 0;
+  }
+}

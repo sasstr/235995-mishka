@@ -81,3 +81,21 @@
   display: block;
   width: 110px;
 }
+
+@media (min-width: $tablet-width) {
+  .header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 768px;
+    min-height: 746px;
+
+    background-image: url("../img/hero-tablet@1x.jpg");
+  }
+
+  .header-title__list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+}

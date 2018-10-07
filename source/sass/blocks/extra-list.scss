@@ -1,0 +1,39 @@
+.extra-list {
+  display: none;
+}
+
+
+@media (min-width: $tablet-width) {
+  .extra-list {
+    display: block;
+
+    @include reset-list;
+
+    background-color: #f9f9f9;
+  }
+
+  .extra-list__item--hidden {
+    display: none;
+  }
+
+  .extra-list__item--free {
+    margin: 0;
+    padding: 25px 0;
+  }
+
+  .extra-list__link {
+    padding: 0;
+    margin: 0;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #444444;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-list__item--hidden {
+    display: block;
+  }
+}
