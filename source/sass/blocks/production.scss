@@ -1,4 +1,5 @@
 .production__title {
+  position: relative;
   display: flex;
   padding: 29px 10px 26px 34px;
   margin: 0;
@@ -20,27 +21,29 @@
     background-image: url("../img/icon-video.svg");
     background-position: 0 0;
   }
-}
 
-.production__image {
-  position: relative;
-
-  display: block;
-
-  &::before {
+  &::after {
     position: absolute;
-    top: -10px;
-    left: 0;
+    top: 140px;
+    right: 79px;
     z-index: 5;
 
     content: "";
 
     width: 101px;
-    height: 57px;
+    height: 78px;
 
     background-image: url("../img/icon-play.svg");
     background-repeat: no-repeat;
+
+    cursor: pointer;
   }
+}
+
+.production__image {
+  display: block;
+  width: 260px;
+  height: 150px;
 }
 
 .production__description {
