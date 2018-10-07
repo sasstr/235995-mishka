@@ -1,7 +1,12 @@
+.production {
+  border: 1px solid #ececec;
+  padding-bottom: 33px;
+}
+
+
 .production__title {
-  position: relative;
   display: flex;
-  padding: 29px 10px 26px 34px;
+  padding: 29px 43px 26px 34px;
   margin: 0;
 
   font-weight: 700;
@@ -13,18 +18,23 @@
 
     content: "";
 
-    display: block;
-    width: 41px;
+    display: flex;
+    flex-shrink: 0;
+    width: 33px;
     height: 32px;
     margin-right: 25px;
 
     background-image: url("../img/icon-video.svg");
     background-position: 0 0;
   }
+}
+
+.production__image-wrapper {
+  position: relative;
 
   &::after {
     position: absolute;
-    top: 140px;
+    top: 37px;
     right: 79px;
     z-index: 5;
 
@@ -60,7 +70,7 @@
   width: 192px;
   min-height: 52px;
   padding: 20px 0 16px;
-  margin: 0 0 91px 34px;
+  margin: 0 0 0 34px;
 
   line-height: 16px;
 }

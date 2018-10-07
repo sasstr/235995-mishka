@@ -1,5 +1,5 @@
 .features {
-  padding: 0 30px;
+  padding: 34px 30px 30px;
 }
 
 .features__title {
@@ -28,8 +28,8 @@
   line-height: 20px;
   color: #000000;
 
-  &--last {
-    margin-bottom: 61px;
+  &:last-child {
+    margin-bottom: 0;
   }
 
   &::before {

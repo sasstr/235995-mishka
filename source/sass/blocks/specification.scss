@@ -6,9 +6,22 @@
   background-color: #ffffff;
 }
 
+.specification__block-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 0 30px;
+}
+
+.specification__block-info {
+  padding-bottom: 26px;
+
+  box-shadow: inset -28px 1px 0 1px #ffffff,
+    inset -28px 0 0 1px rgba(68, 68, 68, 0.2);
+}
+
 .specification__title {
-  padding: 0 30px 17px 0;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 17px 0;
 
   font-weight: 700;
   font-size: 17px;
@@ -19,7 +32,7 @@
 .specification__options {
   position: relative;
 
-  padding: 0 0 26px 0;
+  padding: 0;
   margin: 0;
 
   font-weight: 400;
@@ -27,14 +40,12 @@
   line-height: 30px;
   color: #444444;
 
-  box-shadow: inset -28px 1px 0 1px #ffffff,
-    inset -28px 0 0 1px rgba(68, 68, 68, 0.2);
+
 }
 
 .specification__price {
   display: inline-block;
-  min-width: 130px;
-  padding: 27px 0 30px 0;
+  padding: 0;
   margin: 0;
 
   font-weight: 700;

@@ -1,5 +1,5 @@
 .reviews {
-  padding: 0 30px;
+  padding: 30px 30px 45px;
 }
 
 .reviews__title {
@@ -54,7 +54,7 @@
 }
 
 .reviews__btn-control {
-  padding: 26px 65px;
+  padding: 26px 64px;
   margin: 0;
 
   border: 1px solid #ececec;
@@ -89,13 +89,8 @@
   }
 }
 
-.reviews__button {
+.reviews__wrapper-btn {
   position: relative;
-
-  width: 260px;
-  min-height: 12px;
-  padding: 20px 10px;
-  margin: 0 0 95px 0;
 
   &::before {
     position: absolute;
@@ -109,4 +104,11 @@
 
     background-image: url("../img/bg-zigzag-line.svg");
   }
+}
+
+.reviews__button {
+  width: 260px;
+  min-height: 12px;
+  padding: 20px 10px;
+  margin: 0;
 }
