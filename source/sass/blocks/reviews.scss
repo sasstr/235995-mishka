@@ -71,7 +71,7 @@
   }
 }
 
-.reviews__wrapper {
+/* .reviews__wrapper {
   position: relative;
 
   &::before {
@@ -87,7 +87,7 @@
     background-repeat: no-repeat;
     background-image: url("../img/bg-zigzag-line.svg");
   }
-}
+} */
 
 .reviews__wrapper-btn {
   position: relative;
@@ -111,4 +111,19 @@
   min-height: 12px;
   padding: 20px 10px;
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    display: flex;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__wrapper-btn {
+    order: -1;
+  }
 }

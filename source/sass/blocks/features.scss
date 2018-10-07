@@ -16,8 +16,6 @@
 }
 
 .features__item {
-  position: relative;
-
   width: 250px;
   min-height: 95px;
   padding: 0;
@@ -86,5 +84,19 @@
     margin: 0 0 23px 2px;
 
     background-image: url("../img/icon-feature-gift.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    width: 668px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 570px;
+    height: 450px;
   }
 }

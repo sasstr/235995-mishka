@@ -65,6 +65,7 @@
 
   .header-menu__item {
     width: 200px;
+    box-shadow: none;
   }
 
   .header-menu__text {
@@ -73,14 +74,15 @@
 
   .header-menu__link {
     flex-shrink: 0;
-    padding: 25px 18px;
+    padding: 36px 0 33px;
 
     &--search::before {
       margin-right: 0;
     }
 
     &--cart {
-      min-width: 270px;
+      min-width: 230px;
+      padding-right: 50px;
     }
   }
 
