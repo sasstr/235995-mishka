@@ -85,3 +85,9 @@
     background-image: url("../img/bg-zigzag-line.svg");
   }
 }
+
+@media (min-width: $tablet-width) {
+  .thing__wrapper {
+    display: flex;
+  }
+}

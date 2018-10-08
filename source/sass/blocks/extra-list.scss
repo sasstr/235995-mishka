@@ -5,7 +5,7 @@
 
 @media (min-width: $tablet-width) {
   .extra-list {
-    display: block;
+    display: flex;
 
     @include reset-list;
 
@@ -17,8 +17,10 @@
   }
 
   .extra-list__item--free {
+    width: 384px;
     margin: 0;
-    padding: 25px 0;
+    padding: 25px 50px 25px 0;
+    text-align: end;
   }
 
   .extra-list__link {

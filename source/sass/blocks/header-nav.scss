@@ -27,26 +27,23 @@
 @media (min-width: $tablet-width) {
   .header-nav {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .header-nav__logo {
     justify-content: flex-start;
-    flex-grow: 11;
     flex-shrink: 0;
-    width: 120px;
+    width: 384px;
     padding: 0 0 0 50px;
 
-    box-shadow: none;
-  }
-
-  .header-nav__menu--user {
-    flex-grow: 1;
+    /* box-shadow: none; */
   }
 
   .header-nav__menu--nav {
     order: 1;
-    flex-grow: 1;
+    flex-shrink: 0;
+    padding-left: 50px;
 
     background-color: #f9f9f9;
   }
