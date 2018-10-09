@@ -110,4 +110,15 @@
     justify-content: center;
     align-items: flex-end;
   }
+
+  .header-title__item {
+    width: 334px;
+    height: 119px;
+  }
+
+  .header-title__link {
+    padding: 28px 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

@@ -89,14 +89,25 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    width: 668px;
+    width: 768px;
+    padding: 35px 50px 41px;
+  }
+
+  .features__title {
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .features__list {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width: 570px;
-    height: 450px;
+    width: 668px;
+    height: 400px;
+  }
+
+  .features__item {
+    width: 334px;
+    padding-right: 38px;
   }
 }
