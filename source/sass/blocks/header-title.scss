@@ -122,3 +122,11 @@
     line-height: 30px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header-title {
+    width: 1150px;
+
+    background-image: url("../img/hero-desktop@1x.jpg");
+  }
+}

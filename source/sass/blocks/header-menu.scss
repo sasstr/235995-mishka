@@ -140,3 +140,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header-menu__link {
+    font-size: 17px;
+
+    &--to-order {
+      background-color: #ffffff;
+    }
+
+    &--catalog {
+      background-color: #ffffff;
+    }
+  }
+}

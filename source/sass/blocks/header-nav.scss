@@ -60,3 +60,16 @@
     margin-right: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .header-nav__logo {
+    justify-content: center;
+    flex-shrink: 0;
+    width: 150px;
+    padding: 0;
+  }
+
+  .header-nav__menu--nav {
+    order: -1;
+  }
+}

@@ -35,7 +35,21 @@
 }
 
 @media (min-width: $desktop-width) {
-  .extra-list__item--hidden {
-    display: block;
+  .extra-list__item {
+    width: 262px;
+
+    &--hidden {
+      display: block;
+    }
+
+    &--free {
+      width: 576px;
+      padding-right: 50px;
+    }
+
+    &:first-child {
+      width: 312px;
+      padding-left: 50px;
+    }
   }
 }
