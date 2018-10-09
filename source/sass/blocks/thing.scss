@@ -1,6 +1,20 @@
 .thing {
   margin: 0;
   padding: 34px 30px 36px;
+
+  &::before {//TODO Пока так сдюда воткнул что бы не забыть (не придумал как оставить в потоке )
+    position: absolute;
+    top: 80px;
+    left: -30px;
+
+    content: "";
+
+    width: 319px;
+    height: 6px;
+    //TODO не понимаю почему она так видоизменяется эта полоска. В svg надо что то поменять ?
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: center bottom;
+  }
 }
 
 .thing__title {

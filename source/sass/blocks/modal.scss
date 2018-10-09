@@ -48,7 +48,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* min-height: 52px; */
   width: 82px;
   padding: 20px 10px;
 
@@ -94,4 +93,35 @@
   border: none;
 
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .modal {
+    width: 566px;
+    min-height: 336px;
+    margin: 0 auto;
+    padding: 51px 108px 46px;
+  }
+
+  .modal__title {
+    width: 355px;
+    margin-bottom: 32px;
+
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__list {
+    max-width: 350px;
+  }
+
+  .modal__size {
+    width: 112px;
+  }
+
+  .modal__select-size {
+    margin-bottom: 26px;
+
+    font-size: 17px;
+  }
 }

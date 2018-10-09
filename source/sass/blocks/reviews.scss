@@ -1,5 +1,21 @@
 .reviews {
   padding: 30px 30px 45px;
+
+  &::after {
+    /* position: absolute;
+    top: 95px;
+    left: -30px; */
+    display: block;
+
+    content: "";
+
+    width: 320px;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+  }
 }
 
 .reviews__title {
@@ -59,50 +75,15 @@
 
   border: 1px solid #ececec;
   background-color: #ffffff;
-  background-repeat: no-repeat;
   background-size: 50px 26px;
   background-image: url("../img/icon-left-arrow.svg");
   background-position: 38px 13px;
+  background-repeat: no-repeat;
 
   cursor: pointer;
 
   &--next {
     transform: rotate(180deg);
-  }
-}
-
-/* .reviews__wrapper {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    top: 95px;
-    left: 0;
-
-    content: "";
-
-    width: 320px;
-    height: 6px;
-
-    background-repeat: no-repeat;
-    background-image: url("../img/bg-zigzag-line.svg");
-  }
-} */
-
-.reviews__wrapper-btn {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    top: 95px;
-    left: -30px;
-
-    content: "";
-
-    width: 320px;
-    height: 6px;
-
-    background-image: url("../img/bg-zigzag-line.svg");
   }
 }
 
@@ -116,19 +97,37 @@
 @media (min-width: $tablet-width) {
   .reviews {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 41px 50px 45px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-size: 350px 457px;
+    background-repeat: no-repeat;
+    background-position: left top;
+
+    &::after {
+      width: 768px;
+    }
   }
 
   .reviews__title {
+    order: -5;
+    width: 334px;
+
     font-size: 43px;
     line-height: 50px;
   }
 
   .reviews__text {
     font-size: 17px;
+    width: 668px;
+  }
+
+  .reviews__data {
+    width: 334px;
   }
 
   .reviews__wrapper-btn {
-    order: 1;
+    order: -1;
   }
 }

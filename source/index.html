@@ -132,11 +132,11 @@
                 как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
                 и мои фотографии сразу стали более стильными, а также набирают больше лайков!
               </p>
-              <cite class="reviews__data">
-                <span class="reviews__author">Анастасия&nbsp;Красильникова</span>
-                <span class="reviews__contact">@misssssiskras</span>
-              </cite>
             </blockquote>
+            <cite class="reviews__data">
+              <span class="reviews__author">Анастасия&nbsp;Красильникова</span>
+              <span class="reviews__contact">@misssssiskras</span>
+            </cite>
             <div class="reviews__controls">
               <button type="button" class="global-btn reviews__btn-control reviews__btn-control--prev">
                 <span class="visually-hidden">Предыдущий отзыв</span>
@@ -167,7 +167,11 @@
           </p>
         </div>
         <div class="contacts__map">
-          <img src="img/map-mobile@1x.jpg" alt="Карта">
+          <picture class="contacts__map-picture">
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
+            <img src="img/map-mobile@1x.jpg" alt="Карта"> <!-- width="320" height="395"   -->
+        </picture>
         </div>
         <div class="contacts__wrapper">
           <a class="global-btn contacts__write-to-us" href="#">Напишите нам</a>

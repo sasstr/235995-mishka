@@ -5,3 +5,17 @@
 .footer-page__logo--hidden {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .footer-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 143px;
+    padding: 0 50px;
+  }
+
+  .footer-page__logo--hidden {
+    display: block;
+  }
+}

@@ -51,18 +51,43 @@
   justify-content: center;
 }
 
-.contacts__map-iframe {
-  width: 100%;
-  height: 457px;
-  margin-bottom: 58px;
-
-  border: none;
-}
-
 .contacts__write-to-us {
   width: 260px;
   min-height: 52px;
   padding: 20px 10px;
 
   font-size: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 768px;
+    padding: 39px 50px;
+  }
+
+  .contacts__title {
+    width: 668px;
+    padding: 25px 0;
+    margin-bottom: 0;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  .contacts__data {
+    display: flex;
+    font-size: 17px;
+    width: 334px;
+  }
+
+  .contacts__map-picture {
+    display: block;
+  }
 }

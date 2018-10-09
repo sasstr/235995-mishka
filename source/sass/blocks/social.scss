@@ -20,3 +20,13 @@
     width: 48px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    max-width: 145px;
+    padding: 0;
+    margin: 0 84px 0 159px;
+
+    box-shadow: none;
+  }
+}
