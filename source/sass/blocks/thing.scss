@@ -1,11 +1,13 @@
 .thing {
+  position: relative;
+
   margin: 0;
   padding: 34px 30px 36px;
 
   &::before {//TODO Пока так сдюда воткнул что бы не забыть (не придумал как оставить в потоке )
     position: absolute;
-    top: 80px;
-    left: -30px;
+    top: 870px;
+    left: 0;
 
     content: "";
 
@@ -87,24 +89,18 @@
   width: 259px;
   min-height: 12px;
   padding: 20px 10px;
-
-  &::before {//TODO Пока так сдюда воткнул что бы не забыть (не придумал как оставить в потоке )
-    position: absolute;
-    top: 80px;
-    left: -30px;
-
-    content: "";
-
-    width: 319px;
-    height: 6px;
-    //TODO не понимаю почему она так видоизменяется эта полоска. В svg надо что то поменять ?
-    background-image: url("../img/bg-zigzag-line.svg");
-  }
 }
 
 @media (min-width: $tablet-width) {
   .thing {
     padding: 43px 50px 35px;
+
+    &::before {
+      top: 640px;
+      left: 0;
+      width: 768px;
+      height: 6px;
+    }
   }
 
   .thing__wrapper {
@@ -163,5 +159,35 @@
 
   .thing__order {
     width: 292px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .thing {
+    width: 1150px;
+
+    &::before {
+      top: 640px;
+      left: 0;
+
+      width: 800px;
+      height: 6px;
+    }
+  }
+
+  .thing__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .thing__wrapper {
+    flex-direction: row-reverse;
+    ustify-content: ;
+    padding: 0 28px 55px 0;
+    width: 1050px;
+  }
+
+  .thing__block {
+    padding-left: 175px;
   }
 }

@@ -102,7 +102,6 @@
 
     font-size: 43px;
     line-height: 50px;
-    color: #000000;
   }
 
   .header-title__list {
@@ -128,5 +127,22 @@
     width: 1150px;
 
     background-image: url("../img/hero-desktop@1x.jpg");
+  }
+
+  .header-title__title {
+    width: 700px;
+    padding: 160px 30px 10px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .header-title__item {
+    width: 525px;
+  }
+
+  .header-title__link {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
