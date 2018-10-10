@@ -10,3 +10,21 @@
 
   background-color: #f1f1f1;
 }
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    padding: 76px 30px 78px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title {
+    padding: 76px 30px 99px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

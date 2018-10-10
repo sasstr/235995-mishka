@@ -13,3 +13,15 @@
 .product__image {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .product {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .product__link {
+    min-width: 334px;
+    height: 334px;
+  }
+}

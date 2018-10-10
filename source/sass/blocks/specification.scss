@@ -62,3 +62,12 @@
 
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .specification {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 334px;
+  }
+}

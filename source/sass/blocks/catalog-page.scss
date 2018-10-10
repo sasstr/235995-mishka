@@ -3,3 +3,16 @@
   padding: 30px 30px 58px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog-page__container {
+    width: $tablet-width;
+    padding: 30px 50px 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-page__container {
+    width: $desktop-width;
+  }
+}
