@@ -3,3 +3,16 @@
   padding: 29px 30px 55px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .form-page__container {
+    width: $tablet-width;
+    padding: 29px 50px 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page__container {
+    width: $desktop-width;
+  }
+}

@@ -17,8 +17,6 @@
 }
 
 .order__title {
-  position: relative;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -254,4 +252,90 @@
   margin: 0;
 
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .order__description {
+    width: 677px;
+    padding: 0;
+    margin: 0 0 30px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .order__form-wrapper {
+    padding-left: 167px;
+
+    &--checkbox {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 305px;
+    }
+  }
+
+  .order__fieldset--darkgray {
+    background-color: #f1f1f1;
+    margin-bottom: 0;
+    padding-bottom: 34px;
+  }
+
+  .order__title {
+    width: 167px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .order__block {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    &--surname,
+    &--middle-name,
+    &--name {
+      flex-direction: row;
+      margin-bottom: 24px;
+    }
+  }
+
+  .order__form-input {
+    width: 100%;
+    margin-left: 26px;
+
+    font-size: 19px;
+
+    &--email,
+    &--tel {
+      background-color: #f1f1f1;
+    }
+  }
+
+  .order__label {
+    font-size: 19px;
+
+    &--accessory {
+      width: 334px;
+    }
+  }
+
+  .order__label-text {
+    padding-top: 0;
+  }
+
+  .order__form-add {
+    width: 500px;
+    padding: 17px 17px;
+
+    font-size: 19px;
+  }
+
+  .order__btn-submit {
+    width: 230px;
+  }
 }
