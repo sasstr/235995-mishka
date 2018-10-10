@@ -89,7 +89,7 @@
 
 @media (min-width: $tablet-width) {
   .features {
-    width: 768px;
+    width: $tablet-width;
     padding: 35px 50px 41px;
   }
 
@@ -109,5 +109,16 @@
   .features__item {
     width: 334px;
     padding-right: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    width: $desktop-width;
+    padding: 35px 50px 41px 225px;
+  }
+
+  .features__item {
+    width: 350px;
   }
 }

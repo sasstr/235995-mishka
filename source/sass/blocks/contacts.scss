@@ -64,7 +64,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 768px;
+    width: $tablet-width;
     padding: 39px 50px;
   }
 
@@ -89,5 +89,46 @@
 
   .contacts__map-picture {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 633px;
+  }
+
+  .contacts__write-to-us {
+    flex-shrink: 0;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: $desktop-width;
+    padding-left: 113px;
+
+    &--data {
+      order: -2;
+      width: 525px;
+    }
+
+    &--write-to-us {
+      order: -1;
+      width: 525px;
+    }
+  }
+
+  .contacts__title {
+    width: 525px;
+    padding-left: 225px;
+
+    font-size: 53px;
+    line-height: 57px;
+
+    background-position: center left;
   }
 }

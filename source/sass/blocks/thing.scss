@@ -164,13 +164,13 @@
 
 @media (min-width: $desktop-width) {
   .thing {
-    width: 1150px;
+    width: $desktop-width;
 
     &::before {
-      top: 640px;
+      top: 820px;
       left: 0;
 
-      width: 800px;
+      width: 1150px;
       height: 6px;
     }
   }
@@ -182,12 +182,35 @@
 
   .thing__wrapper {
     flex-direction: row-reverse;
-    ustify-content: ;
+    justify-content: flex-end;
     padding: 0 28px 55px 0;
     width: 1050px;
   }
 
   .thing__block {
     padding-left: 175px;
+    height: 670px;
+  }
+
+  .thing__rating {
+    width: 75px;
+    margin: 0 50px;
+  }
+
+  .thing__promo {
+    width: 300px;
+  }
+
+  .thing__description {
+    width: 350px;
+  }
+
+  .thing__price {
+    width: 350px;
+  }
+
+  .thing__picture {
+    width: 525px;
+    height: 636px;
   }
 }
