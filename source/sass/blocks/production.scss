@@ -119,4 +119,20 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .production {
+    flex-wrap: wrap;
+  }
 
+  .production__image-picture {
+    display: block;
+    width: 682px;
+    height: 455px;
+  }
+
+  .production__title {
+    width: 350px;
+    height: 100px;
+    padding: 39px 43px 26px 42px;
+  }
+}

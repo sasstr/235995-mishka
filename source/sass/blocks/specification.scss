@@ -71,3 +71,9 @@
     width: 334px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .specification {
+    width: 316px;
+  }
+}

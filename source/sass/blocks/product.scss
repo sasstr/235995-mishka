@@ -25,3 +25,16 @@
     height: 334px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .product__link {
+    min-width: 316px;
+    height: 462px;
+  }
+}

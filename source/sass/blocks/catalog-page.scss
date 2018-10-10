@@ -15,4 +15,9 @@
   .catalog-page__container {
     width: $desktop-width;
   }
+
+  .catalog-page__goods {
+    display: flex;
+    justify-content: space-between;
+  }
 }
