@@ -110,7 +110,7 @@
 
   .header-menu__link {
     flex-shrink: 0;
-    padding: 36px 0 33px;
+    padding: 33px 0;
     min-width: 167px;
 
     font-size: 15px;
@@ -124,6 +124,7 @@
       display: flex;
       justify-content: center;
       min-width: 85px;
+      height: 100%;
     }
 
     &--cart {
@@ -134,10 +135,12 @@
     }
 
     &--to-order {
-      padding: 25px 0 25px 0;
+      height: 100%;
+      padding: 25px 0;
     }
 
     &--catalog {
+      height: 100%;
       padding: 25px 0 25px 50px;
     }
   }
@@ -148,10 +151,13 @@
     font-size: 17px;
 
     &--to-order {
+      padding: 35px 0;
+
       background-color: #ffffff;
     }
 
     &--catalog {
+      padding: 35px 0 35px 50px;
       background-color: #ffffff;
     }
   }

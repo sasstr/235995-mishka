@@ -35,8 +35,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .extra-list {
+    align-items: center;
+  }
+
   .extra-list__item {
     width: 262px;
+    padding: 25px 50px 25px 0;
 
     &--hidden {
       display: block;
