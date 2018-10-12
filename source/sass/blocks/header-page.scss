@@ -10,12 +10,12 @@
 
 @media (min-width: $tablet-width) {
   .header-page__wrapper {
-    width: $tablet-width;
+    width: 100%;
   }
 }
 
-@media (min-width: $desktop-width) {
+/* @media (min-width: $desktop-width) {
   .header-page__wrapper {
-    width: $desktop-width;
+    width: 100%;
   }
-}
+} */

@@ -5,6 +5,10 @@
   padding: 22px 30px;
 
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
+  &:active a[href] {
+    opacity: 0.3;
+  }
 }
 
 .header-nav__logo-link {
@@ -71,5 +75,9 @@
 
   .header-nav__menu--nav {
     order: -1;
+  }
+
+  .header-nav__logo:hover a[href] {
+    opacity: 0.6;
   }
 }

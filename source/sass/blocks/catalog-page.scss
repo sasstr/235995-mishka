@@ -19,5 +19,7 @@
   .catalog-page__goods {
     display: flex;
     justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
   }
 }

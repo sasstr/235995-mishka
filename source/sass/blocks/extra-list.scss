@@ -16,15 +16,19 @@
     }
   }
 
-  .extra-list__item--hidden {
-    display: none;
-  }
-
-  .extra-list__item--free {
+  .extra-list__item {
     width: 384px;
-    margin: 0;
     padding: 25px 50px 25px 0;
-    text-align: end;
+
+    &--free {
+      margin: 0;
+
+      text-align: end;
+    }
+
+    &--hidden {
+      display: none;
+    }
   }
 
   .extra-list__link {
@@ -41,11 +45,11 @@
 @media (min-width: $desktop-width) {
   .extra-list {
     align-items: center;
+    width: 100%;
   }
 
   .extra-list__item {
     width: 262px;
-    padding: 25px 50px 25px 0;
 
     &--hidden {
       display: block;
