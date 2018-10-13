@@ -44,6 +44,11 @@
   color: #444444;
   box-shadow: inset 0 1px 0 1px #ffffff,
     inset 0 0 0 1px #62d1ba;
+
+  &:active {
+    color: #46c1ae;
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
@@ -136,5 +141,9 @@
   .contacts__data {
     width: 425px;
     padding-left: 113px;
+  }
+
+  .contacts__data-link:hover {
+    color: #46c1ae;
   }
 }

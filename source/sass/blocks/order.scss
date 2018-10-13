@@ -177,6 +177,11 @@
 
     cursor: pointer;
   }
+
+  & ~ .order__label:active::before,
+  &:checked ~ .order__label:active::before {
+    border: solid 2px rgba(68, 68, 68, 0.3);
+  }
 }
 
 .order__radio ~ .order__label::before {
@@ -199,7 +204,7 @@
   position: relative;
   display: flex;
 
-  & ~ .order__label::before, {
+  & ~ .order__label::before {
     content: "";
 
     display: flex;
@@ -212,7 +217,7 @@
     cursor: pointer;
   }
 
-  &:checked ~ .order__label::before, {
+  &:checked ~ .order__label::before {
 
     content: "";
 
@@ -226,6 +231,11 @@
     background-repeat: no-repeat;
 
     cursor: pointer;
+  }
+
+  & ~ .order__label:active::before,
+  &:checked ~ .order__label:active::before {
+    border: solid 2px rgba(68, 68, 68, 0.3);
   }
 }
 
@@ -369,5 +379,21 @@
 
   .order__btn-submit {
     width: 230px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order__radio ~ .order__label:hover::before,
+  .order__radio:checked ~ .order__label:hover::before,
+  .order__checkbox ~ .order__label:hover::before,
+  .order__checkbox:checked ~ .order__label:hover::before {
+    border: solid 2px #62d1ba;
+  }
+
+  .order__radio ~ .order__label:active::before,
+  .order__radio:checked ~ .order__label:active::before,
+  .order__checkbox ~ .order__label:active::before,
+  .order__checkbox:checked ~ .order__label:active::before {
+    border: solid 2px rgba(68, 68, 68, 0.3);
   }
 }

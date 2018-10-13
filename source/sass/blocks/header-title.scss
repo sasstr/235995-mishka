@@ -40,6 +40,14 @@
   &--darkgreen {
     background-color: #56c3b2;
   }
+
+  &--darkgreen:active {
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    background-color: #59d5bc;
+  }
 }
 
 .header-title__link {
@@ -76,6 +84,15 @@
 
     background-color: #20c5af;
     background-image: url("../img/icon-toy.svg");
+  }
+
+  &--toys:active::before,
+  &--interior-items:active::before {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -152,6 +169,14 @@
 
   .header-title__item {
     width: 525px;
+
+    &--darkgreen:hover {
+      background-color: #46c1ae;
+    }
+
+    &:hover {
+      background-color: #59d5bc;
+    }
   }
 
   .header-title__link {
