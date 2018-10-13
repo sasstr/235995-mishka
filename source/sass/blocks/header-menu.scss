@@ -35,7 +35,7 @@
     opacity: 0.2;
   }
 
-  &--search::before {
+  /* &--search::before {
     width: 20px;
     margin-right: 25px;
 
@@ -52,6 +52,20 @@
   &--cart::before:active a[href],
   &--search::before:active a[href] {
     background-color: #63d1bb;
+  }*/
+}
+
+.header-menu__link-svg {
+  margin-right: 25px;
+
+  opacity: 0.2;
+
+  &:active {
+    opacity: 0.3;
+
+    path {
+      fill: #63d1bb;
+    }
   }
 }
 
@@ -100,7 +114,6 @@
 
     &--catalog {
       width: 217px;
-
       box-shadow: none;
     }
   }
@@ -127,11 +140,6 @@
     min-width: 167px;
 
     font-size: 15px;
-
-    &--search::before {
-      width: 20px;
-      margin-right: 0;
-    }
 
     &--search {
       display: flex;
@@ -176,6 +184,22 @@
     &--catalog {
       padding: 35px 0 35px 50px;
       background-color: #ffffff;
+    }
+
+    .header-menu__link-svg:hover { // TODO сделать что бы по наведению на ссылку менялся цвет иконки
+      opacity: 1;
+
+      path {
+        fill: #63d1bb;
+      }
+
+      &:active {
+        opacity: 0.3;
+
+        path {
+          fill: #63d1bb;
+        }
+      }
     }
   }
 }
