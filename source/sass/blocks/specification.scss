@@ -70,6 +70,15 @@
     justify-content: space-between;
     width: 334px;
   }
+
+  .specification__block-info {
+    box-shadow: none;
+  }
+
+  .specification__block-price {
+    box-shadow: inset -28px -1px 0 1px #ffffff,
+      inset -28px 0 0 1px rgba(68, 68, 68, 0.2);
+  }
 }
 
 @media (min-width: $desktop-width) {

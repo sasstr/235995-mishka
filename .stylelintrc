@@ -2,6 +2,7 @@
   "extends": "stylelint-config-htmlacademy",
 
   "rules": {
+    "ignoreFiles": "source/js/picturefill.min.js"
     "declaration-no-important": true,
     "indentation": [2, {"ignore": ["inside-parens"]}]
   }
