@@ -2,7 +2,7 @@
   margin: 0;
   padding: 34px 30px 36px;
 
-  &::before {
+  &::after {
     display: block;
 
     content: "";
@@ -88,7 +88,7 @@
   .thing {
     padding: 43px 50px 35px;
 
-    &::before {
+    &::after {
       width: 100%;
       height: 23px;
     }
@@ -164,11 +164,9 @@
 
     width: $desktop-width;
 
-    &::before {
-      top: 820px;
-      left: 0;
+    &::after {
 
-      width: 1150px;
+      width: 100%;
       height: 23px;
     }
   }
@@ -205,11 +203,13 @@
 
   .thing__promo {
     width: 350px;
-    padding-right: 68px;
+    padding: 166px 68px 0 0;
+    margin-bottom: 51px;
   }
 
   .thing__description {
     width: 350px;
+    margin-bottom: 70px;
   }
 
   .thing__price {
@@ -218,6 +218,6 @@
 
   .thing__picture {
     width: 525px;
-    /* height: 636px; */
+    height: 636px;
   }
 }
