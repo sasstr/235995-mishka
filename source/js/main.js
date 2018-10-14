@@ -12,3 +12,17 @@ navToggle.addEventListener('click', function() {
     navMain.classList.remove('header-nav--opened');
   }
 });
+
+var orderBtn  = document.querySelector('.thing__order');
+var modal = document.querySelector('.modal');
+
+orderBtn.addEventListener('click', function() {
+  event.preventDefault();
+  if (modal.classList.contains('modal--hidden') ) {
+    modal.classList.remove('modal--hidden');
+    modal.classList.add('modal--show');
+  } else {
+    modal.classList.add('modal--hidden');
+    modal.classList.remove('modal--show');
+  }
+});
