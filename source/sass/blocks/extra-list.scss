@@ -45,18 +45,18 @@
 @media (min-width: $desktop-width) {
   .extra-list {
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .extra-list__item {
-    width: 262px;
+    width: 185px;
 
     &--hidden {
       display: block;
     }
 
     &--free {
-      width: 576px;
+      width: 240px;
       padding-right: 0;
     }
 

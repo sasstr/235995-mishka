@@ -48,6 +48,12 @@
 
     cursor: pointer;
   }
+
+  &:active::after {
+    width: 81px;
+    height: 62px;
+    opacity: 0.3;
+  }
 }
 
 .production__image-picture {
@@ -123,6 +129,29 @@
   .production {
     flex-wrap: wrap;
     height: 455px;
+  }
+
+  .production__image-wrapper {
+    position: relative;
+
+    &::after {
+      top: 189px;
+      right: 291px;
+
+      width: 101px;
+      height: 78px;
+    }
+
+    &:active::after {
+      width: 81px;
+      height: 62px;
+      opacity: 0.3;
+    }
+
+    &:hover::after {
+      width: 121px;
+      height: 92px;
+    }
   }
 
   .production__image-picture {
