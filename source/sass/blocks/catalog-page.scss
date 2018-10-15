@@ -20,6 +20,12 @@
     display: flex;
     justify-content: space-between;
     align-content: stretch;
+    padding-bottom: 30px;
+  }
+
+  .catalog-page__item {
     align-items: stretch;
+    flex-grow: 1;
+    height: 100%;
   }
 }

@@ -136,9 +136,10 @@
 
 .order__form-add {
   width: 260px;
-  height: 142px;
+  min-height: 142px;
   padding: 18px 17px;
   margin: 0;
+  overflow: auto;
 
   font-weight: 400;
   font-size: 17px;

@@ -31,6 +31,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-content: stretch;
+    margin-bottom: 0;
   }
 
   .product__link {

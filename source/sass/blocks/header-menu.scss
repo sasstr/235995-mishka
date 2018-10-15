@@ -85,13 +85,15 @@
   .header-menu {
     display: flex;
 
-    &--darkgray {
+    /* &--darkgray {
       background-color: #f1f1f1;
-    }
+    } */
   }
 
   .header-menu__item {
     width: 200px;
+
+    box-shadow: none;
 
     &--cart {
       flex-shrink: 0;
@@ -149,8 +151,8 @@
     }
 
     &--cart {
-      min-width: 260px;
-      padding: 35px 50px 35px 0;
+      min-width: 264px;
+      padding: 35px 0;
 
       font-size: 17px;
     }
