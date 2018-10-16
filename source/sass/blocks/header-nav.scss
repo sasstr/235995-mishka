@@ -78,6 +78,9 @@
 
 @media (min-width: $tablet-width) {
   .header-nav {
+    position: relative;
+    z-index: 5;
+
     display: flex;
     justify-content: space-between;
     flex-direction: row;

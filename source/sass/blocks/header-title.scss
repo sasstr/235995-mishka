@@ -35,7 +35,7 @@
 
 .header-title__item {
   width: 320px;
-  height: 103px;
+  min-height: 103px;
 
   background-color: #63d1bb;
 
@@ -105,6 +105,8 @@
 
 @media (min-width: $tablet-width) {
   .header-title {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -124,19 +126,19 @@
       background-position: center 0;
     }
 
-    /* &::after {  TODO доделать эту штуку
+    &::after {  //TODO доделать эту штуку
       position: absolute;
-      bottom: 10px;
-      left: 83px;
+      bottom: -7px;
+      left: 0;
       z-index: 5;
 
       content: "";
 
-      width: 670px;
+      width: 100%;
       height: 23px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
-    } */
+    }
   }
 
   .header-title__title {
@@ -160,7 +162,7 @@
 
   .header-title__item {
     width: 334px;
-    height: 119px;
+    min-height: 119px;
   }
 
   .header-title__link {
