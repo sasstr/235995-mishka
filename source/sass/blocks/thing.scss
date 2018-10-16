@@ -1,9 +1,12 @@
 .thing {
+  position: relative;
   margin: 0;
   padding: 34px 30px 36px;
 
   &::after {
-    display: block;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
 
     content: "";
 
@@ -89,6 +92,7 @@
     padding: 43px 50px 35px;
 
     &::after {
+      bottom: -33px;
       width: 100%;
       height: 23px;
     }
@@ -121,12 +125,13 @@
     margin-bottom: 0;
 
     line-height: 17px;
+    text-align: center;
   }
 
   .thing__promo {
     width: 334px;
-    margin-bottom: 41px;
-    padding-right: 52px;
+    margin: 0;
+    padding: 0 0 31px;
 
     font-size: 17px;
     line-height: 30px;
@@ -134,7 +139,7 @@
 
   .thing__description {
     width: 334px;
-    margin-bottom: 10px;
+    margin-bottom: 31px;
   }
 
   .thing__picture {
@@ -150,12 +155,13 @@
   .thing__price {
     font-size: 20px;
     width: 334px;
-    padding: 28px 46px 30px 0;
+    padding: 28px 46px 34px 0;
     margin-bottom: 0;
   }
 
   .thing__order {
     width: 292px;
+    padding: 15px 10px;
   }
 }
 

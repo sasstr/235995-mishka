@@ -18,7 +18,7 @@
 
   .extra-list__item {
     width: 384px;
-    padding: 25px 50px 25px 0;
+    padding: 25px 0;
 
     &--free {
       margin: 0;
@@ -45,7 +45,6 @@
 @media (min-width: $desktop-width) {
   .extra-list {
     align-items: center;
-    /* width: 100%; */
   }
 
   .extra-list__item {
@@ -58,11 +57,6 @@
     &--free {
       width: 240px;
       padding-right: 0;
-    }
-
-    &:first-child {
-      width: 312px;
-      padding-left: 50px;
     }
   }
 }

@@ -1,4 +1,4 @@
-var navMain = document.querySelector('.header-nav');
+/* var navMain = document.querySelector('.header-nav');
 var navToggle = document.querySelector('.header-nav__toggle');
 
 navMain.classList.remove('header-nav--nojs');
@@ -25,4 +25,4 @@ orderBtn.addEventListener('click', function() {
     modal.classList.add('modal--hidden');
     modal.classList.remove('modal--show');
   }
-});
+}); */

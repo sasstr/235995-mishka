@@ -110,9 +110,9 @@
     justify-content: space-between;
     width: 100%;
     padding: 0 50px;
-    margin-top: -78px;
+    margin-top: -90px;
 
-    box-shadow: inset 0 1px 0 rgba(68, 68, 68, 0.2);
+    /* box-shadow: inset 0 1px 0 rgba(68, 68, 68, 0.2); */
 
     &--inner-page {
       background-color: #f1f1f1;
@@ -141,11 +141,13 @@
 
   .header-title__title {
     align-self: center;
-    width: 600px;
+    width: 668px;
     padding: 150px 30px 10px;
 
     font-size: 43px;
     line-height: 50px;
+
+    box-shadow: inset 0 1px 0 rgba(68, 68, 68, 0.2);
   }
 
   .header-title__list {

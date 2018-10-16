@@ -90,7 +90,7 @@
 @media (min-width: $tablet-width) {
   .features {
     width: $tablet-width;
-    padding: 35px 50px 82px;
+    padding: 82px 50px;
   }
 
   .features__wrapper {
@@ -100,19 +100,27 @@
   .features__title {
     font-size: 43px;
     line-height: 50px;
+    padding-bottom: 48px;
+    margin-bottom: 0;
   }
 
   .features__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: column;
     width: 668px;
-    /* height: 400px; */
+    min-height: 415px;
   }
 
   .features__item {
     width: 334px;
+    min-height: 101px;
     padding-right: 38px;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
