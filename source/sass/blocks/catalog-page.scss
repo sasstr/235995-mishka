@@ -14,18 +14,18 @@
 @media (min-width: $desktop-width) {
   .catalog-page__container {
     width: $desktop-width;
+    padding: 30px 50px 105px;
   }
 
   .catalog-page__goods {
     display: flex;
     justify-content: space-between;
     align-content: stretch;
-    padding-bottom: 30px;
+    padding-bottom: 57px;
   }
 
-  .catalog-page__item {
+  /* .catalog-page__item {
     align-items: stretch;
-    flex-grow: 1;
     height: 100%;
-  }
+  } */
 }

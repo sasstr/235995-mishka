@@ -109,6 +109,8 @@
     &--search {
       flex-shrink: 0;
       width: 85px;
+
+      box-shadow: 1px 0 0 #ececec, inset 1px 0 0 #ececec;
     }
 
     &--to-order {

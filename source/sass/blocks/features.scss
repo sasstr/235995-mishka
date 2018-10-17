@@ -111,12 +111,13 @@
     flex-direction: column;
     width: 668px;
     min-height: 415px;
+    padding-right: 38px;
   }
 
   .features__item {
-    width: 334px;
+    width: 296px;
     min-height: 101px;
-    padding-right: 38px;
+    /* padding-right: 38px; */
     margin: 0;
 
     font-size: 20px;
