@@ -102,7 +102,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 28px 55px 0;
+    padding: 0 28px 0 0;
+    margin-bottom: 55px;
   }
 
   .thing__block {
@@ -131,7 +132,8 @@
   .thing__promo {
     width: 334px;
     margin: 0;
-    padding: 0 0 31px;
+    padding: 0;
+    margin-bottom: 31px;
 
     font-size: 17px;
     line-height: 30px;
@@ -170,6 +172,7 @@
     position: relative;
 
     width: $desktop-width;
+    padding-top: 130px;
 
     &::after {
       width: 100%;
@@ -178,9 +181,6 @@
   }
 
   .thing__title {
-    position: absolute;
-    top: 130px;
-    left: 300px;
     z-index: 5;
     font-size: 53px;
     line-height: 57px;
@@ -190,8 +190,9 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     flex-shrink: 0;
-    padding: 0 28px 55px 0;
-    width: 1050px;
+    width: 780px;
+    padding: 0;
+    margin-bottom: 0;
   }
 
   .thing__block {
@@ -199,9 +200,6 @@
   }
 
   .thing__rating {
-    position: absolute;
-    top: 135px;
-    left: 130px;
     z-index: 5;
     width: 75px;
     margin: 0 50px;
@@ -209,7 +207,7 @@
 
   .thing__promo {
     width: 350px;
-    padding: 166px 68px 0 0;
+    padding: 76px 68px 0 0;
     margin-bottom: 51px;
   }
 
@@ -223,6 +221,8 @@
   }
 
   .thing__picture {
+    top: -93px;
+
     width: 525px;
     height: 636px;
   }

@@ -108,8 +108,8 @@
   }
 
   .reviews__title {
-    padding: 0 0 38px 0;
-    margin: 0;
+    padding: 0 0 0 0;
+    margin: 0 0 38px 0;
     order: -5;
     width: 334px;
 
@@ -129,13 +129,13 @@
   }
 
   .reviews__block {
-    padding-bottom: 63px;
-    margin: 0;
+    padding-bottom: 0;
+    margin-bottom: 63px;
   }
 
   .reviews__author {
     margin: 0;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
   }
 
   .reviews__contact {
@@ -148,7 +148,7 @@
 
   .reviews__controls,
   .reviews__wrapper-btn {
-    margin-left: auto;
+    margin: 0 0 auto auto;
   }
 
   .reviews__btn-control {

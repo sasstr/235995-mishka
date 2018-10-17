@@ -23,7 +23,8 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    max-width: 145px;
+    flex-wrap: wrap;
+    max-width: 150px;
     padding: 0;
     margin: 0 84px 0 159px;
 

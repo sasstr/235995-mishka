@@ -83,10 +83,11 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     width: $tablet-width;
-    min-height: 88px;
+    /* min-height: 88px; */
     padding: 0 50px;
     margin: 0 auto;
   }
@@ -98,7 +99,6 @@
     width: 120px;
     min-height: 88px;
     padding: 0;
-    /* margin-left: 50px; */
 
     box-shadow: none;
   }
