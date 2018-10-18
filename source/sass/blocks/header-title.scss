@@ -126,7 +126,7 @@
       background-position: center 0;
     }
 
-    &::after {  //TODO доделать эту штуку
+    &::after {
       position: absolute;
       bottom: -7px;
       left: 0;
@@ -149,7 +149,7 @@
     font-size: 43px;
     line-height: 50px;
 
-    box-shadow: inset 0 1px 0 rgba(68, 68, 68, 0.2);
+    /* box-shadow: inset 0 1px 0 rgba(68, 68, 68, 0.2); */
   }
 
   .header-title__list {
@@ -177,8 +177,6 @@
     width: 100%;
     margin-top: -74px;
 
-    /* background-color: #f9f9f9; */
-
     &--main {
       background-color: #f9f9f9;
       background-image: url("../img/hero-desktop@1x.jpg");
@@ -195,6 +193,7 @@
 
   .header-title__item {
     width: 525px;
+    padding: 28px 36px;
 
     &--darkgreen:hover {
       background-color: #46c1ae;
@@ -206,6 +205,8 @@
   }
 
   .header-title__link {
+    padding: 0;
+
     font-size: 20px;
     line-height: 30px;
   }

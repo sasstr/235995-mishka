@@ -55,33 +55,18 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+}
 
-  &::before {
-    position: absolute;
-    top: 10px;
+.order__form-svg {
+  position: absolute;
+  top: 16px;
+  right: 4px;
 
-    content: "";
+  opacity: 0.2;
 
-    background-repeat: no-repeat;
-    opacity: 0.2;
-  }
-
-  &--tel::before {
+  &--tel {
+    top: 11px;
     right: 8px;
-
-    width: 25px;
-    height: 25px;
-
-    background-image: url("../img/icon-phone.svg");
-  }
-
-  &--email::before {
-    right: 4px;
-
-    width: 32px;
-    height: 26px;
-
-    background-image: url("../img/icon-mail.svg");
   }
 }
 
@@ -282,8 +267,8 @@
 
 @media (min-width: $tablet-width) {
   .order__description {
-    width: 677px;
-    padding: 68px  55px 30px 0;
+    width: 768px;
+    padding: 68px  105px 30px 50px;
     margin: 0 auto;
 
     font-size: 17px;
@@ -303,21 +288,22 @@
       flex-direction: row;
       flex-wrap: wrap;
       width: 250px;
-      padding-left: 0;
     }
+  }
 
-    &--email,
+  .order__form-svg {
+    right: 22px;
+
     &--tel {
-      width: 100%;
-      padding-left: 0;
+      right: 26px;
     }
   }
 
   .order__fieldset {
     display: flex;
     align-items: center;
-    width: 677px;
-    padding: 50px 0;
+    width: 768px;
+    padding: 50px 50px;
     margin: 0 auto;
 
     &--darkgray {
@@ -331,7 +317,7 @@
   .order__container {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .order__container-darkgray {
@@ -341,12 +327,17 @@
     margin: 0 auto;
   }
 
+  .order__description-required {
+    margin: 0;
+  }
+
   .order__container-submit {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    width: 677px;
-    padding-bottom: 50px;
+    width: 768px;
+    padding: 3px 50px 50px;
     margin: 0 auto;
   }
 
@@ -376,6 +367,7 @@
     &--middle-name,
     &--name {
       flex-direction: row;
+      align-items: center;
       margin-bottom: 24px;
     }
   }
@@ -447,10 +439,13 @@
       flex-shrink: 0;
       padding-right: 0;
     }
+  }
 
-    &--email::before,
-    &--tel::before {
-      right: 179px;
+  .order__form-svg {
+    right: 179px;
+
+    &--tel {
+      right: 183px;
     }
   }
 
@@ -475,8 +470,8 @@
   }
 
   .order__description {
-    width: 700px;
-    padding-right: 20px;
+    width: 1150px;
+    padding: 68px  250px 30px 225px;
   }
 
   .order__fieldset {
@@ -492,6 +487,7 @@
   }
 
   .order__container-submit {
-    width: 700px;
+    width: 1150px;
+    padding: 3px 225px 50px;
   }
 }

@@ -75,14 +75,16 @@
 
       background-color: transparent;
 
-      box-shadow: none;
+      box-shadow: 0 1px 0 #ececec/* , inset 0 1px 0 #ececec */;
     }
 
     &--search {
+      display: flex;
       flex-shrink: 0;
       width: 85px;
+      /* height: 100%; */
 
-      box-shadow: 1px 0 0 #ececec, inset 1px 0 0 #ececec;
+      box-shadow: 1px 0 0 #ececec, 0 1px 0 #ececec, inset 1px 0 0 #ececec;
     }
 
     &--to-order {
@@ -118,6 +120,8 @@
   }
 
   .header-menu__link {
+    display: flex;
+    align-items: center;
     flex-shrink: 0;
     padding: 33px 0;
     min-width: 167px;
@@ -135,7 +139,7 @@
       display: flex;
       justify-content: space-between;
       min-width: 264px;
-      padding: 35px 0 35px 31px;
+      padding: 32px 0 32px 31px;
 
       font-size: 17px;
     }
@@ -153,12 +157,23 @@
 }
 
 @media (min-width: $desktop-width) {
-  .header-menu__item--catalog {
-    width: 184px;
-    flex-shrink: 0;
+  .header-menu__item {
+    padding: 32px 0;
+
+    &--cart {
+      min-width: 266px;
+      padding-left: 31px;
+    }
+
+    &--catalog {
+      width: 184px;
+      flex-shrink: 0;
+    }
   }
 
   .header-menu__link {
+    padding: 0;
+    margin: 0;
     font-size: 17px;
 
     &:hover {
@@ -166,17 +181,21 @@
     }
 
     &--to-order {
-      padding: 35px 0;
+      padding: 0;
 
       background-color: #ffffff;
     }
 
     &--catalog {
-      padding: 35px 0;
+      padding: 0;
       background-color: #ffffff;
     }
 
-    .header-menu__link-svg:hover { // TODO сделать что бы по наведению на ссылку менялся цвет иконки
+    &--cart {
+      min-width: 0;
+    }
+
+    /* .header-menu__link-svg:hover { // TODO сделать что бы по наведению на ссылку менялся цвет иконки
       opacity: 1;
 
       path {
@@ -190,6 +209,6 @@
           fill: #63d1bb;
         }
       }
-    }
+    } */
   }
 }
