@@ -52,6 +52,11 @@
 
     &--hidden {
       display: block;
+      /* padding-left: 35px; */
+    }
+
+    &--hidden:not(:first-child) {
+      padding-left: 35px;
     }
 
     &--free {

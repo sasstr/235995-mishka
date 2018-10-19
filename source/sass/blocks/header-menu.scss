@@ -171,8 +171,9 @@
       flex-shrink: 0;
     }
 
-    &--to-order {
-      box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+    &--to-order { // TODO  не показывает на экране
+      padding-left: 35px;
+      box-shadow: inset 1px 0 0 #ececec;
     }
   }
 
