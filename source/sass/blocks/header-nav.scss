@@ -29,10 +29,6 @@
 }
 
 @media (max-width: $tablet-width) { //TODO Доделать вкл/выкл меню на мобильной версии сайта
-  .header-nav--nojs {
-    display: block;
-  }
-
   .header-nav__logo {
     width: 303px;
 
@@ -52,6 +48,7 @@
     background-size: 20px 20px;
   }
 
+
   /* .header-nav--closed  .header-nav__toggle {
     display: block;
     width: 20px;
@@ -65,11 +62,15 @@
     background-size: 20px 20px;
   } */
 
-  .header-nav--closed {
+  .header-menu--nojs {
+    display: block;
+  }
+
+  .header-menu--closed {
     display: none;
   }
 
-  .header-nav--opened {
+  .header-menu--opened {
     display: block;
   }
 }

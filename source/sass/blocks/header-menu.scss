@@ -57,6 +57,33 @@
   }
 }
 
+@media (max-width: $tablet-width) { //TODO Доделать вкл/выкл меню на мобильной версии сайта
+  /* .header-menu--closed {
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+
+    border: none;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-image: url("../img/icon-menu-open.svg");
+    background-size: 20px 20px;
+  } */
+
+  .header-menu--nojs {
+    display: block;
+  }
+
+  .header-menu--closed {
+    display: none;
+  }
+
+  .header-menu--opened {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .header-menu {
     display: flex;
