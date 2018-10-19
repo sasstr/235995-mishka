@@ -12,6 +12,10 @@
   line-height: 24px;
   color: #000000;
 
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   &--cart {
     padding: 32px 46px 32px 30px;
   }
@@ -20,29 +24,24 @@
     padding: 32px 46px 32px 30px;
   }
 
-  &::before {
-    display: block;
+  /*
+  &--cart::before:active a[href],
+  &--search::before:active a[href] {
+    background-color: #63d1bb;
+  }*/
+}
 
-    content: "";
+.header-menu__link-svg {
+  margin-right: 25px;
 
-    height: 18px;
+  opacity: 0.2;
 
-    background-repeat: no-repeat;
-    opacity: 0.2;
-  }
+  &:active {
+    opacity: 0.3;
 
-  &--search::before {
-    width: 18px;
-    margin-right: 25px;
-
-    background-image: url("../img/icon-search.svg");
-  }
-
-  &--cart::before {
-    width: 21px;
-    margin-right: 25px;
-
-    background-image: url("../img/icon-cart.svg");
+    path {
+      fill: #63d1bb;
+    }
   }
 }
 
@@ -55,5 +54,161 @@
     z-index: 5;
 
     background-color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header-menu {
+    display: flex;
+  }
+
+  .header-menu__item {
+    width: 184px;
+    min-height: 88px;
+
+    box-shadow: none;
+
+    &--cart {
+      flex-shrink: 0;
+      min-width: 280px;
+      margin-left: auto;
+
+      background-color: transparent;
+
+      box-shadow: 0 1px 0 #ececec/* , inset 0 1px 0 #ececec */;
+    }
+
+    &--search {
+      display: flex;
+      flex-shrink: 0;
+      width: 85px;
+      /* height: 100%; */
+
+      box-shadow: 1px 0 0 #ececec, 0 1px 0 #ececec, inset 1px 0 0 #ececec;
+    }
+
+    &--to-order {
+      width: 167px;
+
+      box-shadow: none;
+    }
+
+    &--catalog {
+      width: 167px;
+      box-shadow: none;
+    }
+  }
+
+  .header-menu__link-svg {
+    margin-right: 0;
+  }
+
+  .header-menu__text {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .header-menu__link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 33px 0;
+    min-width: 167px;
+
+    font-size: 15px;
+
+    &--search {
+      display: flex;
+      justify-content: center;
+      min-width: 85px;
+      height: 100%;
+    }
+
+    &--cart {
+      display: flex;
+      justify-content: space-between;
+      min-width: 264px;
+      padding: 32px 0 32px 31px;
+
+      font-size: 17px;
+    }
+
+    &--to-order {
+      height: 100%;
+      padding: 13px 0;
+    }
+
+    &--catalog {
+      height: 100%;
+      padding: 13px 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-menu__item {
+    padding: 32px 0;
+
+    &--cart {
+      min-width: 266px;
+      padding-left: 31px;
+    }
+
+    &--catalog {
+      width: 184px;
+      flex-shrink: 0;
+    }
+  }
+
+  .header-menu__link {
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &--to-order {
+      padding: 0;
+
+      background-color: #ffffff;
+    }
+
+    &--catalog {
+      padding: 0;
+      background-color: #ffffff;
+    }
+
+    &--cart {
+      min-width: 0;
+    }
+
+    /* .header-menu__link-svg:hover { // TODO сделать что бы по наведению на ссылку менялся цвет иконки
+      opacity: 1;
+
+      path {
+        fill: #63d1bb;
+      }
+
+      &:active {
+        opacity: 0.3;
+
+        path {
+          fill: #63d1bb;
+        }
+      }
+    } */
   }
 }

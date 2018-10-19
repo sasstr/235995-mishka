@@ -10,4 +10,23 @@
 
   border: 2px solid #444444;
   background-color: #ffffff;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .global-btn {
+    display: block;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #444444;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }

@@ -1,13 +1,29 @@
 .specification {
   width: 260px;
+  padding: 30px 28px;
 
   border: 1px solid #ececec;
   background-color: #ffffff;
 }
 
+.specification__block-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 0 30px;
+}
+
+.specification__block-info {
+  padding-bottom: 26px;
+
+  box-shadow: inset -28px 1px 0 1px #ffffff,
+    inset -28px 0 0 1px rgba(68, 68, 68, 0.2);
+}
+
 .specification__title {
-  margin: 0 0 0 28px;
-  padding: 31px 0 17px 0;
+  display: flex;
+  align-items: stretch;
+  padding: 0;
+  margin: 0 0 17px 0;
 
   font-weight: 700;
   font-size: 17px;
@@ -18,35 +34,19 @@
 .specification__options {
   position: relative;
 
-  margin: 0 0 27px 29px;
-  padding-bottom: 27px;
+  padding: 0;
+  margin: 0;
 
   font-weight: 400;
   font-size: 13px;
   line-height: 30px;
   color: #444444;
-
-  box-shadow: inset -28px 1px 0 1px #ffffff,
-    inset -28px 0 0 1px rgba(68, 68, 68, 0.2);
-
-  /* &::before {
-    position: absolute;
-    top: 39px;
-    left: 0;
-
-    content: "";
-
-    width: 204px;
-    height: 1px;
-
-    background-color: #ececec;
-  } */
 }
 
 .specification__price {
   display: inline-block;
-  min-width: 130px;
-  margin: 0 0 30px 28px;
+  padding: 0;
+  margin: 0;
 
   font-weight: 700;
   font-size: 15px;
@@ -55,11 +55,61 @@
 }
 
 .specification__button {
-  margin-left: 43px;
+  padding: 0;
+  margin: 0;
 
   border: none;
   background-color: #ffffff;
   opacity: 0.2;
 
   cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .specification {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 334px;
+  }
+
+  .specification__block-info {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-shadow: none;
+  }
+
+  .specification__block-price {
+    box-shadow: inset 0 -1px 0 1px #ffffff,
+      inset 0 0 0 1px rgba(68, 68, 68, 0.2);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .specification {
+    width: 316px;
+    height: 100%;
+  }
+
+  .specification__title {
+    margin: 0;
+  }
+
+  .specification__block-price {
+    padding: 27px 0 0;
+  }
+
+  .specification__svg:hover {
+    path {
+      fill: #63d1bb;
+    }
+  }
+
+  .specification__svg:active {
+    path {
+      fill: #63d1bb;
+      opacity: 0.3;
+    }
+  }
 }

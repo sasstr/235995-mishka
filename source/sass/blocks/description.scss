@@ -1,5 +1,6 @@
 .description {
-  margin: 0 0 28px 30px;
+  margin-bottom: 28px;
+  border-collapse: collapse;
 }
 
 .description__set {
@@ -11,7 +12,8 @@
 }
 
 .description__sort {
-  padding: 11px 0 11px 0;
+  min-width: 98px;
+  padding: 11px 0;
 
   font-weight: 400;
   font-size: 15px;
@@ -20,10 +22,24 @@
 }
 
 .description__value {
-  padding: 11px 0 11px 31px;
+  padding: 11px 0;
 
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+  .description {
+    margin-bottom: 0;
+  }
+
+  .description__sort {
+    padding: 9px 0;
+  }
+
+  .description__value {
+    padding: 9px 0;
+  }
 }

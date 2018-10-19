@@ -1,4 +1,12 @@
 .form-page__container {
   width: 320px;
+  padding: 29px 30px 55px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page__container {
+    width: 100%;
+    padding: 0;
+  }
 }

@@ -1,17 +1,40 @@
 .social {
   @include reset-list;
   display: flex;
-  align-items: baseline;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 320px;
-  margin: 0 auto 60px auto;
+  max-width: 260px;  // это потому что полоска тени такой ширины box-shadow
+  margin: 0 auto;
+  padding: 19px 30px 21px;
+
+  box-shadow: 0 1px 0 rgba(129, 129, 129, 0.1);
 }
 
-.social__item {
-  margin: 25px 0 0 40px;
+.social__link {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &--first {
-    margin-left: 0;
+  &--fb {
+    width: 48px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    max-width: 150px;
+    padding: 0;
+    margin: 0 80px 0 153px;
+
+    box-shadow: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin: 0 270px 0 344px;
   }
 }

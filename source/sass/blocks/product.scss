@@ -9,3 +9,34 @@
   margin: 0;
   padding: 0;
 }
+
+.product__image {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .product__link {
+    min-width: 334px;
+    height: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: stretch;
+    margin-bottom: 0;
+  }
+
+  .product__link {
+    min-width: 316px;
+    min-height: 462px;
+  }
+}
