@@ -1,7 +1,7 @@
 .reviews {
   position: relative;
 
-  padding: 30px 30px 50px;
+  padding: 25px 30px 50px;
 
   &::after {
     position: absolute;
@@ -21,7 +21,7 @@
 
 .reviews__title {
   padding: 0;
-  margin: 0 0 38px 0;
+  margin: 0 0 24px 0;
 
   font-weight: 700;
   font-size: 25px;
@@ -30,12 +30,12 @@
 }
 
 .reviews__block {
-  padding: 0 0 40px 0;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 27px 0;
 }
 
 .reviews__text {
-  width: 255px;
+  width: 258px;
   padding: 0;
   margin: 0;
 
@@ -47,7 +47,7 @@
 
 .reviews__author {
   display: block;
-  margin: 0 0 20px 0;
+  margin: 0 0 8px 0;
 
   font-style: normal;
   font-weight: 700;
@@ -65,14 +65,14 @@
 
 .reviews__controls {
   display: flex;
-  margin: 0 0 70px 0;
+  margin: 0 0 37px 0;
 
   font-size: 0;
 }
 
 .reviews__btn-control {
-  padding: 26px 64px;
-  margin: 0;
+  padding: 24px 64px;
+  margin: 0 0 0 0;
 
   border: 1px solid #ececec;
   background-color: #ffffff;
@@ -91,7 +91,7 @@
 .reviews__button {
   width: 260px;
   min-height: 12px;
-  padding: 20px 10px;
+  padding: 15px 10px;
   margin: 0;
 }
 

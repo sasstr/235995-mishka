@@ -1,9 +1,9 @@
 .features {
-  padding: 34px 30px 30px;
+  padding: 32px 30px 30px;
 }
 
 .features__title {
-  margin: 0 0 31px 0;
+  margin: 0 0 30px 0;
 
   font-weight: 700;
   font-size: 25px;
@@ -13,11 +13,14 @@
 
 .features__list {
   @include reset-list;
+
+  &:first-child {
+    margin-bottom: 28px;
+  }
 }
 
 .features__item {
   width: 250px;
-  /* min-height: 95px; */
   padding: 0;
   margin: 0 0 30px 0;
 

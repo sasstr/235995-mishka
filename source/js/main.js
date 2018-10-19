@@ -7,7 +7,7 @@ for (var j=0; j < navMain.lenght; j++) {
 
 navToggle.addEventListener('click', function() {
   for (var i=0; i < navMain.lenght; i++){
-      if (navMain[i].classList.contains('header-menu--closed')) {  //header-nav--closed
+      if (navMain[i].classList.contains('header-menu--closed')) {
       navMain[i].classList.remove('header-menu--closed');
       navMain[i].classList.add('header-menu--opened');
     } else {

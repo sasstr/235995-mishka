@@ -19,7 +19,7 @@
 .header-title__title {
   display: flex;
   justify-content: center;
-  padding: 76px 30px 120px;
+  padding: 71px 30px 120px;
   margin: 0;
 
   font-weight: 700;
@@ -56,7 +56,7 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  padding: 21px 29px;
+  padding: 27px 28px 15px 30px;
 
   font-weight: 700;
   font-size: 19px;
@@ -75,9 +75,11 @@
   &--interior-items::before {
     width: 40px;
     height: 62px;
+    margin-right: 7px;
 
     background-color: #63d1bb;
     background-image: url("../img/icon-interior.svg");
+    background-position-x: -1px;
   }
 
   &--toys::before {
@@ -86,6 +88,7 @@
 
     background-color: #20c5af;
     background-image: url("../img/icon-toy.svg");
+    background-position-y: -5px;
   }
 
   &--toys:active::before,

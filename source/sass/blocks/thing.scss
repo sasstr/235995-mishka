@@ -1,7 +1,7 @@
 .thing {
   position: relative;
   margin: 0;
-  padding: 34px 30px 36px;
+  padding: 29px 30px 36px;
 
   &::after {
     position: absolute;
@@ -20,7 +20,7 @@
 
 .thing__title {
   padding: 0;
-  margin: 0 0 8px 0;
+  margin: 0 0 4px 0;
 
   font-weight: 700;
   font-size: 25px;
@@ -30,7 +30,7 @@
 
 .thing__rating {
   display: flex;
-  margin: 0 0 30px 0;
+  margin: 0 0 24px 0;
 
   font-weight: 700;
   font-size: 17px;
@@ -43,7 +43,7 @@
   width: 249px;
   min-height: 63px;
   padding: 0;
-  margin: 0 0 33px 0;
+  margin: 0 0 15px 0;
 
   font-weight: 400;
   font-size: 15px;
@@ -52,14 +52,15 @@
 }
 
 .thing__description {
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 .thing__picture {
+  display: block;
   width: 260px;
   height: 315px;
   padding: 0;
-  margin: 0 0 28px 0;
+  margin: 0 0 26px 0;
 }
 
 .thing__image {
@@ -74,7 +75,7 @@
   width: 100%;
   min-height: 18px;
   padding: 0;
-  margin: 0 0 28px 0;
+  margin: 0 0 26px 0;
 
   font-weight: 700;
   font-size: 17px;
@@ -84,7 +85,7 @@
 
 .thing__order {
   width: 259px;
-  padding: 20px 10px;
+  padding: 14px 10px;
 }
 
 @media (min-width: $tablet-width) {
