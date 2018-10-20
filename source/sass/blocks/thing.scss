@@ -175,18 +175,25 @@
     position: relative;
 
     width: $desktop-width;
-    padding-top: 130px;
+    padding: 90px 50px 120px;
 
     &::after {
-      width: 100%;
+      left: 50px;
+      bottom: 24px;
+
+      width: 1050px;
       height: 23px;
     }
   }
 
   .thing__title {
     z-index: 5;
+
+    padding-top: 34px;
+
     font-size: 53px;
     line-height: 57px;
+    letter-spacing: -0.004em;
   }
 
   .thing__wrapper {
@@ -205,13 +212,16 @@
   .thing__rating {
     z-index: 5;
     width: 75px;
-    margin: 0 50px;
+    padding-top: 41px;
+    margin: 0 55px 0 45px;
   }
 
   .thing__promo {
     width: 350px;
-    padding: 76px 68px 0 0;
-    margin-bottom: 51px;
+    padding: 54px 68px 0 0;
+    margin-bottom: 48px;
+
+    letter-spacing: -0.0021em;
   }
 
   .thing__description {
@@ -224,7 +234,7 @@
   }
 
   .thing__picture {
-    top: -93px;
+    top: -110px;
 
     width: 525px;
     height: 636px;

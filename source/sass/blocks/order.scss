@@ -381,10 +381,17 @@
     align-items: center;
     width: 700px;
     margin: 0 auto;
+
+    &--email,
+    &--tel {
+      width: 668px;
+    }
   }
 
   .order__description-required {
     margin: 0;
+
+    font-size: 17px;
   }
 
   .order__container-submit {
@@ -418,6 +425,10 @@
 
     &--names {
       padding: 17px 0 0 2px;
+    }
+
+    &--add {
+      padding: 18px 0 0 0;
     }
   }
 
@@ -501,7 +512,7 @@
 
   .order__form-add {
     width: 500px;
-    padding: 17px 17px;
+    padding: 14px 15px;
 
     font-size: 19px;
   }

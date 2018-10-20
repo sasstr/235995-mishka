@@ -47,21 +47,26 @@
     align-items: center;
   }
 
+  .extra-list__link {
+    font-weight: 700;
+  }
+
   .extra-list__item {
     width: 185px;
+    min-height: 88px;
+    padding: 18px 0;
 
     &--hidden {
       display: block;
-      /* padding-left: 35px; */
     }
 
     &--hidden:not(:first-child) {
       padding-left: 35px;
     }
 
-    &--free {
+    /* &--free {
       width: 240px;
       padding-right: 0;
-    }
+    } */
   }
 }
