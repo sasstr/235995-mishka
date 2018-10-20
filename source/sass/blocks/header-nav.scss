@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 22px 30px;
+  padding: 24px 30px 20px;
 
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
@@ -28,11 +28,11 @@
   background-size: 20px 20px;
 }
 
-@media (max-width: $tablet-width) { //TODO Доделать вкл/выкл меню на мобильной версии сайта
+@media (max-width: $tablet-width) {
   .header-nav__logo {
-    width: 303px;
+    width: 320px;
 
-    box-shadow: none;
+    box-shadow: inset 0 -1px 0 #ececec;
   }
 
   .header-nav__toggle {
@@ -44,8 +44,16 @@
     border: none;
     background-color: #ffffff;
     background-repeat: no-repeat;
-    background-image: url("../img/icon-menu-close.svg");
+
     background-size: 20px 20px;
+
+    &--open {
+      background-image: url("../img/icon-menu-close.svg");
+    }
+
+    &--closed {
+      background-image: url("../img/icon-menu-open.svg");
+    }
   }
 
 

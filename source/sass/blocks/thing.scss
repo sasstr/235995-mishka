@@ -5,7 +5,7 @@
 
   &::after {
     position: absolute;
-    bottom: -15px;
+    bottom: -3px;
     left: 0;
 
     content: "";
@@ -15,6 +15,7 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-position: center bottom;
     background-repeat: no-repeat;
+    background-size: contain;
   }
 }
 

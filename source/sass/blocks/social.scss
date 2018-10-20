@@ -10,14 +10,22 @@
 }
 
 .social__link {
-  width: 50px;
+  width: 60px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 
   &--fb {
-    width: 48px;
+    width: 62px;
+  }
+
+  &--tw {
+    width: 62px;
+  }
+
+  &--insta {
+    width: 55px;
   }
 }
 

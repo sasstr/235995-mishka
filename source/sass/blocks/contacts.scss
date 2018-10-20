@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   &--write-to-us {
-    padding: 37px 30px 40px;
+    padding: 39px 30px 40px;
   }
 }
 
@@ -42,6 +42,10 @@
   &--address {
     min-width: 46px;
   }
+}
+
+.contacts__data-info {
+  padding-right: 42px;
 }
 
 .contacts__data-link {
