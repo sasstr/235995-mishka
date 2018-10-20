@@ -117,7 +117,8 @@
   }
 
   .thing__title {
-    margin-bottom: 0;
+    margin: 0 0 0 -3px;
+    padding-top: 1px;
 
     font-size: 43px;
     line-height: 50px;
@@ -126,6 +127,7 @@
   .thing__rating {
     width: 70px;
     margin-bottom: 0;
+    padding-top: 7px;
 
     line-height: 17px;
     text-align: center;
@@ -133,9 +135,8 @@
 
   .thing__promo {
     width: 334px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 31px;
+    padding: 0 35px 0 0;
+    margin: -6px 0 36px 0;
 
     font-size: 17px;
     line-height: 30px;
@@ -143,7 +144,7 @@
 
   .thing__description {
     width: 334px;
-    margin-bottom: 31px;
+    margin-bottom: 28px;
   }
 
   .thing__picture {
@@ -165,7 +166,7 @@
 
   .thing__order {
     width: 292px;
-    padding: 15px 10px;
+    padding: 14px 10px;
   }
 }
 

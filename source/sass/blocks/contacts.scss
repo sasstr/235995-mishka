@@ -87,14 +87,14 @@
     padding: 56px 50px 56px;
 
     &--data {
-      padding: 16px 50px 56px;
+      padding: 16px 50px 55px;
     }
   }
 
   .contacts__title {
     width: 668px;
-    padding: 25px 0;
-    margin-bottom: 24px;
+    padding: 26px 0;
+    margin: 0 0 24px -5px;
 
     font-size: 43px;
     line-height: 50px;
@@ -114,13 +114,25 @@
     }
   }
 
+  .contacts__data-title {
+    margin-right: 25px;
+
+    &--address {
+      margin-right: 32px;
+    }
+  }
+
+  .contacts__data-info {
+    padding-right: 20px;
+  }
+
   .contacts__data-link {
     height: 30px;
   }
 
   .contacts__write-to-us {
     width: 230px;
-    padding: 15px 10px;
+    padding: 14px 10px;
 
     font-size: 17px;
   }

@@ -28,6 +28,7 @@
   font-size: 15px;
   line-height: 20px;
   color: #444444;
+  letter-spacing: -0.01em;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,7 +37,7 @@
   }
 
   .description__sort {
-    padding: 9px 0;
+    padding: 10px 0;
   }
 
   .description__value {

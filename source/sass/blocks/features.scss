@@ -105,7 +105,7 @@
 @media (min-width: $tablet-width) {
   .features {
     width: $tablet-width;
-    padding: 82px 50px;
+    padding: 83px 50px 77px 47px;
   }
 
   .features__wrapper {
@@ -117,6 +117,8 @@
     line-height: 50px;
     padding-bottom: 0;
     margin-bottom: 48px;
+
+    letter-spacing: -0.01em;
   }
 
   .features__list {
@@ -126,16 +128,60 @@
     flex-direction: column;
     width: 668px;
     min-height: 415px;
-    padding-right: 38px;
+    padding: 0 38px 0 2px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
   }
 
   .features__item {
     width: 296px;
-    /* min-height: 101px; */
+    min-height: 105px;
     margin: 0;
 
     font-size: 20px;
     line-height: 22px;
+
+    &--ecology {
+      min-height: 100px;
+      padding: 0 70px 0 2px;
+    }
+
+    &--ecology::before {
+      margin: 0 0 18px 9px;
+    }
+
+    &--nordic {
+      min-height: 104px;
+      padding-left: 2px;
+    }
+
+    &--more-likes {
+      min-height: 100px;
+      padding: 0 70px 0 2px;
+    }
+
+    &--handmade {
+      min-height: 100px;
+    }
+
+    &--support {
+      min-height: 100px;
+    }
+
+    &--support::before {
+      margin: 0 0 28px -7px;
+    }
+
+    &--gift-packed {
+      min-height: 100px;
+      padding-right: 40px;
+    }
+
+    &--gift-packed::before {
+      margin: 0 0 18px 2px;
+    }
   }
 }
 

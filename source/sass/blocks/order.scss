@@ -140,7 +140,13 @@
 
   &--tel,
   &--email {
-    padding: 0 38px 0 0;
+    padding: 0 38px 6px 0;
+  }
+
+  &--surname,
+  &--middle-name,
+  &--name {
+    padding-bottom: 6px;
   }
 
   &:focus {
@@ -157,7 +163,7 @@
 .order__form-add {
   width: 260px;
   min-height: 142px;
-  padding: 18px 17px;
+  padding: 15px 16px;
   margin: 0;
   overflow: auto;
 
@@ -185,7 +191,7 @@
 
   &--accessory {
     width: 260px;
-    margin: 0 0 13px 0;
+    margin: 0 0 14px 0;
   }
 }
 

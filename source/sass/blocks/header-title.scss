@@ -147,7 +147,7 @@
   .header-title__title {
     align-self: center;
     width: 668px;
-    padding: 150px 30px 10px;
+    padding: 153px 30px 10px;
 
     font-size: 43px;
     line-height: 50px;
@@ -169,9 +169,19 @@
   }
 
   .header-title__link {
-    padding: 28px 36px;
+    padding: 28px 30px 28px 36px;
     font-size: 20px;
     line-height: 30px;
+
+    &--interior-items::before {
+      background-position-x: 0;
+    }
+
+    &--toys::before {
+      padding: 28px 28px 28px 36px;
+
+      background-position: 0 2px;
+    }
   }
 }
 

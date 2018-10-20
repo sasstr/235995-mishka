@@ -73,7 +73,7 @@
 
 .reviews__btn-control {
   padding: 24px 64px;
-  margin: 0 0 0 0;
+  margin: 0;
 
   border: 1px solid #ececec;
   background-color: #ffffff;
@@ -100,17 +100,23 @@
   .reviews {
     display: flex;
     flex-wrap: wrap;
-    padding: 86px 50px 90px;
+    padding: 78px 50px 155px;
 
     background-image: url("../img/review@1x.jpg");
     background-size: 350px 457px;
     background-repeat: no-repeat;
     background-position: left top;
+
+    &::after {
+      bottom: 22px;
+
+      height: 17px;
+    }
   }
 
   .reviews__title {
     padding: 0 0 0 0;
-    margin: 0 0 38px 0;
+    margin: 0 0 48px -4px;
     order: -5;
     width: 334px;
 
@@ -131,12 +137,14 @@
 
   .reviews__block {
     padding-bottom: 0;
-    margin-bottom: 63px;
+    margin-bottom: 60px;
   }
 
   .reviews__author {
     margin: 0;
     margin-bottom: 8px;
+
+    letter-spacing: 0.044em;
   }
 
   .reviews__contact {
@@ -153,7 +161,7 @@
   }
 
   .reviews__btn-control {
-    padding: 26px 53px;
+    padding: 24px 64px;
 
     border: none;
   }
