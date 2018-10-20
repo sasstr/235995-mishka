@@ -87,6 +87,7 @@
 @media (min-width: $tablet-width) {
   .header-menu {
     display: flex;
+    align-self: stretch;
   }
 
   .header-menu__item {
@@ -116,13 +117,18 @@
     }
 
     &--to-order {
+      height: 100%;
       width: 167px;
 
+      background-color: #f1f1f1;
       box-shadow: none;
     }
 
     &--catalog {
+      height: 100%;
       width: 167px;
+
+      background-color: #f1f1f1;
       box-shadow: none;
     }
   }

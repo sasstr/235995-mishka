@@ -309,11 +309,12 @@
 @media (min-width: $tablet-width) {
   .order__description {
     width: 768px;
-    padding: 68px  105px 30px 50px;
+    padding: 68px  95px 30px 50px;
     margin: 0 auto;
 
     font-size: 17px;
     line-height: 30px;
+    letter-spacing: 0.0026em;
   }
 
   .order__checkbox-wrapper {
@@ -434,6 +435,30 @@
     &--accessory {
       width: 334px;
     }
+  }
+
+  .order__radio {
+    display: none;
+
+    &:checked ~ .order__label::before {
+      width: 53px;
+      height: 52px;
+      margin-right: 23px;
+      box-shadow: inset 0 0 0 14px #ffffff,
+        inset 0 0 0 25px #62d1ba;
+    }
+
+    & ~ .order__label:active::before,
+    &:checked ~ .order__label:active::before {
+      border: solid 2px rgba(68, 68, 68, 0.3);
+    }
+  }
+
+  .order__radio ~ .order__label::before {
+    width: 53px;
+    height: 52px;
+    margin-right: 23px;
+    box-shadow: inset 0 0 0 14px #ffffff;
   }
 
   .order__label-text {

@@ -75,6 +75,8 @@
   .production {
     position: relative;
 
+    padding-bottom: 45px;
+
     display: flex;
     flex-direction: column;
   }
@@ -97,30 +99,35 @@
   .production__image-picture {
     position: static;
     display: block;
-    /* order: -1; */
+    order: -1;
     width: 668px;
     height: 455px;
 
     &::after {
-      top: 289px;
+      top: 189px;
       right: 283px;
-
-      /* width: 101px;
-      height: 78px; */
     }
   }
 
   .production__title {
-    padding: 39px 43px 26px 42px;
+    padding: 39px 43px 5px 42px;
 
     font-size: 20px;
+    letter-spacing: 0.01em;
+
+    &::before {
+      margin-right: 30px;
+
+      background-position: 0 -5px;
+    }
   }
 
   .production__description {
-    padding: 17px 43px 29px 40px;
+    padding: 17px 43px 36px 40px;
 
     font-size: 15px;
     line-height: 30px;
+    letter-spacing: 0.002em;
   }
 
   .production__link-order {
