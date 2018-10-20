@@ -103,7 +103,7 @@
 
       background-color: transparent;
 
-      box-shadow: 0 1px 0 #ececec/* , inset 0 1px 0 #ececec */;
+      box-shadow: 0 1px 0 #ececec;
     }
 
     &--search {
@@ -111,7 +111,6 @@
       flex-shrink: 0;
       flex-wrap: wrap;
       width: 85px;
-      /* height: 100%; */
 
       box-shadow: 1px 0 0 #ececec, 0 1px 0 #ececec, inset 1px 0 0 #ececec;
     }
@@ -202,10 +201,14 @@
     &--catalog {
       width: 184px;
       flex-shrink: 0;
+
+      background-color: #ffffff;
     }
 
-    &--to-order { // TODO  не показывает на экране
+    &--to-order {
       padding-left: 35px;
+
+      background-color: #ffffff;
       box-shadow: inset 1px 0 0 #ececec;
     }
   }

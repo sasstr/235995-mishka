@@ -309,7 +309,7 @@
 @media (min-width: $tablet-width) {
   .order__description {
     width: 768px;
-    padding: 68px  95px 30px 50px;
+    padding: 68px  95px 7px 50px;
     margin: 0 auto;
 
     font-size: 17px;
@@ -320,17 +320,18 @@
   .order__checkbox-wrapper {
     display: flex;
     flex-wrap: wrap;
+    width: 525px;
   }
 
   .order__form-wrapper {
     padding-left: 0;
     width: 501px;
 
-    &--checkbox {
+    /* &--checkbox {
       flex-direction: row;
       flex-wrap: wrap;
       width: 250px;
-    }
+    } */
   }
 
   .order__form-svg {
@@ -350,9 +351,22 @@
 
     &--darkgray {
       width: 100%;
+      padding: 50px 50px 26px 50px;
       margin-bottom: 0;
 
       background-color: #f1f1f1;
+    }
+
+    &--names {
+      padding-bottom: 27px;
+    }
+
+    &--email {
+      padding: 12px 50px 50px;
+    }
+
+    &--tel {
+      padding: 50px 50px 12px;
     }
   }
 
@@ -365,7 +379,7 @@
   .order__container-darkgray {
     display: flex;
     align-items: center;
-    width: 677px;
+    width: 700px;
     margin: 0 auto;
   }
 
@@ -379,7 +393,7 @@
     justify-content: space-between;
     align-items: center;
     width: 768px;
-    padding: 3px 50px 50px 217px;
+    padding: 3px 50px 50px 50px;
     margin: 0 auto;
   }
 
@@ -394,7 +408,16 @@
 
     &--colour {
       align-self: flex-start;
-      padding-top: 19px;
+      padding: 19px 0 0 18px;
+    }
+
+    &--type {
+      margin-top: 18px;
+      padding-left: 3px;
+    }
+
+    &--names {
+      padding: 17px 0 0 2px;
     }
   }
 
@@ -411,6 +434,10 @@
       flex-direction: row;
       align-items: center;
       margin-bottom: 24px;
+    }
+
+    &--checkbox {
+      width: 262px;
     }
   }
 
@@ -434,6 +461,13 @@
 
     &--accessory {
       width: 334px;
+      margin: 0 0 23px 0;
+    }
+
+    &--checkbox {
+      width: 250px;
+      padding: 0;
+      margin: 0 0 24px 17px;
     }
   }
 
@@ -443,7 +477,7 @@
     &:checked ~ .order__label::before {
       width: 53px;
       height: 52px;
-      margin-right: 23px;
+      margin-right: 28px;
       box-shadow: inset 0 0 0 14px #ffffff,
         inset 0 0 0 25px #62d1ba;
     }
@@ -457,7 +491,7 @@
   .order__radio ~ .order__label::before {
     width: 53px;
     height: 52px;
-    margin-right: 23px;
+    margin-right: 28px;
     box-shadow: inset 0 0 0 14px #ffffff;
   }
 
@@ -474,6 +508,33 @@
 
   .order__btn-submit {
     width: 230px;
+  }
+
+  .order__checkbox {
+    display: none;
+
+    & ~ .order__label::before {
+      width: 54px;
+      height: 52px;
+      margin-right: 28px;
+
+      border: 2px solid #444444;
+    }
+
+    &:checked ~ .order__label::before {
+      width: 54px;
+      height: 52px;
+
+      border: 2px solid #444444;
+      background-image: url("../img/icon-tick.svg");
+      background-size: 33px 22px;
+      background-position: 8px 15px;
+    }
+
+    & ~ .order__label:active::before,
+    &:checked ~ .order__label:active::before {
+      border: solid 2px rgba(68, 68, 68, 0.3);
+    }
   }
 }
 
@@ -545,6 +606,18 @@
 
     &--darkgray {
       width: 100%;
+    }
+  }
+
+  .order__checkbox-wrapper {
+    width: 875px;
+  }
+
+  .order__block {
+    position: relative;
+
+    &--checkbox {
+      width: 291px;
     }
   }
 
