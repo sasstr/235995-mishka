@@ -609,7 +609,7 @@
 
   .order__description {
     width: 1150px;
-    padding: 68px  250px 30px 225px;
+    padding: 125px  250px 30px 225px;
   }
 
   .order__fieldset {
@@ -617,6 +617,10 @@
 
     &--darkgray {
       width: 100%;
+    }
+
+    &--radio {
+      padding: 27px 50px 50px 50px;
     }
   }
 

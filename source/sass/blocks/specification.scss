@@ -120,6 +120,7 @@
   .specification {
     width: 316px;
     height: 100%;
+    padding: 26px 29px 27px 27px;
   }
 
   .specification__title {
@@ -127,7 +128,18 @@
   }
 
   .specification__block-price {
-    padding: 27px 0 0;
+    padding: 23px 0 0;
+  }
+
+  .specification__options {
+    padding-top: 3px;
+
+    font-size: 15px;
+    letter-spacing: 0.001em;
+  }
+
+  .specification__block-info {
+    padding-bottom: 15px;
   }
 
   .specification__svg:hover {
