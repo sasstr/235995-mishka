@@ -56,6 +56,10 @@
     min-height: 88px;
     padding: 18px 0;
 
+    &:first-child {
+      letter-spacing: 0.017em;
+    }
+
     &--hidden {
       display: block;
     }
