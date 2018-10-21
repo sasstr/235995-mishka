@@ -18,6 +18,11 @@
   .product {
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 54px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .product__link {

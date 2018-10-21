@@ -1,12 +1,16 @@
 .contacts__wrapper {
   width: 320px;
-  padding: 39px 30px;
+  padding: 35px 30px 37px;
   margin: 0 auto;
+
+  &--write-to-us {
+    padding: 39px 30px 40px;
+  }
 }
 
 .contacts__title {
   padding: 0;
-  margin: 0 0 42px 0;
+  margin: 0 0 26px 0;
 
   font-weight: 700;
   font-size: 18px;
@@ -26,18 +30,22 @@
   color: #444444;
 
   &--email {
-    margin-bottom: 23px;
+    margin-bottom: 30px;
   }
 }
 
 .contacts__data-title {
   display: inline-block;
   min-height: 30px;
-  margin-right: 28px;
+  margin-right: 30px;
 
   &--address {
     min-width: 46px;
   }
+}
+
+.contacts__data-info {
+  padding-right: 42px;
 }
 
 .contacts__data-link {
@@ -59,7 +67,7 @@
 .contacts__write-to-us {
   width: 260px;
   min-height: 52px;
-  padding: 20px 10px;
+  padding: 15px 10px;
 
   font-size: 18px;
 }
@@ -79,14 +87,14 @@
     padding: 56px 50px 56px;
 
     &--data {
-      padding: 16px 50px 56px;
+      padding: 16px 50px 55px;
     }
   }
 
   .contacts__title {
     width: 668px;
-    padding: 25px 0;
-    margin-bottom: 24px;
+    padding: 26px 0;
+    margin: 0 0 24px -5px;
 
     font-size: 43px;
     line-height: 50px;
@@ -106,13 +114,25 @@
     }
   }
 
+  .contacts__data-title {
+    margin-right: 25px;
+
+    &--address {
+      margin-right: 32px;
+    }
+  }
+
+  .contacts__data-info {
+    padding-right: 20px;
+  }
+
   .contacts__data-link {
     height: 30px;
   }
 
   .contacts__write-to-us {
     width: 230px;
-    padding: 15px 10px;
+    padding: 14px 10px;
 
     font-size: 17px;
   }
@@ -127,6 +147,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding: 91px 50px 6px 50px;
   }
 
   .contacts__wrapper {
@@ -134,28 +155,30 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 62px 50px 50px 100px;
+    padding: 50px 50px 45px 69px;
     margin: 0 auto 0 0;
 
     &--write-to-us {
-      padding: 32px 50px 0 215px;
+      padding: 32px 50px 0 175px;
     }
   }
 
   .contacts_container {
     position: relative;
 
-    width: 1150px;
+    width: 1050px;
     padding: 70px 0 100px;
     margin: 0 auto;
   }
 
   .contacts__title {
     width: 425px;
-    padding-left: 113px;
+    padding: 26px 0 26px 108px;
+    margin: -4px 0 22px -6px;
 
     font-size: 53px;
     line-height: 57px;
+    letter-spacing: -0.006em;
 
     background-position: center left;
   }
@@ -173,14 +196,20 @@
 
   .contacts__data {
     width: 425px;
-    padding-left: 113px;
+    padding-left: 106px;
+
+    letter-spacing: -0.006em;
 
     &--email {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
   }
 
   .contacts__data-link:hover {
     color: #46c1ae;
+  }
+
+  .contacts__write-to-us {
+    font-size: 17px;
   }
 }

@@ -4,7 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 320px;
-  padding: 23px 69px;
+  padding: 17px 69px 23px;
   margin: 0 auto;
 }
 
@@ -15,6 +15,11 @@
   font-weight: 700;
   font-size: 19px;
   color: #000000;
+}
+
+.copyright__svg {
+  width: 30px;
+  height: 36px;
 }
 
 @media (min-width: $tablet-width) {

@@ -7,7 +7,11 @@
 @media (min-width: $tablet-width) {
   .catalog-page__container {
     width: $tablet-width;
-    padding: 30px 50px 58px;
+    padding: 75px 50px 63px;
+  }
+
+  .catalog-page__goods {
+    padding-bottom: 53px;
   }
 }
 

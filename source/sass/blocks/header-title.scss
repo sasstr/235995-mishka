@@ -9,6 +9,10 @@
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -17px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+    }
   }
 }
 
@@ -19,7 +23,7 @@
 .header-title__title {
   display: flex;
   justify-content: center;
-  padding: 76px 30px 120px;
+  padding: 71px 30px 121px;
   margin: 0;
 
   font-weight: 700;
@@ -56,7 +60,8 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  padding: 21px 29px;
+  align-items: center;
+  padding: 21px 28px 15px 30px;
 
   font-weight: 700;
   font-size: 19px;
@@ -75,9 +80,11 @@
   &--interior-items::before {
     width: 40px;
     height: 62px;
+    margin-right: 7px;
 
     background-color: #63d1bb;
     background-image: url("../img/icon-interior.svg");
+    background-position-y: 0;
   }
 
   &--toys::before {
@@ -86,6 +93,7 @@
 
     background-color: #20c5af;
     background-image: url("../img/icon-toy.svg");
+    background-position-y: 0;
   }
 
   &--toys:active::before,
@@ -114,8 +122,6 @@
     padding: 0 50px;
     margin-top: -88px;
 
-    /* box-shadow: inset 0 1px 0 rgba(68, 68, 68, 0.2); */
-
     &--inner-page {
       background-color: #f1f1f1;
     }
@@ -124,6 +130,10 @@
       min-height: 746px;
       background-image: url("../img/hero-tablet@1x.jpg");
       background-position: center 0;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+      }
     }
 
     &::after {
@@ -144,7 +154,7 @@
   .header-title__title {
     align-self: center;
     width: 668px;
-    padding: 150px 30px 10px;
+    padding: 153px 30px 10px;
 
     font-size: 43px;
     line-height: 50px;
@@ -166,16 +176,25 @@
   }
 
   .header-title__link {
-    padding: 28px 36px;
+    padding: 28px 30px 28px 36px;
     font-size: 20px;
     line-height: 30px;
+
+    &--interior-items::before {
+      background-position-x: 0;
+    }
+
+    &--toys::before {
+      padding: 28px 28px 28px 36px;
+
+      background-position: 0 2px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .header-title {
     width: 100%;
-    margin-top: -74px;
 
     &--main {
       background-color: #f9f9f9;
@@ -185,7 +204,7 @@
 
   .header-title__title {
     width: 700px;
-    padding: 160px 30px 10px;
+    padding: 155px 30px 10px;
 
     font-size: 53px;
     line-height: 57px;
@@ -193,7 +212,7 @@
 
   .header-title__item {
     width: 525px;
-    padding: 28px 36px;
+    padding: 0;
 
     &--darkgreen:hover {
       background-color: #46c1ae;
@@ -205,9 +224,17 @@
   }
 
   .header-title__link {
-    padding: 0;
+    padding: 28px 31px 28px 36px;
 
     font-size: 20px;
     line-height: 30px;
+
+    &--interior-items::before {
+      background-position-x: 0;
+    }
+
+    &--toys::before {
+      background-position: 0 2px;
+    }
   }
 }

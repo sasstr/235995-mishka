@@ -13,7 +13,7 @@
 
 .description__sort {
   min-width: 98px;
-  padding: 11px 0;
+  padding: 10px 0;
 
   font-weight: 400;
   font-size: 15px;
@@ -22,12 +22,13 @@
 }
 
 .description__value {
-  padding: 11px 0;
+  padding: 10px 0;
 
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
   color: #444444;
+  letter-spacing: -0.01em;
 }
 
 @media (min-width: $tablet-width) {
@@ -36,10 +37,32 @@
   }
 
   .description__sort {
-    padding: 9px 0;
+    padding: 10px 0;
   }
 
   .description__value {
     padding: 9px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .description__set {
+    width: 291px;
+  }
+
+  .description__sort {
+    padding: 10px 0;
+  }
+
+  .description__value {
+    padding: 10px 0;
+  }
+
+  .thing__description {
+    margin-bottom: 82px;
+  }
+
+  .thing__price {
+    padding-right: 55px;
   }
 }

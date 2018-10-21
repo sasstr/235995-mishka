@@ -1,9 +1,9 @@
 .features {
-  padding: 34px 30px 30px;
+  padding: 32px 30px 30px;
 }
 
 .features__title {
-  margin: 0 0 31px 0;
+  margin: 0 0 30px 0;
 
   font-weight: 700;
   font-size: 25px;
@@ -13,11 +13,14 @@
 
 .features__list {
   @include reset-list;
+
+  &:first-child {
+    margin-bottom: 28px;
+  }
 }
 
 .features__item {
   width: 250px;
-  /* min-height: 95px; */
   padding: 0;
   margin: 0 0 30px 0;
 
@@ -28,6 +31,32 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--ecology {
+    padding-right: 60px;
+  }
+
+  &--nordic {
+    padding-right: 30px;
+  }
+
+  &--more-likes {
+    padding-right: 50px;
+  }
+
+  &--support {
+    width: 255px;
+
+    letter-spacing: 0.01em;
+  }
+
+  &--handmade {
+    letter-spacing: 0.01em;
+  }
+
+  &--gift-packed {
+    letter-spacing: 0.01em;
   }
 
   &::before {
@@ -73,7 +102,7 @@
   &--support::before {
     width: 55px;
     height: 23px;
-    margin: 0 0 30px -7px;
+    margin: 2px 0 30px -3px;
 
     background-image: url("../img/icon-feature-rocket.svg");
   }
@@ -90,7 +119,7 @@
 @media (min-width: $tablet-width) {
   .features {
     width: $tablet-width;
-    padding: 82px 50px;
+    padding: 83px 50px 77px 47px;
   }
 
   .features__wrapper {
@@ -102,6 +131,8 @@
     line-height: 50px;
     padding-bottom: 0;
     margin-bottom: 48px;
+
+    letter-spacing: -0.01em;
   }
 
   .features__list {
@@ -111,23 +142,67 @@
     flex-direction: column;
     width: 668px;
     min-height: 415px;
-    padding-right: 38px;
+    padding: 0 38px 0 2px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
   }
 
   .features__item {
     width: 296px;
-    /* min-height: 101px; */
+    min-height: 105px;
     margin: 0;
 
     font-size: 20px;
     line-height: 22px;
+
+    &--ecology {
+      min-height: 100px;
+      padding: 0 70px 0 2px;
+    }
+
+    &--ecology::before {
+      margin: 0 0 18px 9px;
+    }
+
+    &--nordic {
+      min-height: 104px;
+      padding-left: 2px;
+    }
+
+    &--more-likes {
+      min-height: 100px;
+      padding: 0 70px 0 2px;
+    }
+
+    &--handmade {
+      min-height: 100px;
+    }
+
+    &--support {
+      min-height: 100px;
+    }
+
+    &--support::before {
+      margin: 0 0 28px -7px;
+    }
+
+    &--gift-packed {
+      min-height: 100px;
+      padding-right: 40px;
+    }
+
+    &--gift-packed::before {
+      margin: 0 0 18px 2px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .features {
     width: $desktop-width;
-    padding: 35px 50px 41px 225px;
+    padding: 35px 50px 81px 223px;
   }
 
   .features__title {
@@ -137,9 +212,37 @@
 
   .features__item {
     width: 350px;
+
+    &--ecology {
+      padding: 0 120px 0 2px;
+    }
+
+    &--nordic {
+      padding: 0 90px 0 2px;
+    }
+
+    &--more-likes {
+      padding: 0 120px 0 2px;
+    }
+
+    &--handmade {
+      padding: 0 70px 0 2px;
+
+      letter-spacing: 0.007em;
+    }
+
+    &--support {
+      padding: 0 20px 0 2px;
+    }
+
+    &--gift-packed {
+      padding: 0 70px 0 2px;
+
+      letter-spacing: 0.007em;
+    }
   }
 
   .features__list {
-    width: 700px;
+    width: 350px;
   }
 }

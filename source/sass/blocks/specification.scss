@@ -1,6 +1,6 @@
 .specification {
   width: 260px;
-  padding: 30px 28px;
+  padding: 27px 24px 27px 29px;
 
   border: 1px solid #ececec;
   background-color: #ffffff;
@@ -9,21 +9,21 @@
 .specification__block-price {
   display: flex;
   justify-content: space-between;
-  padding: 27px 0 30px;
+  padding: 21px 0 0;
 }
 
 .specification__block-info {
-  padding-bottom: 26px;
+  padding-bottom: 20px;
 
-  box-shadow: inset -28px 1px 0 1px #ffffff,
-    inset -28px 0 0 1px rgba(68, 68, 68, 0.2);
+  box-shadow: inset 0 1px 0 1px #ffffff,
+    inset 0 0 0 1px rgba(68, 68, 68, 0.2);
 }
 
 .specification__title {
   display: flex;
   align-items: stretch;
   padding: 0;
-  margin: 0 0 17px 0;
+  margin: 0 0 4px 0;
 
   font-weight: 700;
   font-size: 17px;
@@ -71,6 +71,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 334px;
+    padding: 26px 29px 27px 28px;
   }
 
   .specification__block-info {
@@ -80,9 +81,38 @@
     box-shadow: none;
   }
 
+  .specification__title {
+    padding: 0;
+    margin: 0 0 4px 0;
+
+    font-size: 20px;
+    letter-spacing: 0.001em;
+
+    &--basket {
+      margin-bottom: 7px;
+    }
+
+    &--big-basket {
+      padding-right: 50px;
+    }
+  }
+
+  .specification__options {
+    letter-spacing: 0.072em;
+  }
+
   .specification__block-price {
+    padding: 21px 0 0 4px;
+
     box-shadow: inset 0 -1px 0 1px #ffffff,
       inset 0 0 0 1px rgba(68, 68, 68, 0.2);
+  }
+
+  .specification__price {
+    padding: 0;
+    margin: 0;
+
+    font-size: 17px;
   }
 }
 
