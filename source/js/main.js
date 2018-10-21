@@ -24,7 +24,7 @@ navToggle.addEventListener('click', function() {
 var orderBtn  = document.querySelector('.thing__order');
 var modal = document.querySelector('.modal');
 
-orderBtn.addEventListener('click', function() {
+if(orderBtn){ orderBtn.addEventListener('click', function() {
   event.preventDefault();
   if (modal.classList.contains('modal--hidden') ) {
     modal.classList.remove('modal--hidden');
@@ -33,4 +33,4 @@ orderBtn.addEventListener('click', function() {
     modal.classList.add('modal--hidden');
     modal.classList.remove('modal--show');
   }
-});
+});}
