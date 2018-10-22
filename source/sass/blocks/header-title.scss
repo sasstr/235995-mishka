@@ -61,7 +61,8 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  padding: 21px 28px 15px 30px;
+  min-height: 103px;
+  padding: 20px 28px 21px;
 
   font-weight: 700;
   font-size: 19px;
@@ -80,7 +81,7 @@
   &--interior-items::before {
     width: 40px;
     height: 62px;
-    margin-right: 7px;
+    margin-right: 8px;
 
     background-color: #63d1bb;
     background-image: url("../img/icon-interior.svg");
@@ -177,6 +178,7 @@
 
   .header-title__link {
     padding: 28px 30px 28px 36px;
+
     font-size: 20px;
     line-height: 30px;
 

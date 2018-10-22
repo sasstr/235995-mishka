@@ -26,11 +26,21 @@ var modal = document.querySelector('.modal');
 
 if(orderBtn){ orderBtn.addEventListener('click', function() {
   event.preventDefault();
-  if (modal.classList.contains('modal--hidden') ) {
-    modal.classList.remove('modal--hidden');
-    modal.classList.add('modal--show');
-  } else {
-    modal.classList.add('modal--hidden');
-    modal.classList.remove('modal--show');
+    if (modal.classList.contains('modal--hidden') ) {
+      modal.classList.remove('modal--hidden');
+      modal.classList.add('modal--show');
+    } else {
+      modal.classList.add('modal--hidden');
+      modal.classList.remove('modal--show');
+    }
+  });
+}
+
+document.addEventListener("keyup", function (event) {
+if (event.keyCode == 27){
+  event.preventDefault();
+  modal.classList.add('modal--hidden');
+  modal.classList.remove('modal--show');
   }
-});}
+});
+
