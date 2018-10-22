@@ -1,5 +1,7 @@
 var navMain = document.querySelectorAll('.header-menu');
 var navToggle = document.querySelector('.header-nav__toggle');
+var modal = document.querySelector('.modal');
+var modalWrapper = document.querySelector('.modal__wrapper');
 
 for (var j=0; j < navMain.length; j++) {
   navMain[j].classList.remove('header-menu--nojs');
@@ -21,8 +23,17 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+/* modal.addEventListener('click', function() {
+  event.preventDefault();
+  var x = event.ClientX;
+  var y = event.ClientY;
+  if(modalWrapper.elementFromPoint(x, y) == undefined){
+  modal.classList.remove('modal--show');
+  modal.classList.add('modal--hidden');
+    }
+  }); */
+
 var orderBtn  = document.querySelector('.thing__order');
-var modal = document.querySelector('.modal');
 
 if(orderBtn){ orderBtn.addEventListener('click', function() {
   event.preventDefault();
