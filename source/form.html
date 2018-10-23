@@ -22,11 +22,11 @@
                 <img class="header-nav__img" src="img/logo-mobile.svg" alt="Лого интернет магазина Мишка">
               </picture>
             </a>
-            <button type="button" class="header-nav__toggle">
+            <button type="button" class="header-nav__toggle header-nav__toggle--no-js">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
-          <ul class="header-nav__menu header-nav__menu--nav header-menu header-menu--darkgray">
+          <ul class="header-nav__menu header-nav__menu--nav header-menu header-menu--darkgray header-menu--closed header-menu--nojs">
             <li class="header-menu__item header-menu__item--catalog header-menu__item--inner-page">
               <a class="header-menu__link header-menu__link--catalog" href="catalog.html">Каталог товаров</a>
             </li>
@@ -34,7 +34,7 @@
               <a class="header-menu__link header-menu__link--to-order">Вязание на заказ</a>
             </li>
           </ul>
-          <ul class="header-nav__menu header-nav__menu--user header-menu">
+          <ul class="header-nav__menu header-nav__menu--user header-menu header-menu--closed header-menu--nojs">
             <li class="header-menu__item header-menu__item--search">
               <a class="header-menu__link header-menu__link--search" href="#">
                 <svg class="header-menu__link-svg header-menu__link-svg--search" version="1.1" id="Layer_1___001" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
@@ -78,7 +78,7 @@
             чтобы уточнить детали.
           </p>
           <form class="order__form" method="POST" action="https://echo.htmlacademy.ru">
-            <fieldset class="order__fieldset">
+            <fieldset class="order__fieldset order__fieldset--radio">
               <div class="order__container">
                   <h2 class="order__title order__title--type">Тип</h2>
                 <div class="order__form-wrapper">

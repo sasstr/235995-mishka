@@ -6,6 +6,7 @@
   &--main {
     order: 5;
 
+    background-color: #fafafa;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -17px;
@@ -61,7 +62,8 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  padding: 21px 28px 15px 30px;
+  min-height: 103px;
+  padding: 20px 28px 21px;
 
   font-weight: 700;
   font-size: 19px;
@@ -80,7 +82,7 @@
   &--interior-items::before {
     width: 40px;
     height: 62px;
-    margin-right: 7px;
+    margin-right: 8px;
 
     background-color: #63d1bb;
     background-image: url("../img/icon-interior.svg");
@@ -168,6 +170,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    margin-top: 365px;
   }
 
   .header-title__item {
@@ -177,6 +180,7 @@
 
   .header-title__link {
     padding: 28px 30px 28px 36px;
+
     font-size: 20px;
     line-height: 30px;
 
@@ -199,6 +203,10 @@
     &--main {
       background-color: #f9f9f9;
       background-image: url("../img/hero-desktop@1x.jpg");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/hero-desktop@2x.jpg");
+      }
     }
   }
 
@@ -208,6 +216,10 @@
 
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .header-title__list {
+    margin-top: 348px;
   }
 
   .header-title__item {
