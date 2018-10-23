@@ -72,3 +72,52 @@ if (event.keyCode == 27){
   modal.classList.remove('modal--show');
   }
 });
+
+// Работ с картой
+
+var map = document.querySelector('.contacts__map-picture');
+map.classList.remove('contacts__map-picture--no-js');
+
+ymaps.ready(function () {
+
+    var myMap;
+
+    myMap = new ymaps.Map("map", {
+        center: [59.93, 30.32],
+        zoom: 15,
+        controls: []
+    });
+
+    myMap.behaviors.disable('scrollZoom');
+
+    myMap.controls.add("zoomControl", {
+        position: {top: 15, left: 15}
+    });
+
+    var myPlacemark = new ymaps.Placemark([59.9387708, 30.3224519] , {},
+        { iconLayout: 'default#image',
+          iconImageHref: 'img/icon-map-pin.svg',
+          iconImageSize: [66, 101],
+          iconImageOffset: [-20, -47] });
+
+    myMap.geoObjects.add(myPlacemark);
+});
+
+/* function initialize() {
+  var mapOptions = {
+    zoom: 15,
+    center: new google.maps.LatLng(59.9387708,30.3224519)
+  }
+  var map = new google.maps.Map(document.getElementById('map-canvas'),
+                                mapOptions);
+  var image = "img/icon-map-pin.svg";
+  var myLatLng = new google.maps.LatLng(59.9387708,30.3224519);
+  var beachMarker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    icon: image
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+*/
