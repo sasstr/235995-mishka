@@ -57,29 +57,16 @@
   }
 }
 
-@media (max-width: $tablet-width) { //TODO Доделать вкл/выкл меню на мобильной версии сайта
-  /* .header-menu--closed {
-    display: block;
-    width: 20px;
-    height: 20px;
-    padding: 0;
-
-    border: none;
-    background-color: #ffffff;
-    background-repeat: no-repeat;
-    background-image: url("../img/icon-menu-open.svg");
-    background-size: 20px 20px;
-  } */
-
-  .header-menu--nojs {
-    display: block;
-  }
-
+@media (max-width: $tablet-width) {
   .header-menu--closed {
     display: none;
   }
 
   .header-menu--opened {
+    display: block;
+  }
+
+  .header-menu--nojs {
     display: block;
   }
 }
@@ -103,7 +90,7 @@
 
       background-color: transparent;
 
-      box-shadow: 0 1px 0 #ececec;
+      /* box-shadow: 0 1px 0 #ececec; */
     }
 
     &--search {
@@ -112,7 +99,9 @@
       flex-wrap: wrap;
       width: 85px;
 
-      box-shadow: 1px 0 0 #ececec, 0 1px 0 #ececec, inset 0 -1px 0 #ececec, inset 1px 0 0 #ececec;
+      /*0 1px 0 #ececec,  inset 0 -1px 0 #ececec,
+       1px 0 0 #ececec, inset 1px 0 0 #ececec,
+      box-shadow: ;*/
     }
 
     &--to-order {

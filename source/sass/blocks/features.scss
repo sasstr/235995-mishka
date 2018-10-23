@@ -142,7 +142,7 @@
     flex-direction: column;
     width: 668px;
     min-height: 415px;
-    padding: 0 38px 0 2px;
+    padding: 0 34px 0 2px;
 
     &:first-child {
       margin-bottom: 0;
@@ -150,7 +150,7 @@
   }
 
   .features__item {
-    width: 296px;
+    width: 300px;
     min-height: 105px;
     margin: 0;
 
@@ -168,7 +168,7 @@
 
     &--nordic {
       min-height: 104px;
-      padding-left: 2px;
+      padding: 0 40px 0 2px;
     }
 
     &--more-likes {
