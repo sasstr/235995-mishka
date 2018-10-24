@@ -1,4 +1,4 @@
-"use strict";
+/* "use strict"; */
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
@@ -14,8 +14,8 @@ var svgstore = require("gulp-svgstore"); // создаем svg спрайт
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");// вставляем в разметку с помощью тега include
 var del = require("del"); // удаляем папку build перед новой сборкой
-//var uglify = require("uglify"); // сжимает JS минифицирует
-//var pump = require('pump'); //помогает uglify работать без ошибок
+var uglify = require("gulp-uglify"); // сжимает JS минифицирует
+var pump = require('pump'); //помогает uglify работать без ошибок
 var htmlmin = require("gulp-htmlmin"); // сжимает html минифицирует
 
 gulp.task("css", function () {
@@ -32,7 +32,7 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-/* gulp.task('compress', function (cb) {
+gulp.task('compress', function (cb) {
   pump([
       gulp.src('js/*.js'),
       uglify(),
@@ -40,9 +40,9 @@ gulp.task("css", function () {
     ],
     cb
   );
-}); */
+});
 
-gulp.task('minify', () => {
+gulp.task('minify', function() {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
