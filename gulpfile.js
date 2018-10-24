@@ -3,7 +3,7 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");  // не прерывает работу вотчера елси есть ошибки сборки
-var postcss = require("gulp-postcss");
+var postcss = require("gulp-postcss");  // позволяет подключить автопрефиксер
 var autoprefixer = require("autoprefixer");  // раставляем вендорные префиксы
 var server = require("browser-sync").create();
 var csso = require("gulp-csso");  // минифицируем CSS
@@ -11,7 +11,7 @@ var rename = require("gulp-rename"); // используем что бы пер�
 var imagemin = require("gulp-imagemin"); // сжимает jpeg png gif svg
 var webp = require("gulp-webp"); // png jpg конвертим в webp
 var svgstore = require("gulp-svgstore"); // создаем svg спрайт
-var posthtml = require("gulp-posthtml");
+var posthtml = require("gulp-posthtml");  // позволяет подключить posthtml-include
 var include = require("posthtml-include");// вставляем в разметку с помощью тега include
 var del = require("del"); // удаляем папку build перед новой сборкой
 var uglify = require("gulp-uglify"); // сжимает JS минифицирует
@@ -34,7 +34,7 @@ gulp.task("css", function () {
 
 gulp.task('js', function (cb) {
   pump([
-      gulp.src('js/*.js'),
+      gulp.src('source/js/*.js'),
       uglify(),
       gulp.dest('build')
     ],
@@ -43,7 +43,7 @@ gulp.task('js', function (cb) {
 });
 
 gulp.task('minify', function() {
-  return gulp.src('source/*.html')
+  return gulp.src('build/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
 });
@@ -102,7 +102,9 @@ gulp.task("build", gulp.series(  // собираем проект запуска
     "copy",
     "css",
     "sprite",
-    "html"
+    "html",
+    'minify',
+    'js'
   ));
 
 gulp.task("server", function () {  // отслеживаем изменения в файлах и пересобираем проект
