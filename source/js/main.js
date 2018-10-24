@@ -76,19 +76,53 @@ if (event.keyCode == 27){
 // Работ с картой
 
 var map = document.querySelector('.contacts__map-picture');
-map.classList.remove('contacts__map-picture--no-js');
+if(map){
+  map.classList.remove('contacts__map-picture--no-js');
+}
 
-ymaps.ready(function () {
+var myMap;
+
+function init () {
+    // Параметры карты можно задать в конструкторе.
+    myMap = new ymaps.Map(
+        // ID DOM-элемента, в который будет добавлена карта.
+        'map',
+        // Параметры карты.
+        {
+            // Географические координаты центра отображаемой карты.
+            center: [57.767265, 40.925358],
+            // Масштаб.
+            zoom: 20,
+            // Тип покрытия карты: "Спутник".
+            type: 'yandex#satellite'
+        }, {
+            // Поиск по организациям.
+            searchControlProvider: 'yandex#search'
+        }
+    );
+}
+
+function setCenter () {
+    myMap.setCenter([57.767265, 40.925358]);
+}
+
+/* function setBounds () {
+    // Bounds - границы видимой области карты.
+    // Задаются в географических координатах самой юго-восточной и самой северо-западной точек видимой области.
+    //myMap.setBounds([[37, 38], [39, 40]]);
+} */
+
+/* ymaps.ready(function () {
 
     var myMap = new ymaps.Map("map", {
         center: [59.938631, 30.323055],
-        zoom: 10,
+        zoom: 17,
         controls: []
     });
 
     myMap.behaviors.disable('scrollZoom');
 
-    myMap.controls.add("zoomControl", {
+     myMap.controls.add("zoomControl", {
         position: {top: 15, left: 15}
     });
 
@@ -99,4 +133,4 @@ ymaps.ready(function () {
           iconImageOffset: [-1, -1] });
 
     myMap.geoObjects.add(myPlacemark);
-});
+}); */
