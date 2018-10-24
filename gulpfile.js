@@ -32,7 +32,7 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task('compress', function (cb) {
+gulp.task('js', function (cb) {
   pump([
       gulp.src('js/*.js'),
       uglify(),
@@ -114,9 +114,11 @@ gulp.task("server", function () {  // отслеживаем изменения 
     ui: false */
   });
 
+  gulp.watch("source/js/main.js", gulp.series("js", "refresh"));
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
+
 
   //gulp.watch("source/*.html").on("change", server.reload);
 });
