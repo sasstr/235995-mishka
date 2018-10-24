@@ -89,7 +89,6 @@
       margin-left: auto;
 
       background-color: transparent;
-
       /* box-shadow: 0 1px 0 #ececec; */
     }
 
@@ -99,16 +98,16 @@
       flex-wrap: wrap;
       width: 85px;
 
-      /*0 1px 0 #ececec,  inset 0 -1px 0 #ececec,
-       1px 0 0 #ececec, inset 1px 0 0 #ececec,
-      box-shadow: ;*/
+
+      box-shadow: 1px 0 0 #ececec, inset 1px 0 0 #ececec;
     }
 
     &--to-order {
       height: 100%;
       width: 167px;
 
-      background-color: #f9f9f9;
+      /* background-color: #f9f9f9; */
+      background-color: transparent;
       box-shadow: none;
     }
 
@@ -116,7 +115,8 @@
       height: 100%;
       width: 167px;
 
-      background-color: #f9f9f9;
+      background-color: transparent;
+      /* background-color: #f9f9f9; */
       box-shadow: none;
     }
 
