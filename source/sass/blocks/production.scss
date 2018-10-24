@@ -182,7 +182,7 @@
     align-self: flex-end;
     width: 160px;
     min-height: 135px;
-    padding: 39px 0 1px 35px;
+    padding: 39px 0 0 35px;
     margin-right: 106px;
 
     &::before {
@@ -194,11 +194,11 @@
 
   .production__description {
     width: 250px;
-    padding: 32px 3px 46px 20px;
+    padding: 34px 3px 46px 18px;
   }
 
   .production__link-order {
     width: 230px;
-    margin: 0 0 62px 0;
+    margin: 0 0 60px 0;
   }
 }

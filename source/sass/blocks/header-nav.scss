@@ -4,7 +4,7 @@
   align-items: center;
   width: 320px;
   min-height: 79px;
-  padding: 24px 22px 20px 30px;
+  padding: 23px 30px 20px;
   margin: 0 auto;
 
   /* box-shadow: inset 0 -1px 0 #ececec; */
@@ -163,20 +163,25 @@
 
   .header-nav__logo {
     justify-content: center;
-    align-self: flex-start;
+    /* align-self: flex-start; */
     flex-shrink: 0;
     order: -1;
-    width: 348px;
-    padding: 0;
-    margin-left: 0;
+    width: 307px;
+    padding: 5px 40px 0 0;
+    margin: 0 0 0 0;
 
     &:hover a[href] {
       opacity: 0.6;
     }
   }
 
+  .header-nav__logo-link picture {
+    display: block;
+  }
+
   .header-nav__menu--nav {
     order: -2;
+    flex-shrink: 0;
 
     /* box-shadow: 0 1px 0 #ececec; */
   }

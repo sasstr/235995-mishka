@@ -98,31 +98,24 @@ gulp.task("clean", function () {  // удаелеяем папку с содеж
 });
 
 gulp.task("build", gulp.series(  // собираем проект запуская таски
-    "clean",
-    "copy",
-    "css",
-    "sprite",
-    "html",
-    'minify',
-    'js'
-  ));
+  "clean",
+  "copy",
+  "css",
+  "sprite",
+  "html",
+  'minify',
+  'js'
+));
 
 gulp.task("server", function () {  // отслеживаем изменения в файлах и пересобираем проект
   server.init({
     server: "build/",
-    /* notify: false,
-    open: true,
-    cors: true,
-    ui: false */
   });
 
   gulp.watch("source/js/main.js", gulp.series("js", "refresh"));
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
-
-
-  //gulp.watch("source/*.html").on("change", server.reload);
 });
 
 gulp.task("refresh", function (done){

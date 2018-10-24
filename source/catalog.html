@@ -4,17 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка Каталог</title>
-    <link rel="preload" href="fonts/opensans.woff2" as="font">
-    <link rel="preload" href="fonts/opensans.woff" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff" as="font">
+    <link rel="preload" crossorigin type="font/woff2" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" crossorigin type="font/woff2" href="fonts/opensansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.js" async></script>
     <script src="js/svg4everybody.js"></script>
     <script>svg4everybody();</script>
-    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="header-page">
@@ -87,7 +85,7 @@
                 <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
                 <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
                 <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик"><!-- width="260" height="195" -->
-                </picture>
+              </picture>
             </a>
             <div class="product__description specification">
               <div class="specification__block-info">
@@ -130,8 +128,8 @@
                 <button class="specification__button" type="button">
                   <span class="visually-hidden">Положить товар в корзину</span>
                   <svg class="specification__svg" width="21px" height="18px">
-                  <use xlink:href="img/sprite.svg#icon-cart"></use>
-                </svg>
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
                 </button>
               </div>
             </div>

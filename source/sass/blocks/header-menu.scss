@@ -5,7 +5,7 @@
 .header-menu__link {
   display: flex;
   justify-content: flex-start;
-  padding: 32px 76px;
+  padding: 27px 76px;
 
   font-weight: 700;
   font-size: 17px;
@@ -17,11 +17,11 @@
   }
 
   &--cart {
-    padding: 32px 46px 32px 30px;
+    padding: 28px 46px 28px 30px;
   }
 
   &--search {
-    padding: 32px 46px 32px 30px;
+    padding: 28px 46px 28px 32px;
   }
 
   /*
@@ -32,7 +32,7 @@
 }
 
 .header-menu__link-svg {
-  margin-right: 25px;
+  margin: 4px 25px 0 0;
 
   opacity: 0.2;
 
@@ -47,7 +47,7 @@
 
 .header-menu__item {
   width: 320px;
-  min-height: 79px;
+  min-height: 78px;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   &--cart {
@@ -188,17 +188,21 @@
 
     &--cart {
       min-width: 266px;
-      padding-left: 31px;
+      padding: 32px 0 32px 30px;
     }
 
     &--catalog {
-      width: 184px;
       flex-shrink: 0;
+      min-width: 184px;
+      padding: 29px 0 33px 0;
+
+      letter-spacing: 0.005em;
 
       background-color: #ffffff;
     }
 
     &--to-order {
+      min-width: 205px;
       padding-left: 35px;
 
       background-color: #ffffff;
@@ -228,6 +232,7 @@
 
     &--cart {
       min-width: 0;
+      letter-spacing: 0.008em;
     }
 
     /* .header-menu__link-svg:hover { // TODO сделать что бы по наведению на ссылку менялся цвет иконки
