@@ -14,6 +14,9 @@ var svgstore = require("gulp-svgstore"); // создаем svg спрайт
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");// вставляем в разметку с помощью тега include
 var del = require("del"); // удаляем папку build перед новой сборкой
+//var uglify = require("uglify"); // сжимает JS минифицирует
+//var pump = require('pump'); //помогает uglify работать без ошибок
+var htmlmin = require("gulp-htmlmin"); // сжимает html минифицирует
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -27,6 +30,22 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css")) // меняем имя файла на style.min.css в разметке указать его
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+/* gulp.task('compress', function (cb) {
+  pump([
+      gulp.src('js/*.js'),
+      uglify(),
+      gulp.dest('build')
+    ],
+    cb
+  );
+}); */
+
+gulp.task('minify', () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
 });
 
 gulp.task("images", function() {  // сжимаем картинки
