@@ -160,6 +160,8 @@
     &--ecology {
       min-height: 100px;
       padding: 0 70px 0 2px;
+
+      letter-spacing: 0.007em;
     }
 
     &--ecology::before {
@@ -169,11 +171,21 @@
     &--nordic {
       min-height: 104px;
       padding: 0 40px 0 2px;
+
+      letter-spacing: 0.004em;
     }
 
     &--more-likes {
       min-height: 100px;
       padding: 0 70px 0 2px;
+
+      letter-spacing: 0.004em;
+    }
+
+    &--more-likes::before {
+      margin: 0 0 23px 7px;
+
+      background-image: url("../img/icon-feature-heart.svg");
     }
 
     &--handmade {

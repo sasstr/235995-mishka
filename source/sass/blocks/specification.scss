@@ -15,8 +15,10 @@
 .specification__block-info {
   padding-bottom: 20px;
 
-  box-shadow: inset 0 1px 0 1px #ffffff,
-    inset 0 0 0 1px rgba(68, 68, 68, 0.2);
+  border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+
+  /* box-shadow: inset 0 1px 0 1px #ffffff,
+    inset 0 0 0 1px rgba(68, 68, 68, 0.2); */
 }
 
 .specification__title {
@@ -71,19 +73,19 @@
     flex-direction: column;
     justify-content: space-between;
     width: 334px;
-    padding: 26px 29px 27px 28px;
+    padding: 25px 31px 26px 27px;
   }
 
   .specification__block-info {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    box-shadow: none;
+    border-bottom: none;
   }
 
   .specification__title {
     padding: 0;
-    margin: 0 0 4px 0;
+    margin: 0 0 5px 0;
 
     font-size: 20px;
     letter-spacing: 0.001em;
@@ -98,14 +100,13 @@
   }
 
   .specification__options {
-    letter-spacing: 0.072em;
+    letter-spacing: 0.078em;
   }
 
   .specification__block-price {
-    padding: 21px 0 0 4px;
+    padding: 23px 0 0 4px;
 
-    box-shadow: inset 0 -1px 0 1px #ffffff,
-      inset 0 0 0 1px rgba(68, 68, 68, 0.2);
+    border-top: 1px solid rgba(68, 68, 68, 0.2);
   }
 
   .specification__price {
@@ -120,7 +121,7 @@
   .specification {
     width: 316px;
     height: 100%;
-    padding: 26px 29px 27px 27px;
+    padding: 26px 32px 27px 25px;
   }
 
   .specification__title {

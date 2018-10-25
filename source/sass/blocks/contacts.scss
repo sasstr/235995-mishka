@@ -50,11 +50,11 @@
 
 .contacts__data-link {
   color: #444444;
-  box-shadow: inset 0 1px 0 1px #ffffff,
-    inset 0 0 0 1px #62d1ba;
+
+  border-bottom: 1px solid #62d1ba;
 
   &:active {
-    color: #46c1ae;
+    border-bottom-color: #46c1ae;
     opacity: 0.3;
   }
 }
@@ -95,17 +95,18 @@
     padding: 56px 50px 56px;
 
     &--data {
-      padding: 16px 50px 55px;
+      padding: 17px 50px 55px;
     }
   }
 
   .contacts__title {
     width: 668px;
     padding: 26px 0;
-    margin: 0 0 24px -5px;
+    margin: 0 0 24px -6px;
 
     font-size: 43px;
     line-height: 50px;
+    letter-spacing: -0.005em;
 
     background-image: url("../img/icon-flag.svg");
     background-repeat: no-repeat;

@@ -107,6 +107,7 @@
     margin: 0;
 
     text-align: end;
+    letter-spacing: -0.001em;
 
     /* background-color: #f9f9f9; */
     background-color: transparent;
@@ -137,7 +138,7 @@
   }
 
   .header-nav__logo-link {
-    margin-right: 0;
+    margin: 5px 0 0 0;
   }
 }
 
@@ -163,11 +164,10 @@
 
   .header-nav__logo {
     justify-content: center;
-    /* align-self: flex-start; */
     flex-shrink: 0;
     order: -1;
     width: 307px;
-    padding: 5px 40px 0 0;
+    padding: 0 40px 0 0;
     margin: 0 0 0 0;
 
     &:hover a[href] {

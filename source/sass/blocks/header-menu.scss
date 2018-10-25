@@ -85,11 +85,11 @@
 
     &--cart {
       flex-shrink: 0;
-      min-width: 262px;
+      min-width: 263px;
       margin-left: auto;
 
       background-color: transparent;
-      /* box-shadow: 0 1px 0 #ececec; */
+      box-shadow: none;
     }
 
     &--search {
@@ -165,14 +165,17 @@
       display: flex;
       justify-content: space-between;
       min-width: 264px;
-      padding: 32px 0 32px 31px;
+      padding: 32px 0 32px 30px;
 
       font-size: 17px;
+      letter-spacing: 0.003em;
     }
 
     &--to-order {
       height: 100%;
       padding: 0 0 30px 0;
+
+      letter-spacing: 0.009em;
     }
 
     &--catalog {
@@ -194,7 +197,7 @@
     &--catalog {
       flex-shrink: 0;
       min-width: 184px;
-      padding: 29px 0 33px 0;
+      padding: 30px 0 33px;
 
       letter-spacing: 0.005em;
 

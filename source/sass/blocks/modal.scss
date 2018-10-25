@@ -138,12 +138,12 @@
     width: 566px;
     min-height: 336px;
     margin: 0 auto;
-    padding: 51px 108px 46px;
+    padding: 36px 106px 46px;
   }
 
   .modal__title {
     width: 355px;
-    margin-bottom: 32px;
+    margin-bottom: 14px;
 
     font-size: 30px;
     line-height: 57px;
@@ -151,14 +151,16 @@
 
   .modal__list {
     max-width: 350px;
+    margin-bottom: 30px;
   }
 
   .modal__size {
     width: 112px;
+    padding: 15px 10px 14px;
   }
 
   .modal__select-size {
-    margin-bottom: 26px;
+    margin-bottom: 22px;
 
     font-size: 17px;
   }
