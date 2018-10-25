@@ -17,6 +17,8 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: contain;
+
+    transform: rotate(180deg) scaleX(1.07);
   }
 }
 
@@ -60,14 +62,14 @@
 
 .reviews__contact {
   display: block;
-  margin: 0 0 36px 0;
+  margin: 0 0 37px 0;
 
   font-style: normal;
 }
 
 .reviews__controls {
   display: flex;
-  margin: 0 0 37px 0;
+  margin: 0 0 38px 0;
 
   font-size: 0;
 }
@@ -113,9 +115,11 @@
     }
 
     &::after {
-      bottom: 22px;
+      bottom: 16px;
 
       height: 17px;
+
+      transform: rotateY(180deg) scale(-1);
     }
   }
 
@@ -185,10 +189,8 @@
     background-position: 50px 2px;
 
     &::after {
-      left: 50px;
       bottom: -92px;
 
-      width: 1050px;
       height: 23px;
     }
   }

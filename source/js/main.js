@@ -80,10 +80,52 @@ if(map){
   map.classList.remove('contacts__map-picture--no-js');
 }
 
-var myMap;
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map', {
+          center: [55.751574, 37.573856],
+          zoom: 9
+      }, {
+          searchControlProvider: 'yandex#search'
+      }),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/icon-map-pin.svg',
+          // Размеры метки.
+          iconImageSize: [66, 101],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-5, -38]
+      }),
+
+      myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#imageWithContent',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/icon-map-pin.svg',
+          // Размеры метки.
+          iconImageSize: [66, 101],
+          // Смещение левого верхнего угла иконки относительно
+          // её "ножки" (точки привязки).
+          iconImageOffset: [-24, -24],
+          // Смещение слоя с содержимым относительно слоя с картинкой.
+          iconContentOffset: [15, 15],
+          // Макет содержимого.
+          iconContentLayout: MyIconContentLayout
+      });
+
+  myMap.geoObjects
+      .add(myPlacemark)
+});
+
+/*var myMap;
 
 function init () {
-    // Параметры карты можно задать в конструкторе.
     myMap = new ymaps.Map(
         // ID DOM-элемента, в который будет добавлена карта.
         'map',
@@ -92,12 +134,12 @@ function init () {
             // Географические координаты центра отображаемой карты.
             center: [57.767265, 40.925358],
             // Масштаб.
-            zoom: 20,
+            zoom: 10,
             // Тип покрытия карты: "Спутник".
             type: 'yandex#satellite'
         }, {
             // Поиск по организациям.
-            searchControlProvider: 'yandex#search'
+            //searchControlProvider: 'yandex#search'
         }
     );
 }
@@ -106,7 +148,7 @@ function setCenter () {
     myMap.setCenter([57.767265, 40.925358]);
 }
 
-/* function setBounds () {
+ function setBounds () {
     // Bounds - границы видимой области карты.
     // Задаются в географических координатах самой юго-восточной и самой северо-западной точек видимой области.
     //myMap.setBounds([[37, 38], [39, 40]]);

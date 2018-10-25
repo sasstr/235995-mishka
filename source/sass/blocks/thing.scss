@@ -5,7 +5,7 @@
 
   &::after {
     position: absolute;
-    bottom: -3px;
+    bottom: -21px;
     left: 0;
 
     content: "";
@@ -16,6 +16,8 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: contain;
+
+    transform: rotate(180deg);
   }
 }
 
@@ -53,7 +55,7 @@
 }
 
 .thing__description {
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 }
 
 .thing__picture {
@@ -61,7 +63,7 @@
   width: 260px;
   height: 315px;
   padding: 0;
-  margin: 0 0 26px 0;
+  margin: 0 0 24px 0;
 }
 
 .thing__image {
@@ -94,7 +96,7 @@
     padding: 43px 50px 35px;
 
     &::after {
-      bottom: -33px;
+      bottom: -42px;
       height: 23px;
     }
   }
@@ -135,7 +137,7 @@
   .thing__promo {
     width: 334px;
     padding: 0 35px 0 0;
-    margin: -6px 0 36px 0;
+    margin: -6px 0 34px 0;
 
     font-size: 17px;
     line-height: 30px;
@@ -143,7 +145,7 @@
 
   .thing__description {
     width: 334px;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
 
   .thing__picture {
@@ -166,6 +168,7 @@
   .thing__order {
     width: 292px;
     padding: 14px 10px;
+    margin-left: -2px;
   }
 }
 
@@ -177,7 +180,7 @@
     padding: 70px 50px 120px;
 
     &::after {
-      left: 50px;
+      /* left: 50px; */
       bottom: 24px;
 
       height: 23px;
