@@ -60,6 +60,7 @@
 }
 
 .contacts__map {
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -68,15 +69,14 @@
 }
 
 .contacts__map-img {
-  display: block;
+  display: none;
   width: auto;
   height: 100%;
-}
 
-/* .contacts__map-img,
-.contacts__map-picture--no-js {
-  display: none;
-} */
+  &--no-js {
+    display: block;
+  }
+}
 
 .contacts__write-to-us {
   width: 260px;
@@ -149,10 +149,6 @@
 
     font-size: 17px;
   }
-
-  /* .contacts__map-picture {
-    display: block;
-  } */
 }
 
 @media (min-width: $desktop-width) {

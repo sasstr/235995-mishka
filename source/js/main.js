@@ -75,104 +75,69 @@ if (event.keyCode == 27){
 
 // Работ с картой
 
-var map = document.querySelector('.contacts__map-picture');
-if(map){
-  map.classList.remove('contacts__map-picture--no-js');
+var mapNojs = document.querySelector('.contacts__map-img');
+if(mapNojs){
+  mapNojs.classList.remove('contacts__map-img--no-js');
 }
 
+  function initMap() {
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: 59.93869, lng: 30.323055},
+      zoom: 16.6,
+      mapTypeId: 'roadmap',
+      zoomControl: false,
+      mapTypeControl: false,
+      scaleControl: false,
+      streetViewControl: false,
+      rotateControl: false,
+      fullscreenControl: false
+    });
+
+    var image = 'img/icon-map-pin.svg';
+
+    var myCoords = new google.maps.LatLng(59.93869, 30.323);
+
+    var marker = new google.maps.Marker({
+      position: myCoords,
+      map: map,
+      icon: image
+    });
+  }
+
+/*
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map', {
-          center: [55.751574, 37.573856],
-          zoom: 9
-      }, {
-          searchControlProvider: 'yandex#search'
-      }),
+      center: [59.938631, 30.323055],
+      zoom: 16,
+      controls: []
+    }),
 
-      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#image',
-          // Своё изображение иконки метки.
-          iconImageHref: 'img/icon-map-pin.svg',
-          // Размеры метки.
-          iconImageSize: [66, 101],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-5, -38]
-      }),
-
-      myPlacemarkWithContent = new ymaps.Placemark([55.661574, 37.573856], {
-      }, {
-          // Опции.
-          // Необходимо указать данный тип макета.
-          iconLayout: 'default#imageWithContent',
-          // Своё изображение иконки метки.
-          iconImageHref: 'img/icon-map-pin.svg',
-          // Размеры метки.
-          iconImageSize: [66, 101],
-          // Смещение левого верхнего угла иконки относительно
-          // её "ножки" (точки привязки).
-          iconImageOffset: [-24, -24],
-          // Смещение слоя с содержимым относительно слоя с картинкой.
-          iconContentOffset: [15, 15],
-          // Макет содержимого.
-          iconContentLayout: MyIconContentLayout
-      });
+  myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
+      // Опции.
+      // Необходимо указать данный тип макета.
+      iconLayout: 'default#image',
+      // Своё изображение иконки метки.
+      iconImageHref: 'img/icon-map-pin.svg',
+      // Размеры метки.
+      iconImageSize: [66, 101],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
+      iconImageOffset: [-33, -101]
+  });
 
   myMap.geoObjects
-      .add(myPlacemark)
-});
+      .add(myPlacemark);
 
-/*var myMap;
-
-function init () {
-    myMap = new ymaps.Map(
-        // ID DOM-элемента, в который будет добавлена карта.
-        'map',
-        // Параметры карты.
-        {
-            // Географические координаты центра отображаемой карты.
-            center: [57.767265, 40.925358],
-            // Масштаб.
-            zoom: 10,
-            // Тип покрытия карты: "Спутник".
-            type: 'yandex#satellite'
-        }, {
-            // Поиск по организациям.
-            //searchControlProvider: 'yandex#search'
-        }
-    );
-}
-
-function setCenter () {
-    myMap.setCenter([57.767265, 40.925358]);
-}
-
- function setBounds () {
-    // Bounds - границы видимой области карты.
-    // Задаются в географических координатах самой юго-восточной и самой северо-западной точек видимой области.
-    //myMap.setBounds([[37, 38], [39, 40]]);
-} */
-
-/* ymaps.ready(function () {
-
-    var myMap = new ymaps.Map("map", {
-        center: [59.938631, 30.323055],
-        zoom: 17,
-        controls: []
-    });
-
-    myMap.behaviors.disable('scrollZoom');
-
-     myMap.controls.add("zoomControl", {
-        position: {top: 15, left: 15}
-    });
-
-    var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {},
-        { iconLayout: 'default#image',
-          iconImageHref: 'img/icon-map-pin.svg',
-          iconImageSize: [66, 101],
-          iconImageOffset: [-1, -1] });
-
-    myMap.geoObjects.add(myPlacemark);
+  myMap.controls
+      .remove("rulerControl")
+      .remove("searchControl")
+      .remove("trafficControl")
+      .remove("typeSelector")
+      .remove("zoomControl")
+      .remove("geolocationControl")
+      .remove("routeEditor")
+      .remove("fullscreenControl")
+      .remove("routeButtonControl")
+      .remove("routePanelControl")
+      .remove("Button");
 }); */
