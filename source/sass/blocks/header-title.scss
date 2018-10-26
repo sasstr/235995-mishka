@@ -154,8 +154,6 @@
 
       background-image: url("../img/bg-zigzag-fill.svg");
       background-size: 772px 24px;
-
-      /* transform: rotateY(180deg) scaleX(0.9) scaleX(0.88); */
     }
   }
 
@@ -207,10 +205,8 @@
     &::after {
       bottom: -6px;
 
-      background-size: 1250px 34px;
+      background-size: 1150px 34px;
       background-position: 11px 0;
-
-      /* transform: scaleX(-1); */
     }
 
     &--main {

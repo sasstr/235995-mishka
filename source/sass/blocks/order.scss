@@ -336,6 +336,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 501px;
+    padding: 0;
   }
 
   .order__form-wrapper {
@@ -459,6 +460,7 @@
     &--checkbox {
       justify-content: space-between;
       width: 239px;
+      margin-bottom: 0;
     }
   }
 
@@ -625,7 +627,7 @@
 
   .order__description {
     width: 1150px;
-    padding: 125px  250px 30px 225px;
+    padding: 121px  250px 30px 225px;
   }
 
   .order__fieldset {
