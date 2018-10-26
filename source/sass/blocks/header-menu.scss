@@ -23,12 +23,6 @@
   &--search {
     padding: 28px 46px 28px 32px;
   }
-
-  /*
-  &--cart::before:active a[href],
-  &--search::before:active a[href] {
-    background-color: #63d1bb;
-  }*/
 }
 
 .header-menu__link-svg {
@@ -36,13 +30,13 @@
 
   opacity: 0.2;
 
-  &:active {
+  /* &:active {
     opacity: 0.3;
 
     path {
       fill: #63d1bb;
     }
-  }
+  } */
 }
 
 .header-menu__item {
@@ -222,6 +216,10 @@
       color: rgba(0, 0, 0, 0.6);
     }
 
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
     &--to-order {
       padding: 0;
 
@@ -238,20 +236,20 @@
       letter-spacing: 0.008em;
     }
 
-    /* .header-menu__link-svg:hover { // TODO сделать что бы по наведению на ссылку менялся цвет иконки
+    &:hover + .header-menu__link-svg { // TODO сделать что бы по наведению на ссылку менялся цвет иконки
       opacity: 1;
 
       path {
         fill: #63d1bb;
       }
+    }
 
-      &:active {
-        opacity: 0.3;
+    &:active + .header-menu__link-svg {
+      opacity: 0.3;
 
-        path {
-          fill: #63d1bb;
-        }
+      path {
+        fill: #63d1bb;
       }
-    } */
+    }
   }
 }

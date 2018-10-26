@@ -6,6 +6,10 @@
   width: 320px;
   padding: 19px 68px 23px;
   margin: 0 auto;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
@@ -27,5 +31,19 @@
     width: 182px;
     padding: 0;
     margin: -2px 0 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    display: flex;
+
+    &:hover + .copyright__svg path {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

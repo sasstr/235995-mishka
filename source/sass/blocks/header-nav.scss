@@ -172,6 +172,10 @@
     &:hover a[href] {
       opacity: 0.6;
     }
+
+    &:active a[href] {
+      opacity: 0.3;
+    }
   }
 
   .header-nav__logo-link picture {

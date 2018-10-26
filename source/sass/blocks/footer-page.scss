@@ -19,4 +19,18 @@
     display: block;
     margin-top: -6px;
   }
+
+  .footer-page__logo:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-page__logo:hover path {
+    fill: #46c1ae;
+  }
+
+  .footer-page__logo:active {
+    opacity: 0.3;
+  }
 }
