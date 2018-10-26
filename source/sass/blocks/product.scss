@@ -14,6 +14,10 @@
   display: block;
 }
 
+.product__description:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 @media (min-width: $tablet-width) {
   .product {
     display: flex;
@@ -43,5 +47,13 @@
   .product__link {
     min-width: 316px;
     min-height: 462px;
+  }
+
+  .product__description:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .product__description:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
 }
