@@ -89,6 +89,11 @@
 
   &--next {
     transform: rotate(180deg);
+
+    &:active {
+      background-color: #ffffff;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -205,6 +210,16 @@
 
       background-size: 1050px;
     }
+  }
+
+  .reviews__btn-control:hover {
+    background-color: #ffffff;
+    opacity: 0.6;
+  }
+
+  .reviews__btn-control:active {
+    background-color: #ffffff;
+    opacity: 0.3;
   }
 
   .reviews__title {

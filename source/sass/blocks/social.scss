@@ -50,7 +50,11 @@
     margin: 0 250px 0 333px;
   }
 
-  .social__link:hover > .social__svg path {
+  /* .social__svg {
+    fill: currentColor;  // fill="#231F20"
+  } */
+
+  .social__link:hover {
     fill: #46c1ae;
   }
 

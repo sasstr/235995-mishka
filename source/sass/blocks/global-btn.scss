@@ -12,7 +12,14 @@
   background-color: #ffffff;
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba (68, 68, 68, 0.3);
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .global-btn:active {
+    color: rgba (68, 68, 68, 0.3);
   }
 }
 
@@ -28,6 +35,7 @@
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
+      opacity: 1;
     }
   }
 }

@@ -4,7 +4,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 320px;
-  padding: 19px 68px 23px;
+  padding: 19px 70px 23px 67px;
   margin: 0 auto;
 
   &:active {
@@ -24,6 +24,7 @@
 .copyright__svg {
   width: 30px;
   height: 36px;
+  transform: scale(1.2);
 }
 
 @media (min-width: $tablet-width) {
