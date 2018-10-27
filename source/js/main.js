@@ -31,8 +31,9 @@ navToggle.addEventListener('click', function() {
 
 // Работа модального окна
 
-if(modal){modal.addEventListener('click', function(event) {
-  event.preventDefault();
+if(modal){
+  modal.addEventListener('click', function(event) {
+    event.preventDefault();
     if (modal !== event.target) return;
       modal.classList.remove('modal--show');
       modal.classList.add('modal--hidden');
@@ -40,8 +41,8 @@ if(modal){modal.addEventListener('click', function(event) {
 }
 
 if(cartBtn){
-for(var k=0; k < cartBtn.length ; k++){
-  cartBtn[k].onclick = function(event) {
+  for(var k=0; k < cartBtn.length ; k++) {
+    cartBtn[k].onclick = function(event) {
     event.preventDefault();
       if (modal.classList.contains('modal--hidden') ) {
         modal.classList.remove('modal--hidden');
@@ -53,6 +54,7 @@ for(var k=0; k < cartBtn.length ; k++){
     };
   }
 }
+
 if(orderBtn){orderBtn.addEventListener('click', function(evt) {
   evt.preventDefault();
     if (modal.classList.contains('modal--hidden') ) {
@@ -66,78 +68,41 @@ if(orderBtn){orderBtn.addEventListener('click', function(evt) {
 }
 
 document.addEventListener("keyup", function (event) {
-if (event.keyCode == 27){
-  event.preventDefault();
-  modal.classList.add('modal--hidden');
-  modal.classList.remove('modal--show');
+  if (event.keyCode == 27){
+    event.preventDefault();
+    modal.classList.add('modal--hidden');
+    modal.classList.remove('modal--show');
   }
 });
 
 // Работ с картой
 
 var mapNojs = document.querySelector('.contacts__map-img');
+
 if(mapNojs){
   mapNojs.classList.remove('contacts__map-img--no-js');
 }
 
-  function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: 59.93869, lng: 30.323055},
-      zoom: 16.6,
-      mapTypeId: 'roadmap',
-      zoomControl: false,
-      mapTypeControl: false,
-      scaleControl: false,
-      streetViewControl: false,
-      rotateControl: false,
-      fullscreenControl: false
-    });
-
-    var image = 'img/icon-map-pin.svg';
-
-    var myCoords = new google.maps.LatLng(59.93869, 30.323);
-
-    var marker = new google.maps.Marker({
-      position: myCoords,
-      map: map,
-      icon: image
-    });
-  }
-
-/*
-ymaps.ready(function () {
-  var myMap = new ymaps.Map('map', {
-      center: [59.938631, 30.323055],
-      zoom: 16,
-      controls: []
-    }),
-
-  myPlacemark = new ymaps.Placemark(myMap.getCenter(), {}, {
-      // Опции.
-      // Необходимо указать данный тип макета.
-      iconLayout: 'default#image',
-      // Своё изображение иконки метки.
-      iconImageHref: 'img/icon-map-pin.svg',
-      // Размеры метки.
-      iconImageSize: [66, 101],
-      // Смещение левого верхнего угла иконки относительно
-      // её "ножки" (точки привязки).
-      iconImageOffset: [-33, -101]
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 59.93869, lng: 30.323055},
+    zoom: 16.6,
+    mapTypeId: 'roadmap',
+    zoomControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    streetViewControl: false,
+    rotateControl: false,
+    fullscreenControl: false
   });
 
-  myMap.geoObjects
-      .add(myPlacemark);
+  var image = 'img/icon-map-pin.svg';
 
-  myMap.controls
-      .remove("rulerControl")
-      .remove("searchControl")
-      .remove("trafficControl")
-      .remove("typeSelector")
-      .remove("zoomControl")
-      .remove("geolocationControl")
-      .remove("routeEditor")
-      .remove("fullscreenControl")
-      .remove("routeButtonControl")
-      .remove("routePanelControl")
-      .remove("Button");
-}); */
+  var myCoords = new google.maps.LatLng(59.93869, 30.323);
+
+  var marker = new google.maps.Marker({
+    position: myCoords,
+    map: map,
+    icon: image
+  });
+}

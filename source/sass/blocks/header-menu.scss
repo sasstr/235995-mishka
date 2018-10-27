@@ -170,18 +170,24 @@
 }
 
 @media (min-width: $desktop-width) {
+  .header-menu {
+    align-items: center;
+  }
+
   .header-menu__item {
     padding: 32px 0;
+    align-self: stretch;
 
     &--cart {
-      min-width: 266px;
-      padding: 32px 0 32px 30px;
+      min-width: 316px;
+      padding: 32px 50px 32px 30px;
+      margin: auto 0;
     }
 
     &--catalog {
       flex-shrink: 0;
-      min-width: 184px;
-      padding: 30px 0 33px;
+      min-width: 234px;
+      padding: 30px 0 33px 50px;
 
       letter-spacing: 0.005em;
 

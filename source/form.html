@@ -138,11 +138,11 @@
                 <div class="order__form-wrapper">
                   <div class="order__block order__block--name">
                     <label class="order__label order__label--name" for="name">Имя:</label>
-                    <input class="order__form-input order__form-input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+                    <input class="order__form-input order__form-input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
                   </div>
                   <div class="order__block order__block--surname">
                     <label class="order__label order__label--surname" for="surname">Фамилия:</label>
-                    <input class="order__form-input order__form-input--surname" type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
+                    <input class="order__form-input order__form-input--surname" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
                   </div>
                   <div class="order__block order__block--middle-name">
                     <label class="order__label order__label--middle-name" for="middle-name">Отчество:</label>
@@ -155,8 +155,7 @@
               <div class="order__container-darkgray order__container-darkgray--tel">
                 <h2 class="order__title order__title--phone">тел</h2>
                 <div class="order__form-wrapper order__form-wrapper--tel">
-                  <label class="visually-hidden" for="tel">Телефон</label>
-                  <input class="order__form-input order__form-input--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                  <input class="order__form-input order__form-input--tel" type="tel" name="tel" id="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                   <svg class="order__form-svg order__form-svg--tel" width="24.829px" height="24.333px">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
@@ -167,8 +166,7 @@
               <div class="order__container-darkgray order__container-darkgray--email">
                 <h2 class="order__title order__title--email">E-mail</h2>
                 <div class="order__form-wrapper order__form-wrapper--email">
-                  <label class="visually-hidden" for="email">E-mail</label>
-                  <input class="order__form-input order__form-input--email" type="email" name="email" id="email" placeholder="Ваш Email*">
+                  <input class="order__form-input order__form-input--email" type="email" name="email" id="email" placeholder="Ваш Email*" required>
                   <svg class="order__form-svg order__form-svg--email"  width="32px" height="32px">
                     <use xlink:href="img/sprite.svg#icon-mail"></use>
                   </svg>
@@ -179,7 +177,7 @@
               <div class="order__container">
                 <h2 class="order__title order__title--add">Доп</h2>
                 <div class="order__form-wrapper">
-                  <textarea class="order__form-add" name="add" id="add" placeholder="Опишите все ваши пожелания к заказу"></textarea><!-- cols="30" rows="10" -->
+                  <textarea class="order__form-add" name="add" id="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
               </div>
             </fieldset>
