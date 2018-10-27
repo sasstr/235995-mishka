@@ -16,10 +16,6 @@
   margin-right: 67px;
 }
 
-/* .header-nav__toggle {
-  background-image: url("../img/icon-menu-open.svg");
-} */
-
 @media (max-width: $tablet-width) {
   .header-nav__logo {
     width: 320px;
@@ -44,12 +40,12 @@
 
     &--closed {
       background-image: url("../img/icon-menu-open.svg");
+
       transform: scaleY(0.7);
     }
 
     &--no-js {
       display: none;
-      /* background-image: none;*/
     }
   }
 }
@@ -108,12 +104,10 @@
     text-align: end;
     letter-spacing: -0.001em;
 
-    /* background-color: #f9f9f9; */
     background-color: transparent;
 
     &--inner-page {
       background-color: transparent;
-      /* background-color: #f1f1f1; */
     }
   }
 
@@ -185,7 +179,5 @@
   .header-nav__menu--nav {
     order: -2;
     flex-shrink: 0;
-
-    /* box-shadow: 0 1px 0 #ececec; */
   }
 }

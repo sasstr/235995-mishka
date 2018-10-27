@@ -61,6 +61,7 @@
 
 .contacts__map {
   position: relative;
+
   display: flex;
   justify-content: center;
   width: 100%;
@@ -163,6 +164,7 @@
 
   .contacts__wrapper {
     position: relative;
+
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -198,6 +200,7 @@
     position: absolute;
     top: 70px;
     right: 0;
+
     width: 50%;
     min-height: 457px;
   }
