@@ -6,6 +6,8 @@
   margin: 0 auto;
   padding: 21px 30px 20px;
 
+  fill: #231f20;
+
   box-shadow: 0 1px 0 rgba(129, 129, 129, 0.1);
 }
 
@@ -29,6 +31,7 @@
   }
 
   :active {
+    fill: #46c1ae;
     opacity: 0.3;
   }
 }
@@ -50,15 +53,12 @@
     margin: 0 250px 0 333px;
   }
 
-  /* .social__svg {
-    fill: currentColor;  // fill="#231F20"
-  } */
-
   .social__link:hover {
     fill: #46c1ae;
   }
 
-  .social__link:active > .social__svg {
+  .social__link:active {
+    fill: #46c1ae;
     opacity: 0.3;
   }
 }

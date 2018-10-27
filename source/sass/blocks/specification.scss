@@ -18,8 +18,10 @@
   border-bottom: 1px solid rgba(68, 68, 68, 0.2);
 }
 
-.specification__link:active {
-  opacity: 0.3;
+.specification__link {
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .specification__title {
@@ -65,13 +67,14 @@
   background-color: #ffffff;
   opacity: 0.2;
 
-  cursor: pointer;
-}
+  fill: #231f20;
 
-.specification__svg {
-  path {
-    fill: #231f20;
+  &:active {
+    fill: #63d1bb;
+    opacity: 0.3;
   }
+
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {
@@ -162,16 +165,12 @@
     opacity: 0.3;
   }
 
-  .specification__button:hover .specification__svg {
-    path {
-      fill: #63d1bb;
-    }
+  .specification__button:hover {
+    fill: #63d1bb;
   }
 
-  .specification__button:active .specification__svg {
-    path {
-      fill: #63d1bb;
-      opacity: 0.3;
-    }
+  .specification__button:active {
+    fill: #63d1bb;
+    opacity: 0.3;
   }
 }

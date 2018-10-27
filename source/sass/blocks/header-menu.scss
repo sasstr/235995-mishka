@@ -18,10 +18,14 @@
 
   &--cart {
     padding: 28px 46px 28px 30px;
+
+    fill: #231f20;
   }
 
   &--search {
     padding: 28px 46px 28px 32px;
+
+    fill: #231f20;
   }
 }
 
@@ -83,7 +87,6 @@
       flex-shrink: 0;
       flex-wrap: wrap;
       width: 85px;
-
 
       box-shadow: 1px 0 0 #ececec, inset 1px 0 0 #ececec;
     }
@@ -203,11 +206,7 @@
     }
   }
 
-  .header-menu__link {
-    padding: 0;
-    margin: 0;
-    font-size: 17px;
-
+  .header-menu_item a[href] {
     &:hover {
       color: rgba(0, 0, 0, 0.6);
     }
@@ -215,6 +214,24 @@
     &:active {
       color: rgba(0, 0, 0, 0.3);
     }
+
+    &--search:hover,
+    &--cart:hover {
+      opacity: 1;
+      fill: #63d1bb;
+    }
+
+    &--cart:active,
+    &--search:active {
+      fill: #63d1bb;
+      opacity: 0.3;
+    }
+  }
+
+  .header-menu__link {
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
 
     &--to-order {
       padding: 0;
@@ -232,22 +249,6 @@
       min-width: 0;
 
       letter-spacing: 0.008em;
-    }
-
-    &:hover + .header-menu__link-svg { // TODO сделать что бы по наведению на ссылку менялся цвет иконки
-      opacity: 1;
-
-      path {
-        fill: #63d1bb;
-      }
-    }
-
-    &:active + .header-menu__link-svg {
-      opacity: 0.3;
-
-      path {
-        fill: #63d1bb;
-      }
     }
   }
 }

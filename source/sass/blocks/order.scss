@@ -163,11 +163,9 @@
     box-shadow: inset 0 -2px 0 #62d1ba;
   }
 
-  &--tel:focus + .order__form-svg--tel,
-  &--email:focus + .order__form-svg--email {
-    path {
-      fill: #62d1ba;
-    }
+  &--tel:focus,
+  &--email:focus {
+    fill: #62d1ba;
   }
 
   &::-moz-placeholder {
@@ -645,18 +643,15 @@
       box-shadow: inset 0 -2px 0 #62d1ba;
     }
 
-    &--tel:hover + .order__form-svg--tel,
-    &--email:hover + .order__form-svg--email {
-      path {
-        fill: #62d1ba;
-      }
+    &--tel:hover,
+    &--email:hover {
+      fill: #62d1ba;
     }
 
-    /* &:focus {
-      color: rgba(68, 68, 68, 1);
-
-      box-shadow: inset 0 -2px 0 #62d1ba;
-    } */
+    &--tel:focus,
+    &--email:focus {
+      fill: #62d1ba;
+    }
   }
 
   .order__description {

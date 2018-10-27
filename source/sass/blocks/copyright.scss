@@ -7,6 +7,8 @@
   padding: 19px 70px 23px 67px;
   margin: 0 auto;
 
+  fill: #63d1bb;
+
   &:active {
     opacity: 0.3;
   }
@@ -39,7 +41,7 @@
   .copyright {
     display: flex;
 
-    &:hover + .copyright__svg path {
+    &:hover {
       fill: #46c1ae;
     }
 
