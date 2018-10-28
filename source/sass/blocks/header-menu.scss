@@ -16,6 +16,11 @@
     color: rgba(0, 0, 0, 0.3);
   }
 
+  &:active .header-menu__link-svg {
+    opacity: 0.3;
+    fill: #63d1bb;
+  }
+
   &--cart {
     padding: 28px 46px 28px 30px;
 
@@ -206,7 +211,11 @@
     }
   }
 
-  .header-menu_item a[href] {
+  .header-menu__link {
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+
     &:hover {
       color: rgba(0, 0, 0, 0.6);
     }
@@ -214,12 +223,6 @@
     &:active {
       color: rgba(0, 0, 0, 0.3);
     }
-  }
-
-  .header-menu__link {
-    padding: 0;
-    margin: 0;
-    font-size: 17px;
 
     &--search:hover,
     &--cart:hover {

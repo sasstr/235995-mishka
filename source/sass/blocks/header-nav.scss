@@ -6,14 +6,26 @@
   min-height: 79px;
   padding: 23px 30px 20px;
   margin: 0 auto;
-
-  &:active a[href] {
-    opacity: 0.3;
-  }
 }
 
 .header-nav__logo-link {
+  position: relative;
+
   margin-right: 67px;
+
+  &::before {  // что бы в IE11 работал :active
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $tablet-width) {

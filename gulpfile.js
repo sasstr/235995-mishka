@@ -51,8 +51,8 @@ gulp.task('minify', function() {
 gulp.task("images", function() {  // сжимаем картинки
   return gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
-    imagemin.optipng({optimizationLevel: 3}),
-    imagemin.jpegtran({progressive: true}),
+    //imagemin.optipng({optimizationLevel: 3}),
+    //imagemin.jpegtran({progressive: true}),
     imagemin.svgo()
   ]))
   .pipe(gulp.dest("source/img"));

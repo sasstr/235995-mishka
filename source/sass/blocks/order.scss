@@ -157,6 +157,11 @@
     padding-bottom: 6px;
   }
 
+  &--tel:focus + .order__form-svg,
+  &--email:focus + .order__form-svg {
+    fill: #62d1ba;
+  }
+
   &:focus {
     color: rgba(68, 68, 68, 1);
 
@@ -645,11 +650,6 @@
 
     &--tel:hover + .order__form-svg,
     &--email:hover + .order__form-svg {
-      fill: #62d1ba;
-    }
-
-    &--tel:focus,
-    &--email:focus {
       fill: #62d1ba;
     }
   }

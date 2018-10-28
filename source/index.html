@@ -11,8 +11,6 @@
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.js" async></script>
-    <script src="js/svg4everybody.js"></script>
-    <script>svg4everybody();</script>
   </head>
   <body>
     <div class="include-sprite">
@@ -196,6 +194,7 @@
             </p>
           </div>
           <div class="contacts__map" id="map">
+            <h2 class="visibility-hidden">Блок с картой</h2>
             <picture class="contacts__map-picture contacts__map-picture--no-js"> <!-- contacts__map-picture--no-js -->
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
@@ -246,7 +245,7 @@
       <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу сайта HTML Academy">
         <b class="copyright__text">Разработано</b>
         <svg class="copyright__svg" width="27" height="34">
-          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
     </footer>
