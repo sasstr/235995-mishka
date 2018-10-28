@@ -13,6 +13,10 @@
     align-items: center;
     min-height: 143px;
     padding: 52px 50px 58px;
+
+    & a[href]:active {
+      opacity: 0.3;
+    }
   }
 
   .footer-page__logo--hidden {
@@ -37,22 +41,15 @@
 
       display: block;
     }
-
-    &:active {
-      fill: #46c1ae;
-      opacity: 0.3;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .footer-page__logo {
-    &:hover {
-      fill: #46c1ae;
-    }
+  .footer-page a[href]:hover {
+    fill: #46c1ae;
+  }
 
-    &:active {
-      opacity: 0.3;
-    }
+  .footer-page a[href]:active {
+    opacity: 0.3;
   }
 }
