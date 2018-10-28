@@ -1,4 +1,4 @@
-var navMain = document.querySelectorAll('.header-menu');
+/* var navMain = document.querySelectorAll('.header-menu');
 var navToggle = document.querySelector('.header-nav__toggle');
 var modal = document.querySelector('.modal');
 var orderBtn  = document.querySelector('.thing__order');
@@ -107,3 +107,14 @@ function initMap() {
     icon: image
   });
 }
+
+mapPosition = document.querySelector('#map');
+
+window.addEventListener('resize', function(event) {
+  event.preventDefault();
+
+  if(document.documentElement.clientWidth > 768) {
+    mapPosition.style.removeProperty("position");
+  }
+});
+ */
