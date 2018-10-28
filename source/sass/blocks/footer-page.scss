@@ -24,13 +24,18 @@
     position: relative;
 
     &::before {  // что бы в IE11 работал :active
-      content: "";
-      display: block;
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
+
+      content: "";
+
+      width: 0;
+      height: 0;
+
+      display: block;
     }
 
     &:active {

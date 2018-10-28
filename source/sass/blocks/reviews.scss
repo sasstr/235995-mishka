@@ -80,10 +80,10 @@
 
   border: 1px solid #ececec;
   background-color: #ffffff;
-  background-size: 50px 26px;
   background-image: url("../img/icon-left-arrow.svg");
   background-position: 39px 12px;
   background-repeat: no-repeat;
+  background-size: 50px 26px;
 
   cursor: pointer;
 
@@ -157,8 +157,7 @@
   }
 
   .reviews__author {
-    margin: 0;
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
 
     letter-spacing: 0.044em;
   }

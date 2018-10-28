@@ -246,14 +246,15 @@
     }
 
     &--toys::before {
-      background-position: 0 2px;
       background-color: #46c1ae;
+      background-position: 0 2px;
     }
 
     &:hover {
-      background-color: #59d5bc;
-      margin-top: -5px;
       padding-bottom: 33px;
+      margin-top: -5px;
+
+      background-color: #59d5bc;
     }
   }
 }
