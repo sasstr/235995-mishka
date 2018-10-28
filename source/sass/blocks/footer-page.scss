@@ -12,10 +12,44 @@
     justify-content: center;
     align-items: center;
     min-height: 143px;
-    padding: 51px 50px 58px;
+    padding: 52px 50px 58px;
+
+    & a[href]:active {
+      opacity: 0.3;
+    }
   }
 
   .footer-page__logo--hidden {
     display: block;
+    margin-top: -6px;
+  }
+
+  .footer-page__logo {
+    position: relative;
+
+    &::before {  // что бы в IE11 работал :active
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      content: "";
+
+      width: 0;
+      height: 0;
+
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-page a[href]:hover {
+    fill: #46c1ae;
+  }
+
+  .footer-page a[href]:active {
+    opacity: 0.3;
   }
 }

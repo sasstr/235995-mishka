@@ -15,8 +15,13 @@
 .specification__block-info {
   padding-bottom: 20px;
 
-  box-shadow: inset 0 1px 0 1px #ffffff,
-    inset 0 0 0 1px rgba(68, 68, 68, 0.2);
+  border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+}
+
+.specification__link {
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .specification__title {
@@ -60,7 +65,13 @@
 
   border: none;
   background-color: #ffffff;
-  opacity: 0.2;
+
+  fill: #c7c7c7;
+
+  &:active {
+    fill: #63d1bb;
+    opacity: 0.3;
+  }
 
   cursor: pointer;
 }
@@ -71,19 +82,23 @@
     flex-direction: column;
     justify-content: space-between;
     width: 334px;
-    padding: 26px 29px 27px 28px;
+    padding: 25px 31px 26px 27px;
   }
 
   .specification__block-info {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    box-shadow: none;
+    border-bottom: none;
+  }
+
+  .specification__link:active {
+    opacity: 0.3;
   }
 
   .specification__title {
     padding: 0;
-    margin: 0 0 4px 0;
+    margin: 0 0 5px 0;
 
     font-size: 20px;
     letter-spacing: 0.001em;
@@ -98,14 +113,13 @@
   }
 
   .specification__options {
-    letter-spacing: 0.072em;
+    letter-spacing: 0.078em;
   }
 
   .specification__block-price {
-    padding: 21px 0 0 4px;
+    padding: 23px 0 0 4px;
 
-    box-shadow: inset 0 -1px 0 1px #ffffff,
-      inset 0 0 0 1px rgba(68, 68, 68, 0.2);
+    border-top: 1px solid rgba(68, 68, 68, 0.2);
   }
 
   .specification__price {
@@ -120,7 +134,7 @@
   .specification {
     width: 316px;
     height: 100%;
-    padding: 26px 29px 27px 27px;
+    padding: 26px 32px 27px 25px;
   }
 
   .specification__title {
@@ -132,26 +146,30 @@
   }
 
   .specification__options {
-    padding-top: 3px;
+    padding-top: 5px;
 
     font-size: 15px;
     letter-spacing: 0.001em;
   }
 
   .specification__block-info {
-    padding-bottom: 15px;
+    padding-bottom: 13px;
   }
 
-  .specification__svg:hover {
-    path {
-      fill: #63d1bb;
-    }
+  .specification__link:hover {
+    opacity: 0.6;
   }
 
-  .specification__svg:active {
-    path {
-      fill: #63d1bb;
-      opacity: 0.3;
-    }
+  .specification__link:active {
+    opacity: 0.3;
+  }
+
+  .specification__button:hover {
+    fill: #63d1bb;
+  }
+
+  .specification__button:active {
+    fill: #63d1bb;
+    opacity: 0.3;
   }
 }

@@ -18,7 +18,7 @@
 @media (min-width: $desktop-width) {
   .catalog-page__container {
     width: $desktop-width;
-    padding: 132px 50px 105px;
+    padding: 127px 50px 105px;
   }
 
   .catalog-page__goods {
@@ -28,8 +28,13 @@
     padding-bottom: 57px;
   }
 
-  /* .catalog-page__item {
-    align-items: stretch;
-    height: 100%;
-  } */
+  .catalog-page__item {
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
 }

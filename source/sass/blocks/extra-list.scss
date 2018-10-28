@@ -2,18 +2,11 @@
   display: none;
 }
 
-
 @media (min-width: $tablet-width) {
   .extra-list {
     display: flex;
 
     @include reset-list;
-
-    /* background-color: #f9f9f9; */
-
-    /*&--darkgray {
-       background-color: #f1f1f1;
-    }*/
   }
 
   .extra-list__item {
@@ -49,6 +42,14 @@
 
   .extra-list__link {
     font-weight: 700;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .extra-list__item {
@@ -67,10 +68,5 @@
     &--hidden:not(:first-child) {
       padding-left: 35px;
     }
-
-    /* &--free {
-      width: 240px;
-      padding-right: 0;
-    } */
   }
 }

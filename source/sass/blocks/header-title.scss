@@ -25,7 +25,7 @@
 .header-title__title {
   display: flex;
   justify-content: center;
-  padding: 71px 30px 121px;
+  padding: 70px 30px 121px;
   margin: 0;
 
   font-weight: 700;
@@ -47,14 +47,6 @@
 
   &--darkgreen {
     background-color: #56c3b2;
-  }
-
-  &--darkgreen:active {
-    background-color: #46c1ae;
-  }
-
-  &:active {
-    background-color: #59d5bc;
   }
 }
 
@@ -106,6 +98,11 @@
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
+    background-color: #59d5bc;
+  }
+
+  &--toys:active {
+    background-color: #46c1ae;
   }
 }
 
@@ -125,8 +122,6 @@
     padding: 0 50px;
     margin-top: -88px;
 
-    border-top: 1px solid #ececec;
-
     &--inner-page {
       background-color: #f1f1f1;
     }
@@ -141,9 +136,9 @@
       }
     }
 
-    &::after {
+    &::before {
       position: absolute;
-      bottom: -7px;
+      bottom: -8px;
       left: 0;
       z-index: 5;
 
@@ -153,6 +148,7 @@
       height: 23px;
 
       background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 772px 24px;
     }
   }
 
@@ -163,8 +159,6 @@
 
     font-size: 43px;
     line-height: 50px;
-
-    /* box-shadow: inset 0 1px 0 rgba(68, 68, 68, 0.2); */
   }
 
   .header-title__list {
@@ -182,7 +176,7 @@
   }
 
   .header-title__link {
-    padding: 28px 30px 28px 36px;
+    padding: 26px 28px 28px 37px;
 
     font-size: 20px;
     line-height: 30px;
@@ -202,6 +196,17 @@
 @media (min-width: $desktop-width) {
   .header-title {
     width: 100%;
+
+    border-top: none;
+
+    &::before {
+      bottom: -17px;
+
+      height: 34px;
+
+      background-size: 1250px 34px;
+      background-position: 12px 0;
+    }
 
     &--main {
       background-color: #f9f9f9;
@@ -228,14 +233,6 @@
   .header-title__item {
     width: 525px;
     padding: 0;
-
-    &--darkgreen:hover {
-      background-color: #46c1ae;
-    }
-
-    &:hover {
-      background-color: #59d5bc;
-    }
   }
 
   .header-title__link {
@@ -249,7 +246,19 @@
     }
 
     &--toys::before {
+      background-color: #46c1ae;
       background-position: 0 2px;
+    }
+
+    &:hover {
+      padding-bottom: 33px;
+      margin-top: -5px;
+
+      background-color: #46c1ae;
+    }
+
+    &--interior-items:hover {
+      background-color: #59d5bc;
     }
   }
 }

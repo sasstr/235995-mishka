@@ -21,25 +21,27 @@
 .modal__wrapper {
   position: fixed;
   z-index: 21;
-
   top: calc(50% - 336px);
   left: calc((100% - 320px) / 2);
-  display: block;
 
-
+  display: flex;
+  flex-direction: column;
   width: 320px;
   min-height: 336px;
   margin: 0 auto;
-  padding: 36px 30px 46px;
+  padding: 28px 30px 46px;
 
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
   border: 1px solid #c6c6c6;
   background-color: #ffffff;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 }
 
 .modal__title {
+  display: flex;
+  align-self: center;
+  width: 160px;
   min-height: 50px;
-  margin: 0 0 25px 0;
+  margin: 0 0 13px 0;
   padding: 0;
 
   font-weight: 700;
@@ -52,8 +54,8 @@
 }
 
 .modal__select-size {
-  margin: 0 0 28px 0;
   padding: 0;
+  margin: 0 0 23px 0;
 
   font-weight: 400;
   font-size: 15px;
@@ -68,7 +70,7 @@
   justify-content: space-between;
   max-width: 320px;
   padding: 0;
-  margin: 0 0 31px 0;
+  margin: 0 0 30px 0;
 
   list-style: none;
 }
@@ -78,12 +80,12 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 82px;
-  padding: 20px 10px;
+  padding: 17px 10px 14px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 16px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: inherit;
   color: #444444;
   text-transform: uppercase;
   text-align: center;
@@ -94,7 +96,7 @@
   cursor: pointer;
 
   &--m {
-    padding: 20px 10px;
+    padding: 16px 10px;
   }
 
   &--selected {
@@ -115,7 +117,7 @@
   margin: 0;
 
   line-height: 16px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: inherit;
   color: #ffffff;
 
   background-color: #63d1bb;
@@ -128,19 +130,18 @@
   .modal__wrapper {
     position: fixed;
     z-index: 21;
-
     top: calc(50% - 336px);
     left: calc((100% - 556px) / 2);
 
     width: 566px;
     min-height: 336px;
+    padding: 36px 106px 46px;
     margin: 0 auto;
-    padding: 51px 108px 46px;
   }
 
   .modal__title {
     width: 355px;
-    margin-bottom: 32px;
+    margin-bottom: 14px;
 
     font-size: 30px;
     line-height: 57px;
@@ -148,14 +149,16 @@
 
   .modal__list {
     max-width: 350px;
+    margin-bottom: 30px;
   }
 
   .modal__size {
     width: 112px;
+    padding: 15px 10px 14px;
   }
 
   .modal__select-size {
-    margin-bottom: 26px;
+    margin-bottom: 22px;
 
     font-size: 17px;
   }
@@ -167,5 +170,9 @@
     min-height: 336px;
     margin: 0 auto;
     padding: 51px 108px 46px;
+  }
+
+  .modal__size:hover {
+    border: 2px solid rgba(68, 68, 68, 0.3);
   }
 }

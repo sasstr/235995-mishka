@@ -1,6 +1,10 @@
 .production {
   border: 1px solid #ececec;
   padding-bottom: 33px;
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .production__title {
@@ -50,6 +54,11 @@
 
     cursor: pointer;
   }
+
+  &:active::after {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
 }
 
 .production__description {
@@ -75,29 +84,14 @@
   .production {
     position: relative;
 
-    padding-bottom: 45px;
-
     display: flex;
     flex-direction: column;
+    padding-bottom: 45px;
   }
-
-  /* {
-    position: relative;
-
-     &::after {
-      top: 189px;
-      right: 283px;
-    } */
-
-  /*&:active::after {
-       width: 81px; маштобировать
-      height: 62px ;
-      opacity: 0.3;
-    }
-  }*/
 
   .production__image-picture {
     position: static;
+
     display: block;
     order: -1;
     width: 668px;
@@ -105,12 +99,20 @@
 
     &::after {
       top: 189px;
-      right: 283px;
+      left: 283px;
+    }
+
+    &:active::after {
+      top: 189px;
+      left: 283px;
+
+      transform: scale(0.8);
+      opacity: 0.3;
     }
   }
 
   .production__title {
-    padding: 39px 43px 5px 42px;
+    padding: 38px 43px 5px 42px;
 
     font-size: 20px;
     letter-spacing: 0.01em;
@@ -123,7 +125,7 @@
   }
 
   .production__description {
-    padding: 17px 43px 36px 40px;
+    padding: 19px 43px 36px 39px;
 
     font-size: 15px;
     line-height: 30px;
@@ -143,7 +145,15 @@
     flex-wrap: wrap;
     align-items: flex-end;
     min-height: 455px;
-    padding: 7px 57px 0 0;
+    padding: 6px 57px 0 0;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   .production__image-picture {
@@ -162,16 +172,14 @@
       height: 78px;
     }
 
-    &:active::after {
-      width: 81px;
-      height: 62px;
-      opacity: 0.3;
+    &:hover::after {
+      transform: scale(1.2);
     }
 
-    /*&:hover::after {
-       width: 121px;
-      height: 92px;
-    }*/
+    &:active::after {
+      transform: scale(0.8);
+      opacity: 0.3;
+    }
   }
 
   .production__title {
@@ -182,7 +190,7 @@
     align-self: flex-end;
     width: 160px;
     min-height: 135px;
-    padding: 39px 0 1px 35px;
+    padding: 39px 0 0 35px;
     margin-right: 106px;
 
     &::before {
@@ -194,11 +202,11 @@
 
   .production__description {
     width: 250px;
-    padding: 32px 3px 46px 20px;
+    padding: 34px 3px 46px 18px;
   }
 
   .production__link-order {
     width: 230px;
-    margin: 0 0 62px 0;
+    margin: 0 0 60px 0;
   }
 }

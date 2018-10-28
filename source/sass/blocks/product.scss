@@ -1,17 +1,21 @@
 .product {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .product__link {
   display: block;
   min-width: 260px;
   height: 195px;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .product__image {
   display: block;
+}
+
+.product__description:active {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: $tablet-width) {

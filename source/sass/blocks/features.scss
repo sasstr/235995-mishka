@@ -3,7 +3,7 @@
 }
 
 .features__title {
-  margin: 0 0 30px 0;
+  margin: 0 0 30px -2px;
 
   font-weight: 700;
   font-size: 25px;
@@ -15,7 +15,7 @@
   @include reset-list;
 
   &:first-child {
-    margin-bottom: 28px;
+    margin-bottom: 31px;
   }
 }
 
@@ -70,25 +70,25 @@
   &--ecology::before {
     width: 32px;
     height: 37px;
-    margin: 0 0 20px 9px;
+    margin: 0 0 19px 9px;
 
-    background-image: url("../img/icon-feature-flower.svg");
+    background-image: url("../img/feature-flower.svg");
   }
 
   &--nordic::before {
     width: 47px;
     height: 27px;
-    margin-bottom: 28px;
+    margin-bottom: 27px;
 
-    background-image: url("../img/icon-feature-money.svg");
+    background-image: url("../img/feature-money.svg");
   }
 
   &--more-likes::before {
     width: 47px;
     height: 27px;
-    margin: 0 0 23px 8px;
+    margin: 0 0 25px 8px;
 
-    background-image: url("../img/icon-feature-heart.svg");
+    background-image: url("../img/feature-heart.svg");
   }
 
   &--handmade::before {
@@ -96,23 +96,23 @@
     height: 34px;
     margin: 0 0 20px 3px;
 
-    background-image: url("../img/icon-feature-ball.svg");
+    background-image: url("../img/feature-ball.svg");
   }
 
   &--support::before {
     width: 55px;
     height: 23px;
-    margin: 2px 0 30px -3px;
+    margin: 2px 0 30px -5px;
 
-    background-image: url("../img/icon-feature-rocket.svg");
+    background-image: url("../img/feature-rocket.svg");
   }
 
   &--gift-packed::before {
     width: 33px;
     height: 32px;
-    margin: 0 0 23px 2px;
+    margin: 0 0 19px 3px;
 
-    background-image: url("../img/icon-feature-gift.svg");
+    background-image: url("../img/feature-gift.svg");
   }
 }
 
@@ -127,12 +127,12 @@
   }
 
   .features__title {
-    font-size: 43px;
-    line-height: 50px;
     padding-bottom: 0;
     margin-bottom: 48px;
 
-    letter-spacing: -0.01em;
+    font-size: 43px;
+    line-height: 50px;
+    letter-spacing: -0.001em;
   }
 
   .features__list {
@@ -160,6 +160,8 @@
     &--ecology {
       min-height: 100px;
       padding: 0 70px 0 2px;
+
+      letter-spacing: 0.007em;
     }
 
     &--ecology::before {
@@ -169,11 +171,21 @@
     &--nordic {
       min-height: 104px;
       padding: 0 40px 0 2px;
+
+      letter-spacing: 0.004em;
     }
 
     &--more-likes {
       min-height: 100px;
       padding: 0 70px 0 2px;
+
+      letter-spacing: 0.004em;
+    }
+
+    &--more-likes::before {
+      margin: 0 0 23px 7px;
+
+      background-image: url("../img/feature-heart.svg");
     }
 
     &--handmade {
@@ -208,6 +220,7 @@
   .features__title {
     font-size: 53px;
     line-height: 57px;
+    letter-spacing: -0.005em;
   }
 
   .features__item {

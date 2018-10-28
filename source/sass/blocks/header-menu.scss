@@ -5,49 +5,65 @@
 .header-menu__link {
   display: flex;
   justify-content: flex-start;
-  padding: 32px 76px;
+  padding: 27px 76px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: #000000;
 
+  &::before {  // что бы в IE11 работал :active
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    display: block;
+  }
+
+  &--cart {
+    padding: 28px 46px 28px 30px;
+
+    fill: #231f20;
+  }
+
+  &--search {
+    padding: 28px 46px 28px 32px;
+
+    fill: #231f20;
+  }
+
   &:active {
     color: rgba(0, 0, 0, 0.3);
   }
 
-  &--cart {
-    padding: 32px 46px 32px 30px;
-  }
+  &:active .header-menu__link-svg {
+    opacity: 0.3;
 
-  &--search {
-    padding: 32px 46px 32px 30px;
+    fill: #63d1bb;
   }
+}
 
-  /*
-  &--cart::before:active a[href],
-  &--search::before:active a[href] {
-    background-color: #63d1bb;
-  }*/
+.header-menu__text {
+  pointer-events: none;
 }
 
 .header-menu__link-svg {
-  margin-right: 25px;
+  margin: 4px 25px 0 0;
 
-  opacity: 0.2;
-
-  &:active {
-    opacity: 0.3;
-
-    path {
-      fill: #63d1bb;
-    }
-  }
+  fill: #c7c7c7;
 }
 
 .header-menu__item {
   width: 320px;
-  min-height: 79px;
+  min-height: 78px;
+
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   &--cart {
@@ -85,11 +101,11 @@
 
     &--cart {
       flex-shrink: 0;
-      min-width: 262px;
+      min-width: 263px;
       margin-left: auto;
 
       background-color: transparent;
-      /* box-shadow: 0 1px 0 #ececec; */
+      box-shadow: none;
     }
 
     &--search {
@@ -98,7 +114,6 @@
       flex-wrap: wrap;
       width: 85px;
 
-
       box-shadow: 1px 0 0 #ececec, inset 1px 0 0 #ececec;
     }
 
@@ -106,7 +121,6 @@
       height: 100%;
       width: 167px;
 
-      /* background-color: #f9f9f9; */
       background-color: transparent;
       box-shadow: none;
     }
@@ -116,7 +130,6 @@
       width: 167px;
 
       background-color: transparent;
-      /* background-color: #f9f9f9; */
       box-shadow: none;
     }
 
@@ -165,14 +178,17 @@
       display: flex;
       justify-content: space-between;
       min-width: 264px;
-      padding: 32px 0 32px 31px;
+      padding: 32px 0 32px 30px;
 
       font-size: 17px;
+      letter-spacing: 0.003em;
     }
 
     &--to-order {
       height: 100%;
       padding: 0 0 30px 0;
+
+      letter-spacing: 0.009em;
     }
 
     &--catalog {
@@ -183,22 +199,32 @@
 }
 
 @media (min-width: $desktop-width) {
+  .header-menu {
+    align-items: center;
+  }
+
   .header-menu__item {
     padding: 32px 0;
+    align-self: stretch;
 
     &--cart {
-      min-width: 266px;
-      padding-left: 31px;
+      min-width: 316px;
+      padding: 32px 50px 32px 30px;
+      margin: auto 0;
     }
 
     &--catalog {
-      width: 184px;
       flex-shrink: 0;
+      min-width: 234px;
+      padding: 30px 0 33px 50px;
+
+      letter-spacing: 0.005em;
 
       background-color: #ffffff;
     }
 
     &--to-order {
+      min-width: 205px;
       padding-left: 35px;
 
       background-color: #ffffff;
@@ -215,6 +241,29 @@
       color: rgba(0, 0, 0, 0.6);
     }
 
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &--search:hover,
+    &--cart:hover {
+      opacity: 1;
+      fill: #63d1bb;
+    }
+
+    &--search:hover .header-menu__link-svg,
+    &--cart:hover .header-menu__link-svg {
+      opacity: 1;
+      fill: #63d1bb;
+    }
+
+    &--cart:active,
+    &--search:active {
+      opacity: 0.3;
+
+      fill: #63d1bb;
+    }
+
     &--to-order {
       padding: 0;
 
@@ -223,27 +272,14 @@
 
     &--catalog {
       padding: 0;
+
       background-color: #ffffff;
     }
 
     &--cart {
       min-width: 0;
+
+      letter-spacing: 0.008em;
     }
-
-    /* .header-menu__link-svg:hover { // TODO сделать что бы по наведению на ссылку менялся цвет иконки
-      opacity: 1;
-
-      path {
-        fill: #63d1bb;
-      }
-
-      &:active {
-        opacity: 0.3;
-
-        path {
-          fill: #63d1bb;
-        }
-      }
-    } */
   }
 }

@@ -3,19 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Мишка</title>
+    <link rel="preload" crossorigin type="font/woff2" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" crossorigin type="font/woff2" href="fonts/opensansbold.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
     <script>
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.js" async></script>
-    <title>HTML Academy: Мишка</title>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6a6999fe-ed90-425b-b994-97f3921fc192" type="text/javascript"></script>
-    <link rel="preload" href="fonts/opensans.woff2" as="font">
-    <link rel="preload" href="fonts/opensans.woff" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-    <link rel="preload" href="fonts/opensansbold.woff" as="font">
-    <script src="js/svg4everybody.js"></script>
-    <script>svg4everybody();</script>
-    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="include-sprite">
@@ -27,8 +22,8 @@
           <div class="header-nav__logo">
             <a class="header-nav__logo-link">
               <picture>
-                  <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
                 <img class="header-nav__img" src="img/logo-mobile.svg" alt="Лого интернет магазина Мишка">
               </picture>
             </a>
@@ -100,33 +95,33 @@
             <b class="thing__rating">Товар Недели</b>
           </div>
           <div class="thing__block">
-          <p class="thing__promo">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах</p>
-          <div class="thing__description">
-            <table class="description">
-              <tr class="description__set">
-                <td class="description__sort">Цвет:</td>
-                <td class="description__value">«Тиффани»/серый</td>
-              </tr>
-              <tr class="description__set">
-                <td class="description__sort">Диаметр:</td>
-                <td class="description__value">25 см</td>
-              </tr>
-              <tr class="description__set">
-                <td class="description__sort">Высота:</td>
-                <td class="description__value">15 см</td>
-              </tr>
-            </table>
-          </div>
-          <picture class="thing__picture">
-            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
-            <img class="thing__image" src="img/triple-set-mobile@1x.jpg " srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
-          </picture>
-          <p class="thing__price">Цена: 990 руб.</p>
-          <a href="#" class="global-btn thing__order " aria-label="Заказать товар недели">Заказать</a>
+            <p class="thing__promo">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах</p>
+            <div class="thing__description">
+              <table class="description">
+                <tr class="description__set">
+                  <td class="description__sort">Цвет:</td>
+                  <td class="description__value">«Тиффани»/серый</td>
+                </tr>
+                <tr class="description__set">
+                  <td class="description__sort">Диаметр:</td>
+                  <td class="description__value">25 см</td>
+                </tr>
+                <tr class="description__set">
+                  <td class="description__sort">Высота:</td>
+                  <td class="description__value">15 см</td>
+                </tr>
+              </table>
+            </div>
+            <picture class="thing__picture">
+              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+              <img class="thing__image" src="img/triple-set-mobile@1x.jpg " srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            </picture>
+            <p class="thing__price">Цена: 990 руб.</p>
+            <a href="#" class="global-btn thing__order " aria-label="Заказать товар недели">Заказать</a>
           </div>
         </section>
         <section class="features">
@@ -157,32 +152,32 @@
           </div>
         </section>
         <section class="reviews">
-            <h2 class="reviews__title">Отзывы</h2>
-            <blockquote class="reviews__block">
-              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
-                как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!
-              </p>
-            </blockquote>
-            <cite class="reviews__data">
-              <span class="reviews__author">Анастасия&nbsp;Красильникова</span>
-              <span class="reviews__contact">@misssssiskras</span>
-            </cite>
-            <div class="reviews__controls">
-              <button type="button" class="global-btn reviews__btn-control reviews__btn-control--prev">
-                <span class="visually-hidden">Предыдущий отзыв</span>
-              </button>
-              <button type="button" class="global-btn reviews__btn-control reviews__btn-control--next">
-                <span class="visually-hidden">Следующий отзыв</span>
-              </button>
-            </div>
-            <div class="reviews__wrapper-btn">
-              <a class="global-btn reviews__button " href="add-reviews.html">Написать</a>
-            </div>
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__block">
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
+              как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+              и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!
+            </p>
+          </div>
+          <div class="reviews__data">
+            <span class="reviews__author">Анастасия&nbsp;Красильникова</span>
+            <span class="reviews__contact">@misssssiskras</span>
+          </div>
+          <div class="reviews__controls">
+            <button type="button" class="global-btn reviews__btn-control reviews__btn-control--prev">
+              <span class="visually-hidden">Предыдущий отзыв</span>
+            </button>
+            <button type="button" class="global-btn reviews__btn-control reviews__btn-control--next">
+              <span class="visually-hidden">Следующий отзыв</span>
+            </button>
+          </div>
+          <div class="reviews__wrapper-btn">
+            <a class="global-btn reviews__button " href="add-reviews.html">Написать</a>
+          </div>
         </section>
       </div>
       <section class="contacts">
-        <div class="contacts_container">
+        <div class="contacts__container">
           <div class="contacts__wrapper contacts__wrapper--data">
             <h2 class="contacts__title">Контакты</h2>
             <p class="contacts__data contacts__data--email">
@@ -199,13 +194,14 @@
             </p>
           </div>
           <div class="contacts__map" id="map">
+            <h2 class="visibility-hidden">Блок с картой</h2>
             <picture class="contacts__map-picture contacts__map-picture--no-js"> <!-- contacts__map-picture--no-js -->
               <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
               <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-              <img class="contacts__map-img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта"> <!-- width="320" height="395"   -->
+              <img class="contacts__map-img contacts__map-img--no-js  " src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
             </picture>
           </div>
           <div class="contacts__wrapper contacts__wrapper--write-to-us">
@@ -215,8 +211,8 @@
       </section>
     </main>
     <footer class="footer-page">
-      <a href="#" class="footer-page__logo footer-page__logo--hidden">
-        <svg class="footer-page__logo-svg" width="101px" height="34px">
+      <a class="footer-page__logo footer-page__logo--hidden">
+        <svg class="footer-page__logo-svg" width="101px" height="34px"  aria-label="Переход на главную страницу сайта">
           <use xlink:href="#icon-logo-footer"></use>
         </svg>
       </a>
@@ -246,15 +242,15 @@
           </a>
         </li>
       </ul>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу сайта HTML Academy">
         <b class="copyright__text">Разработано</b>
         <svg class="copyright__svg" width="27" height="34">
-          <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+          <use xlink:href="#icon-htmlacademy"></use>
         </svg>
       </a>
     </footer>
     <div class="modal modal--hidden">
-      <section class=" modal__wrapper modal--hidden">
+      <section class=" modal__wrapper">
         <h2 class="modal__title">Добавить в корзину</h2>
         <p class="modal__select-size">Выберите размер:</p>
         <ul class="modal__list">
@@ -272,5 +268,6 @@
       </section>
     </div>
     <script src="js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBgdYJkhtExSlXxXgNGu0iRm9dT6uhYe6M&callback=initMap"></script>
   </body>
 </html>
