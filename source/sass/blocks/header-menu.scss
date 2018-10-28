@@ -50,10 +50,14 @@
   }
 }
 
+.header-menu__text {
+  pointer-events: none;
+}
+
 .header-menu__link-svg {
   margin: 4px 25px 0 0;
 
-  opacity: 0.2;
+  fill: #c7c7c7;
 }
 
 .header-menu__item {
@@ -243,8 +247,13 @@
 
     &--search:hover,
     &--cart:hover {
-      color: rgba(0, 0, 0, 0.6);
+      opacity: 1;
+      fill: #63d1bb;
+    }
 
+    &--search:hover .header-menu__link-svg,
+    &--cart:hover .header-menu__link-svg {
+      opacity: 1;
       fill: #63d1bb;
     }
 

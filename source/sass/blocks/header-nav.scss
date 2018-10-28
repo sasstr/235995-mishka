@@ -6,6 +6,10 @@
   min-height: 79px;
   padding: 23px 30px 20px;
   margin: 0 auto;
+
+  & a[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .header-nav__logo-link {
@@ -25,10 +29,6 @@
     display: block;
     width: 0;
     height: 0;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }
 
@@ -187,11 +187,11 @@
     padding: 0 40px 0 0;
     margin: 0 0 0 0;
 
-    &:hover a[href] {
+    & a[href]:hover {
       opacity: 0.6;
     }
 
-    &:active a[href] {
+    & a[href]:active {
       opacity: 0.3;
     }
   }
