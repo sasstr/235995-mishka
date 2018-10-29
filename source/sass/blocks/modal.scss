@@ -20,20 +20,22 @@
 
 .modal__wrapper {
   position: fixed;
+  top: 50%;
+  left: 50%;
   z-index: 21;
-  top: calc(50% - 336px);
-  left: calc((100% - 320px) / 2);
 
   display: flex;
   flex-direction: column;
   width: 320px;
   min-height: 336px;
-  margin: 0 auto;
   padding: 28px 30px 46px;
+  margin: 0 auto;
 
   border: 1px solid #c6c6c6;
   background-color: #ffffff;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  transform: translate(-50%, -50%);
 }
 
 .modal__title {
@@ -41,13 +43,13 @@
   align-self: center;
   width: 160px;
   min-height: 50px;
-  margin: 0 0 13px 0;
   padding: 0;
+  margin: 0 0 13px 0;
 
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: inherit;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
@@ -60,7 +62,7 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 30px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: inherit;
   color: #444444;
   text-align: center;
 }
@@ -128,15 +130,8 @@
 
 @media (min-width: $tablet-width) {
   .modal__wrapper {
-    position: fixed;
-    z-index: 21;
-    top: calc(50% - 336px);
-    left: calc((100% - 556px) / 2);
-
     width: 566px;
-    min-height: 336px;
     padding: 36px 106px 46px;
-    margin: 0 auto;
   }
 
   .modal__title {
@@ -166,9 +161,6 @@
 
 @media (min-width: $desktop-width) {
   .modal__wrapper {
-    width: 566px;
-    min-height: 336px;
-    margin: 0 auto;
     padding: 51px 108px 46px;
   }
 

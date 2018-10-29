@@ -107,3 +107,14 @@ function initMap() {
     icon: image
   });
 }
+
+mapPosition = document.querySelector('#map');
+
+window.addEventListener('resize', function(event) {
+  event.preventDefault();
+
+  if(document.documentElement.clientWidth > 768) {
+    mapPosition.style.removeProperty("position");
+  }
+});
+
