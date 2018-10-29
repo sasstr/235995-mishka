@@ -196,7 +196,7 @@
   }
 
   .contacts__map {
-    position: absolute;
+    position: absolute /* !important */;
     top: 70px;
     right: 0;
 
