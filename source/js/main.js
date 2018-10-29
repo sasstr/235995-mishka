@@ -108,7 +108,7 @@ function initMap() {
   });
 }
 
-/* mapPosition = document.querySelector('#map');
+mapPosition = document.querySelector('#map');
 
 window.addEventListener('resize', function(event) {
   event.preventDefault();
@@ -116,5 +116,5 @@ window.addEventListener('resize', function(event) {
   if(document.documentElement.clientWidth > 768) {
     mapPosition.style.removeProperty("position");
   }
-}); */
+});
 
