@@ -117,4 +117,3 @@ window.addEventListener('resize', function(event) {
     mapPosition.style.removeProperty("position");
   }
 });
-
