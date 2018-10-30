@@ -1,6 +1,9 @@
 .production {
-  border: 1px solid #ececec;
+  position: relative;
+
   padding-bottom: 33px;
+
+  border: 1px solid #ececec;
 
   &:active {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -9,7 +12,7 @@
 
 .production__title {
   display: flex;
-  padding: 25px 43px 23px 34px;
+  padding: 25px 43px 23px 32px;
   margin: 0;
 
   font-weight: 700;
@@ -38,24 +41,24 @@
   display: block;
   width: 260px;
   height: 150px;
+}
 
-  &::after {
-    position: absolute;
-    top: 37px;
-    right: 79px;
+.production__play-button {
+  position: absolute;
+  top: 132px;
+  right: 78px;
 
-    content: "";
+  content: "";
 
-    width: 101px;
-    height: 78px;
+  width: 108px;
+  height: 78px;
 
-    background-image: url("../img/icon-play.svg");
-    background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
 
-    cursor: pointer;
-  }
+  cursor: pointer;
 
-  &:active::after {
+  &:active {
     transform: scale(0.8);
     opacity: 0.3;
   }
@@ -96,16 +99,13 @@
     order: -1;
     width: 668px;
     height: 455px;
+  }
 
-    &::after {
-      top: 189px;
-      left: 283px;
-    }
+  .production__play-button {
+    top: 189px;
+    right: 282px;
 
-    &:active::after {
-      top: 189px;
-      left: 283px;
-
+    &:active {
       transform: scale(0.8);
       opacity: 0.3;
     }
@@ -177,6 +177,20 @@
     }
 
     &:active::after {
+      transform: scale(0.8);
+      opacity: 0.3;
+    }
+  }
+
+  .production__play-button {
+    top: 186px;
+    left: 285px;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
       transform: scale(0.8);
       opacity: 0.3;
     }
