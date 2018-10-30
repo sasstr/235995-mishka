@@ -160,6 +160,8 @@
   &--tel:focus + .order__form-svg,
   &--email:focus + .order__form-svg {
     fill: #62d1ba;
+
+    outline-color: transparent;
   }
 
   &:focus {
@@ -173,6 +175,8 @@
   &--tel:focus,
   &--email:focus {
     fill: #62d1ba;
+
+    outline-color: transparent;
   }
 
   &::-moz-placeholder {
@@ -256,8 +260,6 @@
 }
 
 .order__radio {
-  display: none;
-
   &:checked ~ .order__label::before {
     content: "";
 
@@ -279,6 +281,21 @@
   &:checked ~ .order__label:active::before {
     border: solid 2px rgba(68, 68, 68, 0.3);
   }
+
+  /* &:checked ~ .order__label:focus::before {
+    border: solid 2px #62d1ba;
+
+    outline-color: transparent;
+  } */
+}
+
+.order__radio:focus ~ .order__label::before,
+.order__radio:checked:focus ~ .order__label::before,
+.order__checkbox:checked:focus ~ .order__label::before,
+.order__checkbox:focus ~ .order__label::before {
+  border: solid 2px #62d1ba;
+
+  outline-color: transparent;
 }
 
 .order__radio ~ .order__label::before {
@@ -298,9 +315,6 @@
 }
 
 .order__checkbox {
-  position: relative;
-  display: none;
-
   & ~ .order__label::before {
     content: "";
 
@@ -315,7 +329,6 @@
   }
 
   &:checked ~ .order__label::before {
-
     content: "";
 
     display: flex;
@@ -330,7 +343,6 @@
     cursor: pointer;
   }
 
-  & ~ .order__label:active::before,
   &:checked ~ .order__label:active::before {
     border: solid 2px rgba(68, 68, 68, 0.3);
   }
@@ -476,8 +488,6 @@
   }
 
   .order__block {
-    position: relative;
-
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -528,8 +538,6 @@
   }
 
   .order__radio {
-    display: none;
-
     &:checked ~ .order__label::before {
       width: 53px;
       height: 52px;
@@ -570,8 +578,6 @@
   }
 
   .order__checkbox {
-    display: none;
-
     & ~ .order__label::before {
       width: 54px;
       height: 52px;
@@ -603,6 +609,8 @@
   .order__checkbox ~ .order__label:hover::before,
   .order__checkbox:checked ~ .order__label:hover::before {
     border: solid 2px #62d1ba;
+
+    outline-color: transparent;
   }
 
   .order__radio ~ .order__label:active::before,
@@ -610,6 +618,8 @@
   .order__checkbox ~ .order__label:active::before,
   .order__checkbox:checked ~ .order__label:active::before {
     border: solid 2px rgba(68, 68, 68, 0.3);
+
+    outline-color: transparent;
   }
 
   .order__container-darkgray {
@@ -698,13 +708,9 @@
     padding: 0;
   }
 
-  .order__block {
-    position: relative;
-
-    &--checkbox {
-      width: 262px;
-      margin-bottom: 0;
-    }
+  .order__block--checkbox {
+    width: 262px;
+    margin-bottom: 0;
   }
 
   .order__form-add {
@@ -716,6 +722,7 @@
 
     &:focus {
       color: #444444;
+
       border: 2px solid #62d1ba;
       outline-color: transparent;
     }

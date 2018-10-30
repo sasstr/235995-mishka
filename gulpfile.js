@@ -48,7 +48,7 @@ gulp.task('minify', function() {
   .pipe(gulp.dest('build'));
 });
 
-gulp.task("images", function() {  // сжимаем картинки
+gulp.task("images", function() {  // сжимаем картинки можно делать паралельно !
   return gulp.src("source/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
     imagemin.optipng({optimizationLevel: 3}),
