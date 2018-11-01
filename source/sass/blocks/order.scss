@@ -281,12 +281,6 @@
   &:checked ~ .order__label:active::before {
     border: solid 2px rgba(68, 68, 68, 0.3);
   }
-
-  /* &:checked ~ .order__label:focus::before {
-    border: solid 2px #62d1ba;
-
-    outline-color: transparent;
-  } */
 }
 
 .order__radio:focus ~ .order__label::before,

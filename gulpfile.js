@@ -17,10 +17,12 @@ var del = require("del"); // удаляем папку build перед ново
 var uglify = require("gulp-uglify"); // сжимает JS минифицирует
 var pump = require('pump'); //помогает uglify работать без ошибок
 var htmlmin = require("gulp-htmlmin"); // сжимает html минифицирует
+var sourcemaps = require("gulp-sourcemaps"); // добавим карты CSS блоков
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
   .pipe(plumber())
+  .pipe(sourcemaps.init())
   .pipe(sass())
   .pipe(postcss([
     autoprefixer()
@@ -28,6 +30,7 @@ gulp.task("css", function () {
   .pipe(gulp.dest("build/css"))
   .pipe(csso())  // минифицируем CSS
   .pipe(rename("style.min.css")) // меняем имя файла на style.min.css в разметке указать его
+  .pipe(sourcemaps.write("."))
   .pipe(gulp.dest("build/css"))
   .pipe(server.stream());
 });
