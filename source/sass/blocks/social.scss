@@ -1,0 +1,64 @@
+.social {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+  max-width: 260px;  // это потому что полоска тени такой ширины box-shadow
+  margin: 0 auto;
+  padding: 21px 30px 20px;
+
+  fill: #231f20;
+
+  box-shadow: 0 1px 0 rgba(129, 129, 129, 0.1);
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 40px;
+
+  &--fb {
+    width: 62px;
+  }
+
+  &--tw {
+    width: 62px;
+  }
+
+  &--insta {
+    width: 55px;
+  }
+
+  :active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    max-width: 240px;
+    padding: 0;
+    margin: 0 60px 0 143px;
+
+    box-shadow: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin: 0 250px 0 333px;
+  }
+
+  .social__link:hover {
+    fill: #46c1ae;
+  }
+
+  .social__link:active {
+    fill: #46c1ae;
+    opacity: 0.3;
+  }
+}

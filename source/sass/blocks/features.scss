@@ -1,0 +1,261 @@
+.features {
+  padding: 32px 30px 30px;
+}
+
+.features__title {
+  margin: 0 0 30px -2px;
+
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.features__list {
+  @include reset-list;
+
+  &:first-child {
+    margin-bottom: 31px;
+  }
+}
+
+.features__item {
+  width: 250px;
+  padding: 0;
+  margin: 0 0 30px 0;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--ecology {
+    padding-right: 60px;
+  }
+
+  &--nordic {
+    padding-right: 30px;
+  }
+
+  &--more-likes {
+    padding-right: 50px;
+  }
+
+  &--support {
+    width: 255px;
+
+    letter-spacing: 0.01em;
+  }
+
+  &--handmade {
+    letter-spacing: 0.01em;
+  }
+
+  &--gift-packed {
+    letter-spacing: 0.01em;
+  }
+
+  &::before {
+    display: block;
+
+    content: "";
+
+    background-repeat: no-repeat;
+  }
+
+  &--ecology::before {
+    width: 32px;
+    height: 37px;
+    margin: 0 0 19px 9px;
+
+    background-image: url("../img/feature-flower.svg");
+  }
+
+  &--nordic::before {
+    width: 47px;
+    height: 27px;
+    margin-bottom: 27px;
+
+    background-image: url("../img/feature-money.svg");
+  }
+
+  &--more-likes::before {
+    width: 47px;
+    height: 27px;
+    margin: 0 0 25px 8px;
+
+    background-image: url("../img/feature-heart.svg");
+  }
+
+  &--handmade::before {
+    width: 35px;
+    height: 34px;
+    margin: 0 0 20px 3px;
+
+    background-image: url("../img/feature-ball.svg");
+  }
+
+  &--support::before {
+    width: 55px;
+    height: 23px;
+    margin: 2px 0 30px -5px;
+
+    background-image: url("../img/feature-rocket.svg");
+  }
+
+  &--gift-packed::before {
+    width: 33px;
+    height: 32px;
+    margin: 0 0 19px 3px;
+
+    background-image: url("../img/feature-gift.svg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    width: $tablet-width;
+    padding: 83px 50px 77px 47px;
+  }
+
+  .features__wrapper {
+    display: flex;
+  }
+
+  .features__title {
+    padding-bottom: 0;
+    margin-bottom: 48px;
+
+    font-size: 43px;
+    line-height: 50px;
+    letter-spacing: -0.001em;
+  }
+
+  .features__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 668px;
+    min-height: 415px;
+    padding: 0 34px 0 2px;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .features__item {
+    width: 300px;
+    min-height: 105px;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 22px;
+
+    &--ecology {
+      min-height: 100px;
+      padding: 0 70px 0 2px;
+
+      letter-spacing: 0.007em;
+    }
+
+    &--ecology::before {
+      margin: 0 0 18px 9px;
+    }
+
+    &--nordic {
+      min-height: 104px;
+      padding: 0 40px 0 2px;
+
+      letter-spacing: 0.004em;
+    }
+
+    &--more-likes {
+      min-height: 100px;
+      padding: 0 70px 0 2px;
+
+      letter-spacing: 0.004em;
+    }
+
+    &--more-likes::before {
+      margin: 0 0 23px 7px;
+
+      background-image: url("../img/feature-heart.svg");
+    }
+
+    &--handmade {
+      min-height: 100px;
+    }
+
+    &--support {
+      min-height: 100px;
+    }
+
+    &--support::before {
+      margin: 0 0 28px -7px;
+    }
+
+    &--gift-packed {
+      min-height: 100px;
+      padding-right: 40px;
+    }
+
+    &--gift-packed::before {
+      margin: 0 0 18px 2px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    width: $desktop-width;
+    padding: 35px 50px 81px 223px;
+  }
+
+  .features__title {
+    font-size: 53px;
+    line-height: 57px;
+    letter-spacing: -0.005em;
+  }
+
+  .features__item {
+    width: 350px;
+
+    &--ecology {
+      padding: 0 120px 0 2px;
+    }
+
+    &--nordic {
+      padding: 0 90px 0 2px;
+    }
+
+    &--more-likes {
+      padding: 0 120px 0 2px;
+    }
+
+    &--handmade {
+      padding: 0 70px 0 2px;
+
+      letter-spacing: 0.007em;
+    }
+
+    &--support {
+      padding: 0 20px 0 2px;
+    }
+
+    &--gift-packed {
+      padding: 0 70px 0 2px;
+
+      letter-spacing: 0.007em;
+    }
+  }
+
+  .features__list {
+    width: 350px;
+  }
+}

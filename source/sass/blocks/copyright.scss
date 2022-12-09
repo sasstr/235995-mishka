@@ -1,0 +1,67 @@
+.copyright {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 320px;
+  padding: 19px 70px 23px 67px;
+  margin: 0 auto;
+
+  fill: #63d1bb;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {  // что бы в IE11 работал :active
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: "";
+
+    display: block;
+  }
+}
+
+.copyright__text {
+  padding: 0;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 19px;
+  color: #000000;
+}
+
+.copyright__svg {
+  width: 30px;
+  height: 36px;
+
+  transform: scale(1.2);
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 182px;
+    padding: 0;
+    margin: -2px 0 0 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    display: flex;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

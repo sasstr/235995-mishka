@@ -1,0 +1,285 @@
+.header-menu {
+  @include reset-list;
+}
+
+.header-menu__link {
+  display: flex;
+  justify-content: flex-start;
+  padding: 27px 76px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+
+  &::before {  // что бы в IE11 работал :active
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    display: block;
+  }
+
+  &--cart {
+    padding: 28px 46px 28px 30px;
+
+    fill: #231f20;
+  }
+
+  &--search {
+    padding: 28px 46px 28px 32px;
+
+    fill: #231f20;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:active .header-menu__link-svg {
+    opacity: 0.3;
+
+    fill: #63d1bb;
+  }
+}
+
+.header-menu__text {
+  pointer-events: none;
+}
+
+.header-menu__link-svg {
+  margin: 4px 25px 0 0;
+
+  fill: #c7c7c7;
+}
+
+.header-menu__item {
+  width: 320px;
+  min-height: 78px;
+
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
+  &--cart {
+    z-index: 5;
+
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .header-menu--closed {
+    display: none;
+  }
+
+  .header-menu--opened {
+    display: block;
+  }
+
+  .header-menu--nojs {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header-menu {
+    display: flex;
+    align-self: stretch;
+  }
+
+  .header-menu__item {
+    width: 184px;
+    min-height: 88px;
+
+    box-shadow: none;
+
+    &--cart {
+      flex-shrink: 0;
+      min-width: 263px;
+      margin-left: auto;
+
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    &--search {
+      display: flex;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+      width: 85px;
+
+      box-shadow: 1px 0 0 #ececec, inset 1px 0 0 #ececec;
+    }
+
+    &--to-order {
+      height: 100%;
+      width: 167px;
+
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    &--catalog {
+      height: 100%;
+      width: 167px;
+
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    &--inner-page {
+      background-color: #f1f1f1;
+    }
+  }
+
+  .header-menu__link-svg {
+    margin-right: 0;
+  }
+
+  .header-menu__text {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    border: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+  .header-menu__link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 33px 0;
+    min-width: 167px;
+
+    font-size: 15px;
+
+    &--search {
+      display: flex;
+      justify-content: center;
+      min-width: 85px;
+      height: 100%;
+    }
+
+    &--cart {
+      display: flex;
+      justify-content: space-between;
+      min-width: 264px;
+      padding: 32px 0 32px 30px;
+
+      font-size: 17px;
+      letter-spacing: 0.003em;
+    }
+
+    &--to-order {
+      height: 100%;
+      padding: 0 0 30px 0;
+
+      letter-spacing: 0.009em;
+    }
+
+    &--catalog {
+      height: 100%;
+      padding: 0 0 30px 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header-menu {
+    align-items: center;
+  }
+
+  .header-menu__item {
+    padding: 32px 0;
+    align-self: stretch;
+
+    &--cart {
+      min-width: 316px;
+      padding: 32px 50px 32px 30px;
+      margin: auto 0;
+    }
+
+    &--catalog {
+      flex-shrink: 0;
+      min-width: 234px;
+      padding: 30px 0 33px 50px;
+
+      letter-spacing: 0.005em;
+
+      background-color: #ffffff;
+    }
+
+    &--to-order {
+      min-width: 205px;
+      padding-left: 35px;
+
+      background-color: #ffffff;
+      box-shadow: inset 1px 0 0 #ececec;
+    }
+  }
+
+  .header-menu__link {
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &--search:hover,
+    &--cart:hover {
+      opacity: 1;
+      fill: #63d1bb;
+    }
+
+    &--search:hover .header-menu__link-svg,
+    &--cart:hover .header-menu__link-svg {
+      opacity: 1;
+      fill: #63d1bb;
+    }
+
+    &--cart:active,
+    &--search:active {
+      opacity: 0.3;
+
+      fill: #63d1bb;
+    }
+
+    &--to-order {
+      padding: 0;
+
+      background-color: #ffffff;
+    }
+
+    &--catalog {
+      padding: 0;
+
+      background-color: #ffffff;
+    }
+
+    &--cart {
+      min-width: 0;
+
+      letter-spacing: 0.008em;
+    }
+  }
+}

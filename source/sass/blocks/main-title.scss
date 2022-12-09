@@ -1,0 +1,41 @@
+.main-title {
+  padding: 70px 30px 77px;
+  margin: 0 auto;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+
+  background-color: #f1f1f1;
+}
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    padding: 0 30px 78px;
+    margin-top: 76px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    &--inner-page {
+      padding: 0 84px 84px 85px;
+      margin-top: 95px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title {
+    padding: 76px 30px 99px;
+
+    font-size: 53px;
+    line-height: 57px;
+
+    &--inner-page {
+      padding: 0 30px 104px;
+      margin-top: 93px;
+    }
+  }
+}
